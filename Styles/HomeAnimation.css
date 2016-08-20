@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+#homeNotes_top
+{
+	width:300px;
+	position:absolute;
+    left:0;  
+  
+
+}
+#homeNotes_bot
+{
+	width:300px;
+	position:absolute;
+    left:0; 
+  
+
+}
+
+
+#rotateLeftOne
+{
+	
+ 	transform:rotate(9deg);
+ 	-ms-transform:rotate(9deg); 
+	 -webkit-transform:rotate(9deg);
+
+}
+
+#rotateLeftTwo
+{
+	
+ 	transform:rotate(18deg);
+ 	-ms-transform:rotate(18deg); 
+	 -webkit-transform:rotate(18deg);
+	 font-size:75%;
+
+}
+
+#rotateRightOne
+{
+	
+ 	transform:rotate(-9deg);
+ 	-ms-transform:rotate(-9deg); 
+	 -webkit-transform:rotate(-9deg);
+
+}
+
+#rotateRightTwo
+{
+	
+ 	transform:rotate(-18deg);
+ 	-ms-transform:rotate(-18deg); 
+	 -webkit-transform:rotate(-18deg);
+	 font-size:75%;
+
+}

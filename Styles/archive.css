@@ -1,0 +1,460 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+		background: url(../Images/Top_Defualt.jpg) repeat-x center top #000;  /* 000 */
+		font-family: Helvetica, Arial, sans-serif;
+		font-size: 12px;
+		margin: 0px;
+		color:#FFF; /* FFF */
+		
+		
+}
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  .blurBG {
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+     
+  }
+}
+
+
+#text-center{
+	text-align:center;	
+}
+
+#text-left{
+	text-align:left;
+	padding: 5px;
+	
+}
+
+
+@font-face
+{
+	font-family: 'xy';
+	src:url('../fonts/Pokemon%20Hollow.ttf')	;
+}
+
+
+#XY{
+	font-family: 'xy';	
+}
+
+@font-face
+{
+	font-family: 'snow';
+	src:url('../fonts/snow.ttf')	;
+}
+
+
+#Snow{
+	font-family: 'snow';
+	font-size:400%;	
+}
+
+
+#header {
+		 width: 100%;
+		 height: 70px;
+		 background-color: #777;   /* 777 */
+		 background: hsla(0,0%,10%,.8); /* (0,0%,10%,.4); */
+		 text-shadow: 0px -1px #DDD; /*DDD*/
+		 border-bottom: 2px solid #000;   /* 000 */
+		 -webkit-box-shadow: 0 0 15px #000; /* 000 */
+		 -moz box shadow: 0 0 15px #000; /* 000 */
+		 box-shadow: 0 0 15px #000; /* 000 */
+		 position:fixed;
+		 top:0px;
+		 z-index:20;
+		 
+		 
+}
+
+#mainImage
+{
+-webkit-box-shadow: 0 0 15px #000; /* 000 */
+		 -moz box shadow: 0 0 15px #000; /* 000 */
+		 box-shadow: 0 0 15px #000;	/* 000 */
+		 	width: 154px;
+	height: 125px;
+}
+
+#centerHeader {
+		width:850px;
+		height: 70px;
+		margin-left: auto;
+		margin-right:auto;
+}
+
+#nav {
+		color: #777;  /*777*/
+		list-style-type: none;
+		margin: 0px;
+		padding: 0px;
+		display: inline-table;
+}
+
+#nav li {
+			display: block;
+			float: left;
+			
+			 
+}
+
+
+
+#nav .active > a { /* FF8A00 */
+  background: #dd9caa; /* c7002e */
+  background: hsla(328,92%,10%,.3); /*20, 0%, 10%)*/
+  -webkit-box-shadow: 0 4px 0 #F57D00, 0 5px 0 #FA8200, 0 6px 0 #FF8A00; /*0 4px 0 #F57D00, 0 5px 0 #FA8200, 0 6px 0 #FF8A00;*/
+  -moz-box-shadow: 0 4px 0 #F57D00, 0 5px 0 #FA8200, 0 6px 0 #FF8A00; /*0 4px 0 #F57D00, 0 5px 0 #FA8200, 0 6px 0 #FF8A00;*/
+  box-shadow: 0 4px 0 #F57D00, 0 5px 0 #FA8200, 0 6px 0 #FF8A00; /*0 4px 0 #F57D00, 0 5px 0 #FA8200, 0 6px 0 #FF8A00;*/
+  color: #ffffff;
+  
+  
+  webkit-box-shadow: 0 4px 0 #c7002e, 0 5px 0 #d41c46, 0 6px 0 #c7002e; /*0 4px 0 #c7002e, 0 5px 0 #d41c46, 0 6px 0 #c7002e;*/
+  -moz-box-shadow: 0 4px 0 #c7002e, 0 5px 0 #d41c46, 0 6px 0 #c7002e; /*0 4px 0 #c7002e, 0 5px 0 #d41c46, 0 6px 0 #c7002e;*/
+  box-shadow: 0 4px 0 #c7002e, 0 5px 0 #d41c46, 0 6px 0 #c7002e; /*0 4px 0 #c7002e, 0 5px 0 #d41c46, 0 6px 0 #c7002e;*/
+  
+  
+}
+
+#nav ul {
+  border-top: 6px solid #c7002e; /* c7002e */
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+#nav li ul {
+  background: #000; /* 000 */
+  background: hsla(0,92%,10%,.8); /* 20 */
+  border-left: 2px solid #c7002e; /* c7002e */
+  border-right: 2px solid #c7002e; /* c7002e */
+  border-bottom: 2px solid #c7002e; /* c7002e */
+  display: none;
+  height: auto;
+  filter: alpha(opacity=95);
+  opacity: 0.95;
+  position: absolute;
+  width:96px;
+  z-index: 200;
+  padding:0px;
+  padding-top:13px;
+
+}
+
+#nav li:hover > ul {
+  display: block;
+}
+
+#nav ul ul {
+  left: 100%;
+  top: 0;
+}
+
+#nav li li {
+  display: block;
+  float: none;
+  padding: 0px;
+  position: relative;
+  width: 96px;
+}
+#nav li ul a {
+  display: block;
+  font-size: 12px;
+  font-style: normal;
+  padding: 0px 10px 0px 15px;
+  text-align: left;
+}
+
+
+h1 {
+
+ 	font-size: 25px;
+	color: #FFF; /*FFF*/
+	padding-top: 10px;
+	margin: 0px; float: left;
+	margin-right: 80px;
+	margin-left: 40px;
+	
+}
+
+h2{
+	color: #FFF;	/*FFF*/
+}
+
+#nav {
+		color: #777;
+		list-style-type: none;
+		margin: 0px;
+		padding: 0px;
+}
+
+#nav li {
+			display: block;
+			float: left;
+			
+			 
+}
+
+
+#header a{text-decoration: none; }
+
+
+a:link {color: #FFF;} /*FFF*/
+
+
+
+a:visited {color: #FFF;}/*FFF*/
+
+
+a:hover {color: #EEE; /*EEE*/
+		 text-shadow: 0px 1px #FFF; /*FFF*/
+		 
+
+ }
+ 
+
+ 
+a:active {color: #FFF;} /*FFF*/
+
+
+#nav li a {
+		font-size: 16px;
+		display: block;
+		width: 100px;
+		height: 50px;
+		text-align:center;
+		color: #FFF; /*FFF*/
+
+		
+}
+
+
+#nav li a:visited {color: #FFF;} /*FFF*/
+
+#nav p {
+		magrin: 0px;
+		padding-top: 13px;
+		color: #FFF; /*FFF*/
+}
+
+#mainContent
+		{
+			
+			/* background-color:#111; /*111*/
+			width:850px;
+			color:#FFF; /*FFF*/
+			font-size:18px;
+			
+			      
+        
+        	
+			overflow:auto;
+		  
+
+
+}
+
+#margin
+{
+	width:850px;
+	margin: 100px auto;	
+	position:relative;
+	
+}
+
+#scroll
+{
+	
+}
+
+#leftAlignText
+{
+	text-align:left;	
+}
+
+
+
+#fullWidth
+{
+	width: 100%;	
+}
+
+#footer {
+		 width: 100%;
+		 height: 36px;
+		 background-color: #111; /*111*/
+		 text-shadow: 0px -1px #333; /*333*/
+		 position:fixed;
+		 bottom:0px;
+		 
+		 
+}
+#centerFooter {
+		width:850px;
+		height: 18px;
+		margin-left: auto;
+		margin-right:auto;
+		color: #FFF /*FFF*/
+}
+
+#chatBox {
+	position: fixed;
+	z-index:100;
+	bottom: 0px;
+	right: 0px;
+	width: 400px;
+	height:0px;
+	color:#000;
+	background:#999;	/*999*/
+}
+@media only screen and (max-width:556px)
+{
+	
+	
+	#nav 
+{
+	
+	background-color: #000000;
+	
+}
+
+	
+#mainContent
+		{
+			 
+			 width: 90%
+		}	
+		#margin
+		{
+		margin: 200px auto;	
+		}
+		
+}
+@media only screen and (max-width:900px) 
+{
+	
+	#mobileHide
+	{
+		
+		display:none;	
+		
+	}
+	
+		#chatBox {width:0px;}
+		
+		#mainContent
+		{
+			
+			 width: 90%
+		}
+		#margin
+{
+	width:90%;
+	
+}
+		
+		#centerHeader {
+			width:95%;
+		/*height: 70px;
+		margin-left: auto;
+		margin-right:auto;*/
+		}
+		h1 {
+
+			font-size: 25px;
+			color: #FFF;
+			padding-top: 0px;
+			margin: 0px; float: left;
+			margin-right: 40px;
+			margin-left: 0px;
+			
+		}
+		#header {
+			height: 140px;	
+		}
+		#nav li a {
+		font-size: 16px;
+		width: 80px;
+		height: 50px;
+		
+		}
+		
+		#centerFooter {
+		width:95%;
+		
+		
+}
+		
+	
+
+		
+}
+@media only screen and (max-device-width:480px) and (-webkit-min-device-pixel-ratio: 2)
+{ 
+
+#mobileHide
+	{
+		
+		display:none;	
+		
+	}
+
+#Snow{
+	font-size:150%;	
+}
+
+#chatBox {width:0px;}
+
+
+
+	body{
+		font-size:200%;
+	}
+	
+	#header {
+		 height: 325px; /*280*/
+		 border-bottom: 4px solid #000; /*000*/
+		
+		 
+		 
+}
+
+h1 {
+ 	font-size: 100px;
+	padding-top: 40px;
+	margin-right: 40px;
+	margin-left: 40px;
+}
+
+#nav 
+{
+	
+	background-color: #000000;
+	
+}
+
+	#nav li {
+			float: left;
+ }
+ 
+ #nav li a {
+		font-size: 40px;
+		width: 170px;
+		height: 100px;
+		
+}
+#mainContent
+		{
+			font-size:150%;
+			width:93%;
+			height:auto;
+				/*		height: 600px; */
+
+			
+}
+}

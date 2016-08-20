@@ -1,0 +1,798 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/Template_1.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="Styles/styles.css" media="screen" /> 
+<link rel="stylesheet" type="text/css" href="Styles/cssAnimations.css" media="screen" /> 
+<link rel="shortcut icon" href="Images/favico/favicon.ico">
+
+
+
+
+
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Anime Party | Constitution</title>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script type="text/javascript" src="js/smoothscroll.js"></script>
+<script type="text/javascript" src="js/backToTop.js"></script>
+<script type="text/javascript">
+
+
+
+
+
+	function MM_swapImgRestore() { //v3.0
+	  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+	}	
+	function MM_preloadImages() { //v3.0
+	  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+		var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+		if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+	}
+	function MM_findObj(n, d) { //v4.01
+	  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+		d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+	  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+	  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+	  if(!x && d.getElementById) x=d.getElementById(n); return x;
+	}
+
+	function MM_swapImage() { //v3.0
+	  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+	   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+	}
+
+    function hideClass()
+    {
+        document.getElementById("leftBar").className = "Hideblock";
+		document.getElementById("show").className = "show-sidebar";
+		document.getElementById("hide").className = "hide-sidebar";
+    }
+
+	function showClass()
+    {
+        document.getElementById("leftBar").className = "Showblock blurBG";
+		document.getElementById("show").className = "hide-sidebar";
+		document.getElementById("hide").className = "show-sidebar";
+		
+    }
+	
+	
+	
+	function showFeedbackBar()
+	{
+		document.getElementById("feedbackBar").className = "feedbackBar blurBG";
+		document.getElementById("showFeedbackBar").className = "hide-feedbackBar";
+		document.getElementById("hideFeedbackBar").className = "show-feedbackBar";	
+	}
+	
+	function hideFeedbackBar()
+	{
+		document.getElementById("feedbackBar").className = "feedbackBarHide";
+		document.getElementById("showFeedbackBar").className = "show-feedbackBar";
+		document.getElementById("hideFeedbackBar").className = "hide-feedbackBar";	
+	}
+	
+	
+	function showFooterBar()
+	{
+		document.getElementById("footerBar").className = "footerBarShow blurBG";
+		document.getElementById("showFooterBar").className = "hide-footerBar";
+		document.getElementById("hideFooterBar").className = "show-footerBar";	
+	}
+	
+	function hideFooterBar()
+	{
+		document.getElementById("footerBar").className = "footerBarHide";
+		document.getElementById("showFooterBar").className = "show-footerBar";
+		document.getElementById("hideFooterBar").className = "hide-footerBar";	
+	}
+	
+	function aboutHoverF()
+	{
+		
+		hideAnimation();
+		
+		
+		if(document.getElementById("activeAbout"))
+		{
+		
+		}
+		else
+		{
+			document.getElementById("aboutBar").className = "upperBarThree blurBG fade-in-25s";
+			document.getElementById("aboutBar").id = "aboutBarActive";
+		}
+		
+		//document.getElementById("animeBar").className = "footerBarHide";
+		//document.getElementById("eventsBar").className = "footerBarHide";
+		
+	}
+	
+	function animeHover()
+	{
+		
+		hideAnimation();
+		
+		
+		if(document.getElementById("activeAnime"))
+		{
+			
+		}
+		else
+		{
+			document.getElementById("animeBar").className = "upperBarThree blurBG fade-in-25s";
+			document.getElementById("animeBar").id = "animeBarActive";
+		}
+		
+		//document.getElementById("aboutBar").className = "footerBarHide fade-in-25s";
+		//document.getElementById("eventsBar").className = "footerBarHide fade-in-25s";
+		
+	}
+	
+	function eventsHover()
+	{
+		
+		hideAnimation();
+		
+		if(document.getElementById("eventsActive"))
+		{
+			
+		}
+		else
+		{
+			
+			document.getElementById("eventsBar").className = "upperBarThree blurBG fade-in-25s";
+			document.getElementById("eventsBar").id = "eventsBarActive";
+		}
+		
+		//document.getElementById("animeBar").className = "footerBarHide";
+		//document.getElementById("aboutBar").className = "footerBarHide";
+		
+		
+	}
+	function hideAnimation()
+	{
+	
+		var delay=480;
+		setTimeout(function(){hideAll();}, delay); 
+		if(document.getElementById("aboutBarActive"))
+		{
+			document.getElementById("aboutBarActive").className = "upperBarThree blurBG fade-out-25s";	
+			document.getElementById("aboutBarActive").id = "aboutBarDeActive";	
+			
+		}
+		if(document.getElementById("eventsBarActive"))
+		{
+			document.getElementById("eventsBarActive").className = "upperBarThree blurBG fade-out-25s";
+			document.getElementById("eventsBarActive").id = "eventsBarDeActive";	
+			
+		}
+		if(document.getElementById("animeBarActive"))
+		{
+			document.getElementById("animeBarActive").className = "upperBarThree blurBG fade-out-25s";
+			document.getElementById("animeBarActive").id = "animeBarDeActive";		
+			
+		}
+		
+		
+	}
+	
+	
+	function hideAll()
+	{
+		
+		if(document.getElementById("aboutBarDeActive"))
+		{
+			document.getElementById("aboutBarDeActive").className = "footerBarHide";
+			document.getElementById("aboutBarDeActive").id = "aboutBar";
+		}
+		if(document.getElementById("animeBarDeActive"))
+		{
+			document.getElementById("animeBarDeActive").className = "footerBarHide";
+			document.getElementById("animeBarDeActive").id = "animeBar";
+		}
+		if(document.getElementById("eventsBarDeActive"))
+		{
+			document.getElementById("eventsBarDeActive").className = "footerBarHide";
+			document.getElementById("eventsBarDeActive").id = "eventsBar";
+		}
+								
+	}
+	
+
+    window.onload = function()
+    {
+        document.getElementById("hide").addEventListener( 'click' , hideClass );
+		document.getElementById("show").addEventListener( 'click' , showClass );
+		
+		
+		document.getElementById("showFeedbackBar").addEventListener( 'click' , showFeedbackBar);
+		document.getElementById("hideFeedbackBar").addEventListener( 'click' , hideFeedbackBar);
+		
+		
+		document.getElementById("showFooterBar").addEventListener( 'click' , showFooterBar);
+		document.getElementById("hideFooterBar").addEventListener( 'click' , hideFooterBar);
+		
+		
+		document.getElementById("aboutHover").addEventListener('mouseover', aboutHoverF);	
+		document.getElementById("homeHover").addEventListener('mouseover', hideAnimation);
+		
+		document.getElementById("animeHover").addEventListener('mouseover', animeHover);
+		document.getElementById("eventsHover").addEventListener('mouseover', eventsHover);
+		document.getElementById("pointsHover").addEventListener('mouseover', hideAnimation);
+		
+		document.getElementById("hideBarE").addEventListener('mouseover', hideAnimation);
+		document.getElementById("hideBarAb").addEventListener('mouseover', hideAnimation);
+		document.getElementById("hideBarAn").addEventListener('mouseover', hideAnimation);
+		
+		if (document.getElementById("FacebookPageID"))  //check for about page
+		{
+			document.getElementById("FacebookPageID").addEventListener('mouseover',facebookPage);
+			document.getElementById("TwitterID").addEventListener('mouseover',twitterPage);
+			document.getElementById("YoutubeID").addEventListener('mouseover',youtubePage);
+			document.getElementById("instagramID").addEventListener('mouseover',instagramPage);
+			document.getElementById("facebookGroupID").addEventListener('mouseover',facebookGroup);
+		}
+		
+		if (document.getElementById("pointsDESClink")) //check for point page
+		{
+			
+			document.getElementById("pointsDESClink").addEventListener('click',showPointsASC);
+			document.getElementById("pointsASClink").addEventListener('click',showPointsDESC); 
+			document.getElementById("pointslink").addEventListener('click',showPointsDESC);
+			document.getElementById("pointsNameLink").addEventListener('click',showPointsNameDESC);  
+			document.getElementById("pointsNameAsclink").addEventListener('click',showPointsNameDESC);
+			document.getElementById("pointsNameDesclink").addEventListener('click',showPointsNameASC );
+		}
+		
+		
+    }
+	
+</script>
+</head>
+
+<!-- InstanceBeginEditable name="BodyTag" --> <body> <!-- InstanceEndEditable -->
+
+<div class="upperBar blurBG">
+
+<div id="upperBarCenter">
+<ul id="nav">
+
+                   <!-- InstanceBeginEditable name="Home" --> <li> <!-- InstanceEndEditable --><a href="Index.html" id="homeHover" >Home</a></li>
+                   <!-- InstanceBeginEditable name="About" --> <li class="active" id="activeAbout"> <!-- InstanceEndEditable --><a href="About.html" id="aboutHover">About</a> </li>
+                   <!-- InstanceBeginEditable name="Anime" --> <li> <!-- InstanceEndEditable --><a href="Anime.html" id="animeHover" >Anime</a></li>
+                   <!-- InstanceBeginEditable name="Events" --> <li> <!-- InstanceEndEditable --><a href="Events.html" id="eventsHover" >Events</a></li>
+                   <!-- InstanceBeginEditable name="Points" --> <li> <!-- InstanceEndEditable --><a href="Points.html" id="pointsHover" >Points</a></li>
+                         
+ </ul>  
+ </div> 
+ 
+ <div id="upperBarCenterMobile">
+ <table width="100%">
+ <tr>
+ <td align="left" width="25%">
+ 
+ </td>
+ <th width="50%">
+ <a href="Index.html">Anime Party</a>
+ </th>
+ <td align="right"  width="25%">
+<div class="nav-toggle pull-right ">
+	<a  class="show-sidebar" id="show" >
+    	<span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </a>
+
+</div> 
+ </td>
+</tr>
+</table> 
+ </div>               
+</div>
+<div id="leftBar" class="Hideblock">
+<table width="90%" style="margin:auto;">
+ <tr>
+ <td align="left" width="25%">
+ 
+ </td>
+ <th width="50%">
+ <a href="Index.html">Anime Party</a>
+ </th>
+ <td align="right"  width="25%">
+<div class="nav-toggle pull-right ">
+    <a  class="hide-sidebar" id="hide">
+    	<span class="icon-bar-top"></span>
+        <span class="icon-bar-mid"></span>
+        <span class="icon-bar-bot"></span>
+    </a>
+</div> 
+ </td>
+</tr>
+</table> 
+<div id="leftBar-scroll">
+<ul id="nav">
+					<li id="LeftHeightLogo"> <a href="Index.html"><img src="Images/Logo-transparent.png" id="width_logo" height="auto" alt=""/></a></li>
+                   <li> <a href="Index.html">Home</a></li>
+                    <li> <a href="Points.html" >Points</a></li>
+                    <li id="LeftHeightIndex">
+                    <ul id="nav">
+                        <li class="activeSub">
+                        		<a href="About.html">About</a>
+                        </li>
+                        <li class="navSub">
+                       		 <a href="boardMembers.html">Board Members</a> 
+                        </li>
+                        <li class="navSub">
+                        		<a href="SocialMedia.html">Social Media</a>
+                        </li>
+                        <li class="navSub" id="constBar">
+                       		 <a href="Constitution.html">Constitution</a> 
+                        </li>
+                        <li class="navSub">
+                       		 <a href="Archive/index.html">Archive</a>
+                        </li>
+                        <li class="navSub">
+                       		 <a href="CommentCard.html">Comment Card</a>
+                        </li>
+                    </ul>
+                    
+                    </li>
+                    <li id="LeftHeightTwo"> 
+                        <ul id="nav">
+                            <li class="activeSub">
+                            <a href="Anime.html">Anime</a>
+                            </li>
+                            <li class="navSub">
+                            <a href="Anime/recommendedAnime.html">Recommended</a> 
+                            </li>
+                            <li class="navSub">
+                            <a href="Anime/PreviousAnime.html">Previous Anime</a> 
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="LeftHeightTwo">
+                    <ul id="nav">
+                        <li class="activeSub">
+                        	<a href="Events.html">Events</a>
+                        </li>
+                        <li class="navSub">
+                        	<a href="Gallery.html">Gallery</a>
+                        </li>
+                        <li class="navSub">
+                        	<a href="prevMeetings/lastMeeting.html">Previous Meetings</a> 
+                        </li>
+                    </ul>
+                    
+                    </li>
+                   
+                  
+                         
+				</ul>  
+</div>
+</div>
+
+
+
+
+<div id="eventsBar" class="footerBarHide">
+    <div id="upperBarCenterThree">
+    <ul id="nav">
+    <li class="navSub">
+    <a href="Events.html">Events</a>
+    </li>
+    <li class="navSub">
+    <a href="Gallery.html">Gallery</a> 
+    </li>
+    <li class="navSub">
+    <a href="prevMeetings/lastMeeting.html">Previous Meetings</a> 
+    </li>
+    </ul>
+    </div>
+    <div id="hideBarE">
+    
+    </div>
+    </div> 
+
+
+<div id="animeBar" class="footerBarHide">
+    <div id="upperBarCenterThree">
+    <ul id="nav">
+    <li class="navSub">
+    <a href="Anime.html">Anime</a>
+    </li>
+    <li class="navSub">
+    <a href="Anime/recommendedAnime.html">Recommended</a> 
+    </li>
+    <li class="navSub">
+    <a href="Anime/PreviousAnime.html">Previous Anime</a> 
+    </li>
+    </ul>
+    </div>
+    <div id="hideBarAn">
+    
+    </div>
+    </div> 
+    
+    
+<div id="aboutBar" class="footerBarHide">
+    <div id="upperBarCenterTwo">
+    <ul id="nav">
+    <li class="navSub">
+    <a href="About.html">About</a>
+    </li>
+    <li class="navSub">
+    <a href="boardMembers.html">Board Members</a> 
+    </li>
+    <li class="navSub">
+    <a href="SocialMedia.html">Social Media</a>
+    </li>
+    <li class="navSub">
+    <a href="Constitution.html">Constitution</a> 
+    </li>
+    <li class="navSub">
+    <a href="Archive/index.html">Archive</a>
+    </li>
+    <li class="navSub">
+    <a href="CommentCard.html">Comment Card</a></h4>
+    </li>
+    </ul>
+    
+    </div>
+    <div id="hideBarAb">
+    
+    </div>
+    </div>
+<!-- InstanceBeginEditable name="Body" -->
+    
+    <div class="upperBarTwo blurBG">
+    <div id="upperBarCenterTwo">
+    <ul id="nav">
+    <li class="navSub">
+    <a href="About.html">About</a>
+    </li>
+    <li class="navSub">
+    <a href="boardMembers.html">Board Members</a> 
+    </li>
+    <li class="navSub">
+    <a href="SocialMedia.html">Social Media</a>
+    </li>
+    <li class="activeSub">
+    <a href="Constitution.html">Constitution</a> 
+    </li>
+    <li class="navSub">
+    <a href="Archive/index.html">Archive</a>
+    </li>
+    <li class="navSub">
+    <a href="CommentCard.html">Comment Card</a></h4>
+    </li>
+    </ul>
+    
+    </div>
+    
+    </div>
+    
+    
+    	
+    
+    
+     
+     <div style="max-width:800px; margin-left:auto; margin-right:auto;">
+     
+     <table name="top">
+     <tr height="95px">
+     <th>
+     </th>
+     </tr>
+     
+     </table>
+     
+     
+     <h1 align="center"> Quickly go to an area on the page: </h1>
+     <p align="center">
+        <select onchange="location = this.options[this.selectedIndex].value;" style="min-width:70%;" id="mobileOnly" >
+                	<option value="#" >Index</option>
+                    <option value="#">Description and Purpose</option>
+                 <option value="#">University Policy</option>
+                    <option value="#AntiHazingPolicy" >Anti-Hazing Policy</option> 
+                	<option value="#NonDescriminationStatement">Non Discrimination Statement</option> 
+                    <option value="#Membership">Membership</option>
+                    <option value="#MembershipLevels">Membership Levels</option>
+                    <option value="#Dues">Dues</option>
+                    <option value="#Meetings">Meetings</option>
+                    <option value="#BoardOffices">Board Offices</option>
+                    <option value="#AmendmentsRevisions">Amendments/Revisions </option>
+                </select>
+                
+                
+                
+                
+                <table width="100%" align="center" cellpadding="10px" cellspacing="20px" id="desktopOnly">
+                <tr>
+                	<th id="const" width="33%">
+                    <a href="#" class="smoothScroll">Index</a>
+                    </th>
+                    <th id="const" width="33%">
+                     <a href="#descAndPurp"  class="smoothScroll">Description and Purpose</a>
+                    </th>
+                    <th id="const" width="33%">
+                     <a href="#AntiHazingPolicy" class="smoothScroll">University Policy</a>
+                    </th>
+                </tr>
+                <tr>
+                	<th id="const" width="33%">
+                    <a href="#AntiHazingPolicy" class="smoothScroll">Anti-Hazing Policy</a>
+                    </th>
+                    <th id="const" width="33%">
+                    <a href="#NonDescriminationStatement" class="smoothScroll"> Non Discrimination Statement </a>
+                    </th>
+                    <th id="const" width="33%">
+                     <a href="#Membership" class="smoothScroll"> Membership </a>
+                    </th>
+                </tr>
+                <tr>
+                	<th id="const" width="33%">
+                    <a href="#MembershipLevels" class="smoothScroll">Membership Levels</a>
+                    </th>
+                    <th id="const" width="33%">
+                    <a href="#Dues" class="smoothScroll">Dues</a>
+                    </th>
+                    <th id="const" width="33%">
+                    <a href="#Meetings" class="smoothScroll">Meetings</a>
+                    </th>
+                </tr>
+                <tr id="descAndPurp">
+                	<th id="const" width="33%">
+                    <a href="#BoardOffices" class="smoothScroll">Board Offices</a>
+                    </th>
+                    <th id="const" width="33%">
+                    <a href="#AmendmentsRevisions" class="smoothScroll">Amendments/Revisions</a>
+                    </th>
+                    <th id="const" width="33%">
+                    <a href="#Download" class="smoothScroll">Downloads</a>
+                    </th>
+                </tr>
+                </table>
+     </p>
+     
+     
+     <h1 align="center">Anime Party Constitution </h1>
+
+
+
+
+<h2 align="left" id="AntiHazingPolicy">Club Description and Purpose </h2>
+	<p align="justify">The purpose of the Anime Party is to expand awareness of cultural diversity through the appreciation of various types of foreign media, such as film (Drama, Anime, and movies), graphic novels, books (manga), music, games, etc... To fulfill the purpose, club participation will openly review media for discussion at club meetings. </p>
+
+<h2 align="left" >University Policy</h2>
+
+	<p align="justify">As a recognized student organization on the Southeast Missouri State University campus, we adhere to the policies and guidelines set forth by the University.</p>
+
+<h2 align="left"> Anti-Hazing Policy </h2>
+<ol type="A">
+    <li>Hazing for the purpose of pledging, initiation, admission into, affiliation with, or as a condition for maintaining membership in a group, organization or team shall be defined as:
+    <ol type="1">
+        <li>
+        Any intentional, knowing or reckless act, whether on or off campus, which endangers the mental or physical health or safety of any person, regardless of consent, or which violates public law or University policy.
+        </li>
+        <li>
+        Hazing includes, but is not limited to:
+        <ol type="a">
+            <li> Any physical brutality such as whipping, beating, striking, paddling, branding, placing of a harmful substance on the body, or similar activity;  </li>
+            <li>Any physical activity such as sleep deprivation, exposure to the elements, confinement, calisthenics, or other activity that subjects a student to risk of harm, or that adversely affects the mental or physical health or safety of a student; </li>
+            <li>Any activity involving consumption of food, liquid, alcoholic beverage, drug, or substance that subjects a student to risk of harm, or that adversely affects the mental or physical health or safety of a student; </li>
+            <li id="NonDescriminationStatement">Any activity that intimidates or threatens a student with ostracism, subjects a student to extreme mental stress, shame or humiliation, or adversely affects the mental health or dignity of a student, or that may reasonably be expected to cause a student to leave the organization or institution rather than submit to acts described above; and, </li>
+           <li>Any activity, in which a person solicits, plans, encourages, directs, aids, or attempts to aid another in hazing or intentionally, knowingly, or recklessly permits hazing to occur and/or knowingly fails to report the incident.
+    		</li>
+        </ol>
+    </li>
+    </ol>
+    </li>
+    <li>
+    Hazing is inconsistent with Missouri laws/statues, University policies, the Student Code of Conduct, and fraternal/organizational laws. (Student Organization Name) and its members agree to abide by the anti-hazing policy required of all student organizations at Southeast Missouri State University.
+	
+    </li>
+    </ol>
+
+<h2 align="left" id="Membership"> Non Discrimination Statement </h2>
+	<p align="justify"> Anime Party shall not discriminate on the basis of race, ethnicity, religion, sex, sexual orientation, national origin, gender identity and expression, disability, social status, age, creed, or any other factors not specified as a basis for qualification, in all facets of its operations and governance. </p>
+
+
+<h2 align="left" id="MembershipLevels">  Membership </h2>
+<p align="justify">  Membership to the club is granted when the participant has paid the dues for that semester. Before dues are accepted from a potential member, however, membership can be denied by a majority vote of the active board if deemed necessary. Membership can be revoked from a member in cases when a member’s behavior reflects negatively upon the club and its members, with a majority vote of the active board. </p>
+
+<h2 align="left"> Membership Levels </h2>
+	<ul style="list-style:none">
+    <li>
+	<h3>Nonmembers</h3>
+    </li>
+    <li>
+    <p>
+	Nonmembers are any club participants who have not paid their dues for the given semester. Nonmembers are allowed to sit in on meetings and view the media presented; however, they are not allowed to vote upon any club policies or business, and cannot participate in contests. They are however allowed to vote on media. Nonmembers also will not have access to club funds for convention experiences.
+    </p>
+	</li>
+    <li>
+	<h3 id="Dues">Members</h3>
+    </li>
+    <li>
+    <p>
+Members are any club participants who have paid their dues for the given semester. Members can join meetings, partake in media, vote on any media or club business, and can participate in contests.
+</p>
+	</li>
+    <li>
+	<h3>Honorary Membership</h3>
+    </li>
+    <li>
+    <p id="Meetings">
+Community members, parents, or alumni who wish to attend meetings are allowed to do so and may become honorary members. Honorary members do not have the right to vote on club procedures or policies, and they cannot participate in contests. They are however allowed to vote on media. 
+</p>
+</li>
+</ul>
+<h2 align="left" id="BoardOffices"> Dues </h2>
+<p align="justify"> At the beginning of each year, a dues policy must be made and agreed upon unanimously by the current board. This policy must be adhered to for the remainder of the school year and is not subject to change. </p>
+
+
+<h2 align="left"> Meetings </h2>
+<p align="justify"> At the beginning of each semester, a general meeting schedule shall be proposed and voted on by the current acting board. In order for the vote to pass, there must be a majority vote in agreement. </p>
+
+<h2 align="left" > Board Offices </h2>
+<p align="justify"> New offices shall be nominated within three weeks by the end of the school year and voted upon no later than the last week of the year. Nominees must have been members for at least one entire semester. In the event an office becomes vacant, nominations and a vote can be held at any time to fill the position. No member can hold more than one board position, with the exception of the Webmaster. All board positions have a secondary position associated with them which falls under the jurisdiction of that board member. These responsibilities can be shared with other board members and “committees” of members can be organized to aid in their accomplishment. </p>
+
+<ul style="list-style:none">
+    <li>
+	<h3>President/Historian</h3>
+	</li>
+	<li>
+    <p>
+	The president is responsible for enforcing order within the club as well as maintaining an active record/knowledge of Anime Party policy, business, and history. He or she presides over the meetings. The position is also responsible for maintaining contact with the university, advisor, other groups and any other communication necessary.
+    </p>
+    </li>
+	<li>
+	<h3> Vice-President/ Public Relations </h3>
+    </li>
+    <li>
+    <p>
+The vice-president acts as an aid to the president as well as a stand-in if the president is not available. The position is also responsible for maintaining follow-up contact with the university, advisor, other groups, and any other communication necessary. They are also responsible for organizing and helping with event planning. They remind and help board members to complete respective tasks. 
+</p>
+</li>
+<li>
+	<h3> Secretary/Advising </h3>
+    </li>
+    <li>
+    <p>
+The secretary will keep a record of the minutes and events for each meeting. He or she is also responsible for club publicity, advertising, and keeping an agenda of events/business for the club. He or she also needs to keep records of club members for contacting purposes. He or she is in charge of posting advertisements for meetings and events on the Facebook page and group.
+</p>
+</li>
+<li>
+	<h3>Treasurer/Fundraising </h3>
+    </li>
+    <li>
+    <p>
+The treasurer is responsible for any club money/card and for keeping a detailed record of all collections and expenditures. In the necessity of a fundraising activity, they are also responsible for planning, maintaining, and set-up.
+</p>
+</li>
+<li>
+	<h3 id="AmendmentsRevisions"> Webmaster </h3>
+    </li>
+    <li>
+    <p>
+The webmaster is responsible for the virtual upkeep and presentation of the Anime Party website and any online contact made with the club. This position is granted to a member by the current board. This is the only exception to the dual role rule. In the event that no member at all wishes to take on this position, a current board member can tentatively take on this position or allow the website to lapse. Alternatively, the board can look into third-party management of the website. 
+</p>
+</li>
+</ul>
+
+<h2 align="left" id="Download">  Amendments/Revisions </h2>
+<p align="justify">  This constitution is a living document and may only be changed through amendments, leaving the document as a whole intact. Constitutional amendments must be approved by majority vote of the membership in order to be added to the constitution. The only situation in which this constitution can be undone and entirely rewritten/revised is by a unanimous vote of the current board and a majority vote of the members. </p>
+
+
+  <table width="100%" align="center" id="desktopOnly">
+    
+    <tr>
+    <th colspan="2" style="font-size:200%;">
+    <h1> Download </h1> <br/>
+    </th>
+    </tr>
+    <tr>
+                <th width="50%" align="center">
+                       <table width="85%" bordercolor="#FFFFFF"  style="margin:25px; padding:5px;">
+                            <tr>
+                            	<th>
+                                <h3><a href="Documents/Constitution.pdf">PDF</a></h3>
+                                </th>
+                            </tr>
+                       </table>
+               </th>
+               <th width="50%" align="center">
+                       <table width="85%" bordercolor="#FFFFFF"  style="margin:25px; padding:5px;">
+                            <tr>
+                            	<th>
+                                <h3><a href="Documents/Constitution.docx">Word DOCX</a></h3>
+                                </th>
+                            </tr>
+                       </table>
+               </th>
+    </tr>
+    
+    </table>
+
+ 
+ <table>
+ <tr height="50px">
+ <td>
+ </td>
+ </tr>
+ </table>
+ 
+ 
+ 
+</div>
+     
+     
+     
+     
+     
+    <!-- InstanceEndEditable -->
+
+
+<a href="#" class="back-to-top" id="blurBG" style="color:#000000;">Back to Top</a>
+<div id="footerBar" class="footerBarHide">
+
+<h1 align="center"><a href="http://www.2point5dproductions.com">Designed by 2.5D Productions</a> </h1>
+<h1 align="center"><a href="ChangeLog.html">Last Updated 10/18/2015</a> </h1> <!-- dont forget desktop version -->
+<h3 align="center">If you want to leave feedback, please either send an email or fill out the form. Thanks!</h3>
+  <table width="100%" align="center" style="max-width:1200px;">
+    
+        <tr>
+        
+        	<th width="50%">
+            <a href="mailto:mjreishman1s@semo.edu"><img class="fade" src="Images/feedbackEmail.png" width="128" height="auto" alt="Email"/> </a>
+            </th>
+            <th width="50%">
+            <a href="CommentCard.html"><img class="fade" src="Images/feedbackForm.png" width="128" height="auto" alt="Form"/></a>
+            </th>
+        
+        </tr>
+    
+    </table>   
+</div>  
+
+
+
+
+<div id="feedbackBar" class="feedbackBarHide">
+ 	
+    
+    <h1 align="center"> If you want to leave feedback, please choose the option to send an email or fill out the form. </h1>
+    
+    <table width="100%" align="center" style="max-width:1200px;">
+    
+        <tr>
+        
+        	<th width="50%">
+            <a href="mailto:mjreishman1s@semo.edu"><img class="fade" src="Images/feedbackEmail.png" width="128" height="auto" alt="Email"/> </a>
+            </th>
+            <th width="50%">
+            <a href="CommentCard.html"><img class="fade" src="Images/feedbackForm.png" width="128" height="auto" alt="Form"/></a>
+            </th>
+        
+        </tr>
+    
+    </table>
+    
+    <h2 align="center"> Thank you for taking the time to submit feedback on the website </h2>
+	</div>	
+
+
+<div class="lowerBar blurBG">
+<p id="lowerBarMain" align="center"><a href="http://www.2point5dproductions.com">Designed by 2.5D Productions</a> | <a href="ChangeLog.html">Last Updated 10/18/2015</a> <!-- dont forget mobile version --> | <a class="show-feedbackBar" id="showFeedbackBar">Leave feedback on the website</a> <a class="hide-feedbackBar" id="hideFeedbackBar">Close feedback</a>
+</p>
+<p id="lowerBarMobile" align="center">
+<a id="showFooterBar" class="show-footerBar">Click For More Info</a><a id="hideFooterBar" class="hide-footerBar">Close Footer</a>
+</p>
+</div>
+</body>
+<!-- InstanceEnd --></html>

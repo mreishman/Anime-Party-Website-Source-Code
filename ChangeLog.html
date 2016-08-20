@@ -1,0 +1,5254 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/Template_1.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="Styles/styles.css" media="screen" /> 
+<link rel="stylesheet" type="text/css" href="Styles/cssAnimations.css" media="screen" /> 
+<link rel="shortcut icon" href="Images/favico/favicon.ico">
+
+
+
+
+
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Anime Party | Feature List</title>
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/lightbox-2.6.min.js"></script>
+<link href="Styles/lightbox.css" rel="stylesheet" />
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script type="text/javascript" src="js/smoothscroll.js"></script>
+<script type="text/javascript" src="js/backToTop.js"></script>
+<script type="text/javascript">
+
+
+
+
+
+	function MM_swapImgRestore() { //v3.0
+	  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+	}	
+	function MM_preloadImages() { //v3.0
+	  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+		var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+		if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+	}
+	function MM_findObj(n, d) { //v4.01
+	  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+		d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+	  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+	  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+	  if(!x && d.getElementById) x=d.getElementById(n); return x;
+	}
+
+	function MM_swapImage() { //v3.0
+	  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+	   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+	}
+
+    function hideClass()
+    {
+        document.getElementById("leftBar").className = "Hideblock";
+		document.getElementById("show").className = "show-sidebar";
+		document.getElementById("hide").className = "hide-sidebar";
+    }
+
+	function showClass()
+    {
+        document.getElementById("leftBar").className = "Showblock blurBG";
+		document.getElementById("show").className = "hide-sidebar";
+		document.getElementById("hide").className = "show-sidebar";
+		
+    }
+	
+	
+	
+	function showFeedbackBar()
+	{
+		document.getElementById("feedbackBar").className = "feedbackBar blurBG";
+		document.getElementById("showFeedbackBar").className = "hide-feedbackBar";
+		document.getElementById("hideFeedbackBar").className = "show-feedbackBar";	
+	}
+	
+	function hideFeedbackBar()
+	{
+		document.getElementById("feedbackBar").className = "feedbackBarHide";
+		document.getElementById("showFeedbackBar").className = "show-feedbackBar";
+		document.getElementById("hideFeedbackBar").className = "hide-feedbackBar";	
+	}
+	
+	
+	function showFooterBar()
+	{
+		document.getElementById("footerBar").className = "footerBarShow blurBG";
+		document.getElementById("showFooterBar").className = "hide-footerBar";
+		document.getElementById("hideFooterBar").className = "show-footerBar";	
+	}
+	
+	function hideFooterBar()
+	{
+		document.getElementById("footerBar").className = "footerBarHide";
+		document.getElementById("showFooterBar").className = "show-footerBar";
+		document.getElementById("hideFooterBar").className = "hide-footerBar";	
+	}
+	
+	function aboutHoverF()
+	{
+		
+		hideAnimation();
+		
+		
+		if(document.getElementById("activeAbout"))
+		{
+		
+		}
+		else
+		{
+			document.getElementById("aboutBar").className = "upperBarThree blurBG fade-in-25s";
+			document.getElementById("aboutBar").id = "aboutBarActive";
+		}
+		
+		//document.getElementById("animeBar").className = "footerBarHide";
+		//document.getElementById("eventsBar").className = "footerBarHide";
+		
+	}
+	
+	function animeHover()
+	{
+		
+		hideAnimation();
+		
+		
+		if(document.getElementById("activeAnime"))
+		{
+			
+		}
+		else
+		{
+			document.getElementById("animeBar").className = "upperBarThree blurBG fade-in-25s";
+			document.getElementById("animeBar").id = "animeBarActive";
+		}
+		
+		//document.getElementById("aboutBar").className = "footerBarHide fade-in-25s";
+		//document.getElementById("eventsBar").className = "footerBarHide fade-in-25s";
+		
+	}
+	
+	function eventsHover()
+	{
+		
+		hideAnimation();
+		
+		if(document.getElementById("eventsActive"))
+		{
+			
+		}
+		else
+		{
+			
+			document.getElementById("eventsBar").className = "upperBarThree blurBG fade-in-25s";
+			document.getElementById("eventsBar").id = "eventsBarActive";
+		}
+		
+		//document.getElementById("animeBar").className = "footerBarHide";
+		//document.getElementById("aboutBar").className = "footerBarHide";
+		
+		
+	}
+	function hideAnimation()
+	{
+	
+		var delay=480;
+		setTimeout(function(){hideAll();}, delay); 
+		if(document.getElementById("aboutBarActive"))
+		{
+			document.getElementById("aboutBarActive").className = "upperBarThree blurBG fade-out-25s";	
+			document.getElementById("aboutBarActive").id = "aboutBarDeActive";	
+			
+		}
+		if(document.getElementById("eventsBarActive"))
+		{
+			document.getElementById("eventsBarActive").className = "upperBarThree blurBG fade-out-25s";
+			document.getElementById("eventsBarActive").id = "eventsBarDeActive";	
+			
+		}
+		if(document.getElementById("animeBarActive"))
+		{
+			document.getElementById("animeBarActive").className = "upperBarThree blurBG fade-out-25s";
+			document.getElementById("animeBarActive").id = "animeBarDeActive";		
+			
+		}
+		
+		
+	}
+	
+	
+	function hideAll()
+	{
+		
+		if(document.getElementById("aboutBarDeActive"))
+		{
+			document.getElementById("aboutBarDeActive").className = "footerBarHide";
+			document.getElementById("aboutBarDeActive").id = "aboutBar";
+		}
+		if(document.getElementById("animeBarDeActive"))
+		{
+			document.getElementById("animeBarDeActive").className = "footerBarHide";
+			document.getElementById("animeBarDeActive").id = "animeBar";
+		}
+		if(document.getElementById("eventsBarDeActive"))
+		{
+			document.getElementById("eventsBarDeActive").className = "footerBarHide";
+			document.getElementById("eventsBarDeActive").id = "eventsBar";
+		}
+								
+	}
+	
+
+    window.onload = function()
+    {
+        document.getElementById("hide").addEventListener( 'click' , hideClass );
+		document.getElementById("show").addEventListener( 'click' , showClass );
+		
+		
+		document.getElementById("showFeedbackBar").addEventListener( 'click' , showFeedbackBar);
+		document.getElementById("hideFeedbackBar").addEventListener( 'click' , hideFeedbackBar);
+		
+		
+		document.getElementById("showFooterBar").addEventListener( 'click' , showFooterBar);
+		document.getElementById("hideFooterBar").addEventListener( 'click' , hideFooterBar);
+		
+		
+		document.getElementById("aboutHover").addEventListener('mouseover', aboutHoverF);	
+		document.getElementById("homeHover").addEventListener('mouseover', hideAnimation);
+		
+		document.getElementById("animeHover").addEventListener('mouseover', animeHover);
+		document.getElementById("eventsHover").addEventListener('mouseover', eventsHover);
+		document.getElementById("pointsHover").addEventListener('mouseover', hideAnimation);
+		
+		document.getElementById("hideBarE").addEventListener('mouseover', hideAnimation);
+		document.getElementById("hideBarAb").addEventListener('mouseover', hideAnimation);
+		document.getElementById("hideBarAn").addEventListener('mouseover', hideAnimation);
+		
+		if (document.getElementById("FacebookPageID"))  //check for about page
+		{
+			document.getElementById("FacebookPageID").addEventListener('mouseover',facebookPage);
+			document.getElementById("TwitterID").addEventListener('mouseover',twitterPage);
+			document.getElementById("YoutubeID").addEventListener('mouseover',youtubePage);
+			document.getElementById("instagramID").addEventListener('mouseover',instagramPage);
+			document.getElementById("facebookGroupID").addEventListener('mouseover',facebookGroup);
+		}
+		
+		if (document.getElementById("pointsDESClink")) //check for point page
+		{
+			
+			document.getElementById("pointsDESClink").addEventListener('click',showPointsASC);
+			document.getElementById("pointsASClink").addEventListener('click',showPointsDESC); 
+			document.getElementById("pointslink").addEventListener('click',showPointsDESC);
+			document.getElementById("pointsNameLink").addEventListener('click',showPointsNameDESC);  
+			document.getElementById("pointsNameAsclink").addEventListener('click',showPointsNameDESC);
+			document.getElementById("pointsNameDesclink").addEventListener('click',showPointsNameASC );
+		}
+		
+		
+    }
+	
+</script>
+</head>
+
+<!-- InstanceBeginEditable name="BodyTag" --> <body> <!-- InstanceEndEditable -->
+
+<div class="upperBar blurBG">
+
+<div id="upperBarCenter">
+<ul id="nav">
+
+                   <!-- InstanceBeginEditable name="Home" --> <li> <!-- InstanceEndEditable --><a href="Index.html" id="homeHover" >Home</a></li>
+                   <!-- InstanceBeginEditable name="About" --> <li> <!-- InstanceEndEditable --><a href="About.html" id="aboutHover">About</a> </li>
+                   <!-- InstanceBeginEditable name="Anime" --> <li> <!-- InstanceEndEditable --><a href="Anime.html" id="animeHover" >Anime</a></li>
+                   <!-- InstanceBeginEditable name="Events" --> <li> <!-- InstanceEndEditable --><a href="Events.html" id="eventsHover" >Events</a></li>
+                   <!-- InstanceBeginEditable name="Points" --> <li> <!-- InstanceEndEditable --><a href="Points.html" id="pointsHover" >Points</a></li>
+                         
+ </ul>  
+ </div> 
+ 
+ <div id="upperBarCenterMobile">
+ <table width="100%">
+ <tr>
+ <td align="left" width="25%">
+ 
+ </td>
+ <th width="50%">
+ <a href="Index.html">Anime Party</a>
+ </th>
+ <td align="right"  width="25%">
+<div class="nav-toggle pull-right ">
+	<a  class="show-sidebar" id="show" >
+    	<span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </a>
+
+</div> 
+ </td>
+</tr>
+</table> 
+ </div>               
+</div>
+<div id="leftBar" class="Hideblock">
+<table width="90%" style="margin:auto;">
+ <tr>
+ <td align="left" width="25%">
+ 
+ </td>
+ <th width="50%">
+ <a href="Index.html">Anime Party</a>
+ </th>
+ <td align="right"  width="25%">
+<div class="nav-toggle pull-right ">
+    <a  class="hide-sidebar" id="hide">
+    	<span class="icon-bar-top"></span>
+        <span class="icon-bar-mid"></span>
+        <span class="icon-bar-bot"></span>
+    </a>
+</div> 
+ </td>
+</tr>
+</table> 
+<div id="leftBar-scroll">
+<ul id="nav">
+					<li id="LeftHeightLogo"> <a href="Index.html"><img src="Images/Logo-transparent.png" id="width_logo" height="auto" alt=""/></a></li>
+                   <li> <a href="Index.html">Home</a></li>
+                    <li> <a href="Points.html" >Points</a></li>
+                    <li id="LeftHeightIndex">
+                    <ul id="nav">
+                        <li class="activeSub">
+                        		<a href="About.html">About</a>
+                        </li>
+                        <li class="navSub">
+                       		 <a href="boardMembers.html">Board Members</a> 
+                        </li>
+                        <li class="navSub">
+                        		<a href="SocialMedia.html">Social Media</a>
+                        </li>
+                        <li class="navSub" id="constBar">
+                       		 <a href="Constitution.html">Constitution</a> 
+                        </li>
+                        <li class="navSub">
+                       		 <a href="Archive/index.html">Archive</a>
+                        </li>
+                        <li class="navSub">
+                       		 <a href="CommentCard.html">Comment Card</a>
+                        </li>
+                    </ul>
+                    
+                    </li>
+                    <li id="LeftHeightTwo"> 
+                        <ul id="nav">
+                            <li class="activeSub">
+                            <a href="Anime.html">Anime</a>
+                            </li>
+                            <li class="navSub">
+                            <a href="Anime/recommendedAnime.html">Recommended</a> 
+                            </li>
+                            <li class="navSub">
+                            <a href="Anime/PreviousAnime.html">Previous Anime</a> 
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="LeftHeightTwo">
+                    <ul id="nav">
+                        <li class="activeSub">
+                        	<a href="Events.html">Events</a>
+                        </li>
+                        <li class="navSub">
+                        	<a href="Gallery.html">Gallery</a>
+                        </li>
+                        <li class="navSub">
+                        	<a href="prevMeetings/lastMeeting.html">Previous Meetings</a> 
+                        </li>
+                    </ul>
+                    
+                    </li>
+                   
+                  
+                         
+				</ul>  
+</div>
+</div>
+
+
+
+
+<div id="eventsBar" class="footerBarHide">
+    <div id="upperBarCenterThree">
+    <ul id="nav">
+    <li class="navSub">
+    <a href="Events.html">Events</a>
+    </li>
+    <li class="navSub">
+    <a href="Gallery.html">Gallery</a> 
+    </li>
+    <li class="navSub">
+    <a href="prevMeetings/lastMeeting.html">Previous Meetings</a> 
+    </li>
+    </ul>
+    </div>
+    <div id="hideBarE">
+    
+    </div>
+    </div> 
+
+
+<div id="animeBar" class="footerBarHide">
+    <div id="upperBarCenterThree">
+    <ul id="nav">
+    <li class="navSub">
+    <a href="Anime.html">Anime</a>
+    </li>
+    <li class="navSub">
+    <a href="Anime/recommendedAnime.html">Recommended</a> 
+    </li>
+    <li class="navSub">
+    <a href="Anime/PreviousAnime.html">Previous Anime</a> 
+    </li>
+    </ul>
+    </div>
+    <div id="hideBarAn">
+    
+    </div>
+    </div> 
+    
+    
+<div id="aboutBar" class="footerBarHide">
+    <div id="upperBarCenterTwo">
+    <ul id="nav">
+    <li class="navSub">
+    <a href="About.html">About</a>
+    </li>
+    <li class="navSub">
+    <a href="boardMembers.html">Board Members</a> 
+    </li>
+    <li class="navSub">
+    <a href="SocialMedia.html">Social Media</a>
+    </li>
+    <li class="navSub">
+    <a href="Constitution.html">Constitution</a> 
+    </li>
+    <li class="navSub">
+    <a href="Archive/index.html">Archive</a>
+    </li>
+    <li class="navSub">
+    <a href="CommentCard.html">Comment Card</a></h4>
+    </li>
+    </ul>
+    
+    </div>
+    <div id="hideBarAb">
+    
+    </div>
+    </div>
+<!-- InstanceBeginEditable name="Body" -->
+    
+   
+    
+    
+
+<body>
+<div id="mainContent">
+   
+    
+    <table id="changeLog" align="center" >
+    
+    <tr>
+    
+    	<th width="50%" style="vertical-align:top;">
+        <table width="100%" style="max-width:800px;" align="center">
+		<tr>
+        <th>
+        	 <h1 style="text-align:center;">Features</h1>
+    		<h3 style="text-align:center;">Email <a href="mailto:mjreishman1s@semo.edu">Matt Reishman</a> to request a feature</h3>
+            <h3> Features in the next update that are ready are in the red bar </h3>
+        </th>
+        </tr>
+        <tr>
+        <td align="left">
+        	<ul>
+                <li>
+                The gallery Update Part 3 (3.9.6?)
+                	<ul>
+                    	<li>
+                        Add galleries for:
+                        <ul>
+                            <li>
+                            Game Night
+                            </li>
+                        </ul>
+                        </li>
+                   	</ul>
+                </li>
+               <li> 
+               The Framework Update Part 2(3.9.7?)
+               	<ul>
+                	<li>
+                    Add directory listing to parts of the website for easier access to resources for the images folder (2012+)
+                    </li>
+                   <!--  <li>
+                    Update meta data on webpages
+                    </li>
+                    <li>
+                    Clean up main css file
+                    </li>     
+                </ul>
+              </li>
+              <li>
+              The Navigation Update (3.10?)
+              	<ul>
+                    <li>
+                    Add search functionality???
+                    </li> 
+                    <li>
+                    
+                    </li>
+                   <li>
+                    
+                    </li>
+                 </ul>   
+              </li>
+              <li> 
+             
+              </li>
+                   <!-- Logo with waves of anime -->         
+                   <!-- Logo with noodle like lines waving around of anime -->
+                   <!-- Logo with bubbles of anime -->   
+                   <!-- Spinny cubes -->       
+                            
+            </ul>
+        </td>
+        </tr>
+        <tr>
+        
+        </tr>
+	</table>
+    	<table width="100%" style="max-width:800px; padding-top:50px; padding-bottom:50px;" align="center">
+    	<tr>
+        <th colspan="7">
+        	<h3> System requirements (recommended, not required) </h3>
+        </th>
+        </tr>
+    	<tr>
+        <th  style="width:15%"> IE
+        </th>
+        <th  style="width:14%"> Firefox
+        </th>
+        <th  style="width:14%"> Safari
+        </th>
+        <th  style="width:14%"> Chrome
+        </th>
+        <th  style="width:14%"> Opera
+        </th>
+        <th  style="width:14%"> Iphone
+        </th>
+        <th  style="width:15%"> Android
+        </th>
+        </tr>
+        <tr>
+        <th>9.0+
+        </th>
+        <th>12.0+
+        </th>
+        <th>4.0+
+        </th>
+        <th>4.0+
+        </th>
+        <th>10.5+
+        </th>
+        <th>4.0+
+        </th>
+        <th>3.0+
+        </th>
+        </tr>
+    </table>
+    
+    	<table width="100%" style="max-width:800px; padding-top:50px; padding-bottom:50px;" align="center">
+    	<tr>
+        <th colspan="3">
+        <h2> List of directories for direct access to anime party media </h2>
+        <h4>*For use with anime party related events, Advertisements , etc. </h4> 
+        <h4>Currently only for the photos gallery not images gallery</h4>
+    	</th>
+        </tr>
+        <tr>
+        <th>
+        /Images/
+        </th>
+        <th>
+        Current Images Folder
+        </th>
+        <th>
+        Last Updated:  10/--/2015
+        </th>
+        </tr>
+         <tr>
+        <th>
+        <a href="photos/index.html">/Photos/</a>
+        </th>
+        <th>
+        Previous Images Folder ( 2003 - 2011)
+        </th>
+        <th>
+        Last Updated:  10/13/2015
+        </th>
+        </tr>
+        </table>
+        </th>
+        
+        <th width="50%" >
+          <table width="100%" style="max-width:800px;" align="center">
+		<tr>
+			<th width="75">Version</th>
+			<th width="90">Date of change</th>
+			<th >Notes</th>
+		</tr>
+        <tr>
+         <th>
+         </th>
+         <th>
+         </th>
+         <th>
+         <h1> 2015-2016 </h1>
+         </th>
+         </tr>
+         <!-- style="background-color:#B22628"-->
+         
+          <tr style="background-color:#333333">
+         <th>
+         4.0?
+         </th>
+         <th>
+         In Progress
+         </th>
+         <th>
+         
+         
+          <h3 id="text-center"> Features </h3>
+                <ul align="left">
+               <li>
+                Updated the mobile menu to make it full screen.
+                </li>
+                
+         </ul> 
+        
+                    
+                    
+       
+         
+         
+         </th>
+         </tr>
+         
+         
+         
+         
+          <tr style="background-color:#333333">
+         <th>
+         3.9.7
+         </th>
+         <th>
+         12/26/2015
+         </th>
+         <th>
+         
+         
+          <h3 id="text-center"> Features </h3>
+                <ul align="left">
+               <li>
+                Added an images to the tabs for the windows
+                </li>
+                
+         </ul> 
+        
+                    
+                    
+       
+         
+         
+         </th>
+         </tr>
+         
+         
+         
+           <tr>
+         <th>
+         3.9.6 
+         </th>
+         <th>
+         10/26/2015
+         </th>
+         <th>
+         
+         
+         
+        
+                    
+                    
+          <h3 id="text-center"> Bug Fixes </h3>
+                <ul align="left">
+               <li>
+                Fixed the incorrect display of the social media icons on the social meda page in some browsers (firefox)
+                </li>
+                
+         </ul> 
+         
+         
+         </th>
+         </tr>
+         
+         
+         
+            <tr style="background-color:#333333">
+         <th>
+         3.9.5 - The Gallery Update part 3
+         </th>
+         <th>
+         10/18/2015
+         </th>
+         <th>
+         
+         
+         
+        
+                    
+                    
+          <h3 id="text-center"> Features </h3>
+                <ul align="left">
+               <li>
+                Add photo gallery:   Bake Sale!
+                </li>
+                
+         </ul> 
+         
+         
+         
+          <h3 id="text-center"> Bug Fixes </h3>
+                <ul align="left">
+                <li>
+                     Fixed the abrupt page jump when clicking on the link in the bottom row, as well as opening the menu on mobile.
+                </li>
+                
+                
+         </ul> 
+         </th>
+         </tr>
+         
+         
+         
+           <tr>
+         <th>
+         3.9.4 - The Framework Update part 1
+         </th>
+         <th>
+         10/14/2015
+         </th>
+         <th>
+         
+         
+         
+        
+                    
+                    
+          <h3 id="text-center"> Features </h3>
+                <ul align="left">
+               <li>
+                Add directory listing to parts of the website for easier access to resources for the photos folder (2003 - 2011)
+                </li>
+                
+         </ul> 
+         
+         
+         </th>
+         </tr>
+         
+         
+         
+         
+            <tr style="background-color:#333333">
+         <th>
+         3.9.3
+         </th>
+         <th>
+         10/12/2015
+         </th>
+         <th>
+         
+         
+         
+        
+                    
+                    
+          <h3 id="text-center"> Bug Fixes </h3>
+                <ul align="left">
+                <li>
+                     Changed the size of the last week anime thumbnal on the main anime page. 
+                </li>
+                <li>
+                	Edited the previous anime page for a slightly better layout
+                </li>
+                
+         </ul> 
+         
+         
+         </th>
+         </tr>
+         
+         
+                 <tr>
+         <th>
+         3.9.2 - The Gallery Update Part 2
+         </th>
+         <th>
+         10/11/2015
+         </th>
+         <th>
+         
+         
+         
+        
+                    
+                    
+          <h3 id="text-center"> Features </h3>
+                <ul align="left">
+                <li>
+                        Add galleries for:
+                        <ul>
+                            <li>
+                            First Meeting
+                            </li>
+                         </ul>   
+                </li>
+                <li>
+                Added a banner to tell if the gallery is new (will show up for approx 2 weeks after it's uploaded)
+                </li>
+                <li>
+                Added thumbnails for galleries that are coming soon
+                </li>
+         </ul> 
+         
+         
+         </th>
+         </tr>
+         
+         
+         
+            <tr style="background-color:#333333">
+         <th>
+         3.9.1 - The Gallery Update Part 1
+         </th>
+         <th>
+         10/9/2015
+         </th>
+         <th>
+         
+         
+         
+        
+                    
+                    
+          <h3 id="text-center"> Features </h3>
+                <ul align="left">
+                <li>
+                        Add galleries for:
+                        <ul>
+                            <li>
+                            Welcome Back!
+                            </li>
+                         </ul>   
+                </li>
+                <li>
+                Added the logo for each year next to their respictive galleries.
+                </li>
+         </ul> 
+         
+         
+         </th>
+         </tr>
+         
+         
+         
+           <tr>
+         <th>
+         3.9.0.1
+         </th>
+         <th>
+         9/17/2015 - 14:20
+         </th>
+         <th>
+         
+         
+         
+        
+                    
+                    
+          <h3 id="text-center"> Weekly Update </h3>
+                <ul align="left">
+         		<li>
+                Add meeting notes to the webstie
+                </li>
+                <li>
+                Update last anime and add lastweeks anime to the archive
+                </li>
+                <li>
+                Change the date on the homepage
+                </li>
+                <li>
+                Updated members points
+                </li>
+         </ul> 
+         
+         
+         </th>
+         </tr>
+         
+         
+         
+         
+         
+         
+         
+         
+           <tr style="background-color:#333333">
+         <th>
+         3.9 - The Archive Update
+         </th>
+         <th>
+         9/12/2015
+         </th>
+         <th>
+         
+         
+         
+       <h3 id="text-center"> features </h3>
+                <ul align="left">
+                	
+                    <li>
+                    Update the archive
+                    <ul>
+                        <li>
+                            Updated home page
+                            <ul>
+                                <li>
+                                Made it easier to view on mobile
+                                </li>
+                                <li>
+                                Made pictures on front clickable
+                                </li>
+                            </ul>
+                            </li> 
+                            <li>
+                        Changed look of galleries on mobile 
+                        	<ul>
+                            	<li>
+                                Removed duplicate galleries from the archive
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Adjusted the top and bottom bar to be fixed positions
+                        </li>
+                         <li>
+                        Added a new history page to the archive
+                        </li>
+                        
+                     </ul> 
+                    </li>
+                </ul>
+                    
+                    
+                   <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	
+                    
+                     
+                    <li>
+                   Fixed layout issues on phones for the points page
+                    </li>
+                    </ul>   
+       
+       <!--
+       		 <h3 align="center"> pictures </h3>
+                <a href="images/changeLog/3.7.5ConstDesktop.jpg" data-lightbox="3point7point5m"><img src="images/changeLog/3.7.5ConstDesktop.jpg" width="auto" height="128"  alt=""/></a>
+                <a href="images/changeLog/3.7.5Downloads.jpg" data-lightbox="3point7point5m"><img src="images/changeLog/3.7.5Downloads.jpg" width="auto" height="128"  alt=""/></a> -->
+               
+       
+       
+         
+         
+         </th>
+         </tr>
+         
+         
+         
+         
+         
+         
+         
+         
+          <tr>
+         <th>
+         3.8.2
+         </th>
+         <th>
+         9/11/2015
+         </th>
+         <th>
+         
+         
+         
+       <h3 id="text-center"> features </h3>
+                <ul align="left">
+                	
+                    
+                     
+                    <li>
+                  Added the ability to sort points by name and ammount of points (ASC and DESC)
+					</li>
+                    </ul> 
+                    
+                    
+                 <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	
+                    
+                     
+                    <li>
+                   Fixed some issues with the javascript programming
+                    </li>
+                    </ul>   
+       
+       
+       		  <!-- <h3 align="center"> pictures </h3>
+                <a href="images/changeLog/3.7.5ConstDesktop.jpg" data-lightbox="3point7point5m"><img src="images/changeLog/3.7.5ConstDesktop.jpg" width="auto" height="128"  alt=""/></a>
+                <a href="images/changeLog/3.7.5Downloads.jpg" data-lightbox="3point7point5m"><img src="images/changeLog/3.7.5Downloads.jpg" width="auto" height="128"  alt=""/></a> -->
+               
+       
+       
+         
+         
+         </th>
+         </tr>
+         
+         
+         
+         
+         
+             <tr style="background-color:#333333;">
+         <th>
+         3.8.1
+         </th>
+         <th>
+         9/10/2015
+         </th>
+         <th>
+
+       
+                 <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	
+                    
+                     
+                    <li>
+                   Changed the default profile picture to a star
+                    </li>
+                    </ul>   
+       
+         
+         </th>
+         </tr>
+         
+         
+         
+         
+         
+         
+         
+         <tr >
+         <th>
+         3.8 - Points
+         </th>
+         <th>
+         9/7/2015
+         </th>
+         <th>
+         
+         
+         
+         <h3> features </h3>
+            	<ul align="left">
+               		 <li>
+                   	  Update the points page
+                        
+                        <ul>
+                         <li>
+                       	Change the layour of the points system
+                            <ul>
+                                <li>
+                                Seperated parts into 'cards' two wide (one wide on smaller screens)
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                       Moved the information to the left hand side of the screen (right in medium sized screens, top in small screens/phones)
+                        </li>
+                        <li>
+                        Updated the members points view
+                         <ul>
+                         		<li>
+                                Moved the members points to the right side of the screen (bottom on small screens/phones)
+                                </li>
+                                <li>
+                                Changed the system to use javascript for easier updates
+                                </li>
+                                <li>
+                                Added profile pictures (opional)
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        </ul>
+                        </li>
+                   </ul>
+                  <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	
+                    
+                     
+                    <li>
+                   Removed old pages that were not in use
+                    </li>
+                    </ul>   
+
+                <h3 align="center"> pictures </h3>
+                <a href="images/changeLog/3.8Points.png" data-lightbox="3point8"><img src="images/changeLog/3.8Points_Thumbnail.jpg" width="auto" height="128"  alt=""/></a>
+                
+                
+         
+         </th>
+         </tr>
+         
+         
+         
+         
+         
+           <tr style="background-color:#333333;">
+         <th>
+         3.7.5
+         </th>
+         <th>
+         9/5/2015
+         </th>
+         <th>
+         
+         
+         
+         <h3 id="text-center"> features </h3>
+                <ul align="left">
+                	
+                    
+                     
+                    <li>
+                   Changed the link layout on the constitution page on the desktop.
+                    </li>
+                 <li>
+               Added a download option for the costitution (pdf and word)
+                </li>
+                    </ul>
+                    
+                    
+                 <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	
+                    
+                     
+                    <li>
+                   Fixed the issues on the mobile version of the boardmembers page
+                    </li>
+                    </ul>   
+       
+       
+       		  <h3 align="center"> pictures </h3>
+                <a href="images/changeLog/3.7.5ConstDesktop.jpg" data-lightbox="3point7point5"><img src="images/changeLog/3.7.5ConstDesktop.jpg" width="auto" height="128"  alt=""/></a>
+                <a href="images/changeLog/3.7.5Downloads.jpg" data-lightbox="3point7point5"><img src="images/changeLog/3.7.5Downloads.jpg" width="auto" height="128"  alt=""/></a>
+               
+       
+       
+         
+         
+         </th>
+         </tr>
+         
+         
+         
+         
+         
+           <tr>
+         <th>
+         3.7.4
+         </th>
+         <th>
+         9/4/2015
+         </th>
+         <th>
+         
+         
+         
+         <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	
+                    
+                     
+                    <li>
+                   Fixed issues with the home page linking to the incorrect last meeting page
+                    </li>
+                     <li>
+                  Updated format on meeting notes pages
+                    </li>
+                 <li>
+               	Add new points chart to the points page
+                </li>
+                    </ul>
+                    
+                    
+                    
+       
+         
+         
+         </th>
+         </tr>
+         
+         
+         
+         
+         
+         
+         
+          <tr style="background-color:#333333;">
+         <th>
+         3.7.3
+         </th>
+         <th>
+         9/3/2015 - 23:21
+         </th>
+         <th>
+         
+         
+         
+         <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	
+                    
+                     
+                    <li>
+                   Fixed issues displaying last meeting info on mobile
+                    </li>
+                 <li>
+               fixed broken links on the mobile version of the last meeting page
+                </li>
+                    </ul>
+                    
+                    
+                    
+       
+         
+         
+         </th>
+         </tr>
+         
+         
+         
+         
+         
+           <tr>
+         <th>
+         3.7.2
+         </th>
+         <th>
+         9/3/2015 - 22:20
+         </th>
+         <th>
+         
+         
+         
+         <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	
+                    
+                     
+                    <li>
+                    Fixed locations of links on constitution page
+                    </li>
+                 <li>
+               Adjusted the size of the font on the home page for mobile
+                </li>
+                    </ul>
+                    
+                    
+                    
+          <h3 id="text-center"> Weekly Update </h3>
+                <ul align="left">
+         		<li>
+                Add meeting notes to the webstie
+                </li>
+                <li>
+                Update last anime and add lastweeks anime to the archive
+                </li>
+                <li>
+                Change the date on the homepage
+                </li>
+                <li>
+                Updated members points
+                </li>
+         </ul> 
+         
+         
+         </th>
+         </tr>
+         
+         
+         
+         
+           <tr style="background-color:#333333;">
+         <th>
+         3.7.1
+         </th>
+         <th>
+         9/3/2015 - 17:00
+         </th>
+         <th>
+         
+         
+         
+         <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	
+                    
+                     
+                    <li>
+                    Fixed the bug for zooming in on the selection field on mobile safari
+                    </li>
+                 <li>
+               Adjusted the size and location of the 'back to top' button on mobile
+                </li>
+                    </ul>
+                    
+                    
+                    
+         <!-- <h3 id="text-center"> Weekly Update </h3>
+                <ul align="left">
+         		<li>
+                Add meeting notes to the webstie
+                </li>
+                <li>
+                Update last anime and add lastweeks anime to the archive
+                </li>
+                <li>
+                Change the date on the homepage
+                </li>
+         </ul> -->
+         
+         
+         </th>
+         </tr>
+         
+         
+         
+         
+         
+          <tr>
+         <th>
+         3.7 - Project Motion
+         </th>
+         <th>
+         9/3/2015 - 11:00
+         </th>
+         <th>
+         
+         
+         
+         <h3> features </h3>
+            	<ul align="left">
+                <li>
+                   	  Add animation to hovering over links on menu bar
+                        </li>
+                         <li>
+                        Smoother scrolling to areas linked on same page
+                        </li>
+                        <li>
+                        Added a standard 'back to top' button on the pages that it needed it
+                        </li>
+                        <li>
+                        Add another optional background to the homepage
+                        </li>
+                        <li>
+                        Add picture below social media that is shown when hovering over icon
+                        </li>
+                         <li>
+                        Update Constitution to the new version
+                            <ul>
+                                <li>
+                                Add section links at top for easier and quicker navigation.
+                                </li>
+                            </ul>
+                        </li>
+                   </ul>
+                
+                
+                   <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	
+                    
+                     
+                    <li>
+                    General Bux Fixes
+                    </li>
+                    </ul>
+                
+               
+                
+                
+                <h3 align="center"> pictures </h3>
+                <a href="images/changeLog/3.7Const.jpg" data-lightbox="3point7"><img src="images/changeLog/3.7Const.jpg" width="auto" height="128"  alt=""/></a>
+                <a href="images/changeLog/3.7Social.jpg" data-lightbox="3point7"><img src="images/changeLog/3.7Social.jpg" width="auto" height="128"  alt=""/></a>
+                <a href="images/changeLog/3.7BackToTop.jpg" data-lightbox="3point7"><img src="images/changeLog/3.7BackToTop.jpg" width="auto" height="128"  alt=""/></a>
+                
+         
+         </th>
+         </tr>
+         
+         
+         
+          <tr style="background-color:#333333;">
+         <th>
+         3.6.5
+         </th>
+         <th>
+         9/1/2015
+         </th>
+         <th>
+         
+         
+         
+         <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	
+                    
+                     
+                    <li>
+                    Update the board members page
+                    </li>
+                 <li>
+               Add missing screenshots to anime 
+                </li>
+                    </ul>
+                    
+                    
+                    
+          <h3 id="text-center"> Weekly Update </h3>
+                <ul align="left">
+         		<li>
+                Add meeting notes to the webstie
+                </li>
+                <li>
+                Update last anime and add lastweeks anime to the archive
+                </li>
+                <li>
+                Change the date on the homepage
+                </li>
+         </ul>
+         
+         
+         </th>
+         </tr>
+         
+         
+           <tr >
+         <th>
+         3.6.4
+         </th>
+         <th>
+         8/27/2015  
+         </th>
+         <th>
+         
+         
+         
+         <h3> features </h3>
+            	<ul align="left">
+                   	<li>
+                   		Updated the change log view on desktops 
+                  	</li>
+                   </ul>
+                
+                
+                  
+                
+               
+               
+                
+         
+         </th> 
+         </tr>
+         
+         
+         <tr style="background-color:#333333;">
+         <th>
+         3.6.3
+         </th>
+         <th>
+         8/26/2015
+         </th>
+         <th>
+         
+         
+         
+         <h3 id="text-center"> features </h3>
+                <ul align="left">
+                	
+                    
+                     
+                     <li>
+               Replaced the numbers on recommended anime page with stars 
+                </li>
+                    </ul>
+                    
+                    
+                    <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	
+                    
+                     
+                    <li>
+                    Updated the recommended anime picture on the anime page
+                    </li>
+                    <li>
+                    Improved detection of when you move your mouse off of the hovered menu bar (going down)
+                    </li>
+                    </ul>
+         
+         
+         
+                
+                <h3 align="center"> pictures </h3>
+                <a href="images/changeLog/3.6.3Stars.jpg" data-lightbox="3point6point3"><img src="images/changeLog/3.6.3Stars_Thumbnail.jpg" width="auto" height="128"  alt=""/></a>
+               <!--  <a href="images/changeLog/3.6FAQ.jpg" data-lightbox="3point6"><img src="images/changeLog/3.6FAQ_Thumbnail.jpg" width="auto" height="128"  alt=""/></a>
+                <a href="images/changeLog/3.6AnimeSort.jpg" data-lightbox="3point6"><img src="images/changeLog/3.6AnimeSort_Thumbnail.jpg" width="auto" height="128"  alt=""/></a> -->
+         
+         
+         </th>
+         </tr>
+         
+         
+         
+         <tr>
+         <th>
+         3.6.2
+         </th>
+         <th>
+         8/22/2015
+         </th>
+         <th>
+         
+         
+         
+         <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	
+                    
+                     
+                    <li>
+                    Added more anime to the recommended anime page
+                    </li>
+                    </ul>
+         
+         
+         
+         
+         </th>
+         </tr>
+         
+         
+         
+         
+          <tr style="background-color:#333333;">
+         <th>
+         3.6.1
+         </th>
+         <th>
+         8/21/2015 - 23:15
+         </th>
+         <th>
+         
+         
+         
+         <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	
+                    
+                     
+                    <li>
+                    Fixed recommended anime page on mobile
+                    </li>
+                    <li>
+                    Fixed bugs with the on hover bar
+                    </li>
+                    </ul>
+         
+         
+         
+         
+         </th>
+         </tr>
+         
+         
+         
+         <tr>
+         <th>
+         3.6 The Desktop Update
+         </th>
+         <th>
+         8/21/2015 - 23:00  
+         </th>
+         <th>
+         
+         
+         
+         <h3> features </h3>
+            	<ul align="left">
+                   	<li>
+                   		Added a hover option to show the sub pages below the main menu when hovering over each of the tabs 
+                  	</li>
+                     <li>
+                        Update the look of the recommended anime page 
+                        	<ul>
+                            	<li>
+                                	Sorted anime in the recommended anime page by:
+                                    	<ul>
+                                        	<li>
+                                            rank from Anime-Planet Ascending
+                                            </li>
+                                            <li>
+                                            rank from Anime-Planet Descending
+                                            </li> 
+                                            <li>
+                                            A - Z
+                                            </li>
+                                            <li>
+                                            Z - A
+                                            </li>
+                                            <li>
+                                            2015 - 1992 
+                                            </li>
+                    		                 <li>
+                                            1992 - 2015
+                                            </li>
+                                         <li>
+                                           Num Of Episodes Ascending
+                                            </li>
+                                          <li>
+                                           Num Of Episodes Descending
+                                            </li>  
+                                        </ul>
+                            	</li>
+                                <li>
+                                	Switched to a card based system which added more information about the anime including
+                                    <ul>
+                                    	<li>
+                                        Rank
+                                        </li>
+                                        <li>
+                                        Number Of Episodes
+                                        </li>
+                                        <li>
+                                        Year
+                                        </li>
+                                        <li>
+                                        Genere
+                                        </li>
+                                        <li>
+                                        Screenshots
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                     </li>
+                     <li>
+                        Improve the look of the FAQ section in the comment card
+                     </li>
+                   </ul>
+                
+                
+               <!--    <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	
+                    
+                     
+                    <li>
+                    ---
+                    </li>
+                    </ul>
+                
+                -->
+                
+                
+                <h3 align="center"> pictures </h3>
+                <a href="images/changeLog/3.6RecommendedAnime.jpg" data-lightbox="3point6"><img src="images/changeLog/3.6RecommendedAnime_Thumbnail.jpg" width="auto" height="128"  alt=""/></a>
+                <a href="images/changeLog/3.6FAQ.jpg" data-lightbox="3point6"><img src="images/changeLog/3.6FAQ_Thumbnail.jpg" width="auto" height="128"  alt=""/></a>
+                <a href="images/changeLog/3.6AnimeSort.jpg" data-lightbox="3point6"><img src="images/changeLog/3.6AnimeSort_Thumbnail.jpg" width="auto" height="128"  alt=""/></a>
+                
+         
+         </th>
+         </tr>
+         
+         
+         
+           <tr style="background-color:#333333;">
+         <th>
+         3.5.3
+         </th>
+         <th>
+         8/18/2015 - 22:22 
+         </th>
+         <th>
+         
+         
+         
+         <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	
+                    
+                     
+                    <li>
+                    seperated the ways to earn points and the ways to spend points in the table (on the points page)
+                    </li>
+                    </ul>
+         
+         
+         
+         
+         </th>
+         </tr>
+          
+          
+          
+          
+          
+          
+          <tr>
+         <th>
+         3.5.2
+         </th>
+         <th>
+         8/18/2015 - 20:55 
+         </th>
+         <th>
+         
+         
+         
+         <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	
+                    
+                     
+                    <li>
+                    Update the height of the mobile version of the footer bar
+                    </li>
+                    <li>
+                    Changed the size of the pictures in the feedback bar and changed the height
+                    </li>
+                    </ul>
+         
+         
+         
+         
+         </th>
+         </tr>
+         
+         <tr style="background-color:#333333;">
+         <th>
+         3.5.1
+         </th>
+         <th>
+         8/18/2015 - 19:28 
+         </th>
+         <th>
+         
+         
+         
+         <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	
+                    
+                     
+                    <li>
+                    Update the height of the mobile version of the anime page
+                    </li>
+                    <li>
+                    Fixed the issue where the date and meeting place were not showing up on the mobile version of the website.
+                    </li>
+                    </ul>
+         
+         
+         
+         
+         </th>
+         </tr>
+         
+         
+         
+         
+         
+         
+          <tr>
+         <th>
+         3.5 - The Mobile Update
+         </th>
+         <th>
+         8/18/2015 - 19:15
+         </th>
+         <th>
+         
+         
+         
+         <h3> features </h3>
+            	<ul align="left">
+                   	<li>
+                    Updated index page look on mobile devices for easier viewing
+                    </li>
+                    <li>
+                    Updated close icon for mobile bar
+                    </li>
+                    <li>
+                    Update footer for better viewing on mobile devices
+                    </li>
+                    <li>
+                    Update look of anime page on smaller screens
+                    </li>
+                    <li>
+                    Updated the look of the change log
+                    	<ul>
+                        	<li>
+                            Added pictures of the new features (if applicable)
+                            </li>
+                            <li>
+                            Cleaned up top area.
+                            </li>
+                            <li>
+                            Changed the background color of every other to help seperate versions
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                    Updated the previous anime page's link to the archive
+                    </li>
+                    <li>
+                    Added two galeries to the galleries page
+                    	<ul>
+                        	<li>
+                            Game Night 2015 and other
+                            </li>
+                            <li>
+                            New Board 2015 - 2016
+                            </li>
+                        </ul>
+                    </li>
+         		</ul>
+                
+                
+                  <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	
+                    
+                     
+                    <li>
+                    Fixed the variation of alpha values of the links on the side bar
+                    </li>
+                    <li>
+                    Update mobile version of points page to reflect changes to the main page
+                    </li>
+                    <li>
+                    Fixed the width of the comment card when displaying on smaller screens
+                    </li>
+                    <li>
+                    General bux fixes
+                    </li>
+                    
+                    </ul>
+                
+                
+                
+                 <h3 align="center"> pictures </h3>
+                <a href="images/changeLog/3.5IndexLook.jpg" data-lightbox="3point5"><img src="images/changeLog/3.5IndexLook_Thumbnail.jpg" width="auto" height="128"  alt=""/></a>
+         		 <a href="images/changeLog/3.5AnimeLook.jpg" data-lightbox="3point5"><img src="images/changeLog/3.5AnimeLook_Thumbnail.jpg" width="auto" height="128"  alt=""/></a>
+                  <a href="images/changeLog/3.5Footer.jpg" data-lightbox="3point5"><img src="images/changeLog/3.5Footer_Thumbnail.jpg" width="auto" height="128"  alt=""/></a>
+                  <a href="images/changeLog/3.5Gallery.jpg" data-lightbox="3point5"><img src="images/changeLog/3.5Gallery.jpg" width="auto" height="128"  alt=""/></a>
+         </th>
+         </tr>
+         
+         
+         
+         
+         
+         
+         
+         
+          <tr style="background-color:#333333;">
+         <th>
+         3.4
+         </th>
+         <th>
+         8/17/2015
+         </th>
+         <th>
+         
+         
+         
+         <h3> features </h3>
+            	<ul align="left">
+                   	<li>
+                   		Added more anime to the recommended anime picture on the main anime page
+                  	</li>
+                    <li>
+                    	Added a popup menu to the footer which can be used to submit feedback on the website either via email or form.
+                    </li>
+                    <li>
+                    Added an area to mark the point values and what they can be redeemed for.
+                    </li>
+                    <li>
+                Added links to Relevant YouTube videos on gallery pages.
+                </li>
+         		</ul>
+                
+                
+               <!--    <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	
+                    
+                     
+                    <li>
+                    ---
+                    </li>
+                    </ul>
+                
+                -->
+         
+         </th>
+         </tr>
+         
+         
+         
+         
+         
+         
+         
+         
+         
+          <tr >
+         <th>
+         3.3.1
+         </th>
+         <th>
+         8/15/2015 - 23:07
+         </th>
+         <th>
+         
+         
+         
+         <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	
+                    
+                     
+                    <li>
+                    slightly adjusted position of social media bars for the mobile version
+                    </li>
+                    <li>
+                    fixed scaling of the pictures on the about section when viewing on tablets
+                    </li>
+                    </ul>
+         
+         
+         
+         
+         </th>
+         </tr>
+         
+         
+         
+         
+         
+         
+         
+          
+           <tr style="background-color:#333333;">
+         <th>
+         3.3
+         </th>
+         <th>
+         8/15/2015 - 21:00
+         </th>
+         <th>
+         
+         
+         
+         <h3> features </h3>
+            	<ul align="left">
+                   	<li>
+                   		Changed the look of years on the gallery page 
+                  	</li>
+                  	<li>
+                   		Update look of social media page icons
+                        <ul>
+                            <li>
+                            Add instagram link to page
+                            </li>
+                        </ul>
+                    </li>
+                     <li>
+                    Update look and layout of the last meetings page
+                    </li>
+                    <li>
+                    Seperate a WIP version from the rest for better information on what i'm working on
+                    </li>
+         		</ul>
+                
+                
+               <!--    <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	
+                    
+                     
+                    <li>
+                    ---
+                    </li>
+                    </ul>
+                
+                -->
+         
+         </th>
+         </tr>
+         
+         
+         
+         
+          
+          
+           <tr>
+         <th>
+         3.2.3
+         </th>
+         <th>
+         8/14/2015
+         </th>
+         <th>
+         
+         
+         
+         <h3> features </h3>
+            	<ul align="left">
+                     <li>
+                	Added a link to the archive from the photo gallery page
+                	</li>
+         		</ul>
+                
+                
+                  <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	
+                    
+                     
+                    <li>
+                    fixed issues where the preview gallery width was not displaying correctly on mobile safari
+                    </li>
+                    <li>
+                    fixing issues with incorrect css code
+                    </li>
+                    <li>
+                    edit alpha values on the logo on the mobile navigation side bar
+                    </li>
+                    </ul>
+                
+                
+         
+         </th>
+         </tr>
+          
+          
+          
+          
+          
+          
+          <tr style="background-color:#333333;">
+         <th>
+         3.2.2
+         </th>
+         <th>
+         8/13/2015 - 23:37
+         </th>
+         <th>
+         
+         
+         
+         <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	
+                    
+                     
+                    <li>
+                    Fixed visual bug where the recommended anime page as well as the main anime page would not show up on mobile devices
+                    </li>
+                    <li>
+                    Fixed (all?) broken links on the mobile navigation side bar
+                    </li>
+                    </ul>
+         
+         
+         
+         
+         </th>
+         </tr>
+          
+          
+          
+          <tr>
+         <th>
+         3.2.1
+         </th>
+         <th>
+         8/13/2015 - 23:00
+         </th>
+         <th>
+         
+         
+         
+         <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	
+                    
+                     
+                    <li>
+                    Fixed some of the galleries not displaying correctly on small windows / mobile devices
+                    </li>
+                    </ul>
+         
+         
+         
+         
+         </th>
+         </tr>
+         
+         
+         
+          
+          
+           <tr style="background-color:#333333;">
+         <th>
+         3.2
+         </th>
+         <th>
+         8/13/2015 - 22:00
+         </th>
+         <th>
+         
+         
+         
+         <h3> features </h3>
+            	<ul align="left">
+                	 <li>
+                            Photo Gallery Page
+                            	<ul>
+                                    <li>
+                                    Changed layout of pages making it easier to add in new events
+                                    </li>
+                                    <li>
+                                    Adding missing galleries from last year.
+                                    </li>
+                            	</ul>
+               		 </li>
+                     <li>
+                	Added blur to the background of elements to make it easier to read <a href="http://caniuse.com/#feat=css-backdrop-filter">(although it is not supported in most web browsers)</a>
+                	</li>
+         		</ul>
+                
+                
+                  <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	
+                    
+                     
+                    <li>
+                    Adjusted older Gallery pages to make sure content fit on screen with the new content layout.
+                    </li>
+                    </ul>
+                
+                
+         
+         </th>
+         </tr>
+          
+          
+          
+          
+           <tr>
+         <th>
+         3.1.1
+         </th>
+         <th>
+         8/12/2015
+         </th>
+         <th>
+         
+         
+         
+         <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	
+                    
+                     
+                    <li>
+                    Fixed mobile view for events page (putting calender under upcoming events insted of next to it)
+                    </li>
+                    <li>
+                    Home page video loops less abruptly.
+                    </li>
+                    </ul>
+         
+         
+         
+         
+         </th>
+         </tr>
+          
+          
+          
+          
+          <tr style="background-color:#333333;">
+         <th>
+         3.1
+         </th>
+         <th>
+         8/10/2015
+         </th>
+         <th>
+         
+         
+         
+         <h3> features </h3>
+            	<ul align="left">
+                	<li>
+                    Redesign Event page 
+                    </li>
+                    <li>
+                    Added more anime to the Recommended Anime page. 
+                    </li>
+                    <li>
+                            Anime Party Archive
+                            	<ul>
+                                	<li>
+                                    Moved the info from the history page to the home page of the archive
+                                    </li>
+                                    <li>
+                                    Moved the previous anime from the main site to the archive
+                                    </li>
+                                </ul>
+                            </li>
+         		</ul>
+                
+                
+                
+                
+                <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	
+                    
+                     
+                    <li>
+                    Fixed a bug specific to mobile safari which the pictures on the about page were not the correct size. 
+                    </li>
+                    <li>
+                    Fixed the video on the front page from loading on mobile devices.
+                    </li>
+                    <li>
+                    Fixed issue on Internet Explorer where text on the about page was off of the page.
+                    </li>
+                    </ul>
+         
+         </th>
+         </tr>
+          
+          
+          
+          
+          <tr>
+         <th>
+         3.0.3
+         </th>
+         <th>
+         8/5/2015
+         </th>
+         <th>
+         
+         
+         
+         <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	
+                    
+                     
+                    <li>
+                    Fixed a bug specific to mobile safari which now shows a picture insted of a video for mobile to conserve data usage
+                    </li>
+                    <li>
+                    Links for the anime on the board members pages are correct and working
+                    </li>
+                    </ul>
+         
+         
+         
+         
+         </th>
+         </tr>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <tr style="background-color:#333333;">
+         <th>
+         3.0.2
+         </th>
+         <th>
+         8/3/2015
+         </th>
+         <th>
+         
+         
+         
+         <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	
+                    
+                     <li>
+                     The mobile Sidebar now reflects the updated desktop link bar.
+                     </li>
+                    <li>
+                    Added text to about page to improve mobile vewing.
+                    </li>
+                    </ul>
+         
+         
+         
+         
+         </th>
+         </tr>
+          
+          
+          
+          
+          
+          
+         <tr>
+         <th>
+         3.0.1
+         </th>
+         <th>
+         8/2/2015
+         </th>
+         <th>
+         
+         
+         
+         <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	
+                    <li>
+                    Replaced old g+ icon with twitter icon
+                    </li>
+                     <li>
+                    Fixed mobile display issues on about and board members pages
+                    </li>
+                    
+                    </ul>
+         
+         
+         
+         
+         </th>
+         </tr>
+         
+         
+        <tr style="background-color:#333333;"> 
+        	<th> 3.0</th>
+            <th> 8/1/2015 </th>
+            <th>
+            <h3> features </h3>
+            	<ul align="left">
+                	<li>
+                    Update to the logo (Designed by Hannah)
+                    </li>
+                    <li>
+                    Redesigned Pages
+                        <ul>
+                        	<li>
+                            General updates to backgrounds and height settings to allow for dynamic and easier to read text. 
+                            </li>
+                            <li>
+                            Home Page
+                            	 <ul>
+                                    <li>
+                                    Updated the look of the background
+                                    </li>
+                                    <li>
+                                    Simplified the message below the logo
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                            Board Members Page
+                                <ul>
+                                    <li>
+                                    Changed to current board members
+                                    </li>
+                                    <li>
+                                    Change layout of information
+                                    </li>
+                                </ul>
+                            </li>
+                            
+                            
+                            <li>
+                            About Page
+                            	<ul>
+                                	<li>
+                                    Moved the social media links to the social media page
+                                    </li>
+                                    <li>
+                                    Changed look of about page
+                                    </li>
+                                    <li>
+                                    Added more content to the page
+                                    </li>
+                                </ul>
+                            </li>
+                            
+                            <li>
+                            Comment Card Page
+                            	<ul>
+                                	<li>
+                                    Added a FAQ part with previous questions and answers
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        
+                    </li>
+                    <li>
+                    Added New Pages
+                    	<ul>
+                        	<li>
+                            Social Media Page
+                            
+                            	<ul>
+                                	<li>
+                                    Changed the google plus link to a twitter page
+                                    </li>
+                                    <li>
+                                    Added the Facebook page to the list of links
+                                    </li>
+                                </ul>
+                            
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                    The history page now links to the archive website and is renamed to 'archive'.
+                    </li>
+                    <li>
+                    <s>Added a known bugs column to the change log page.</s> (see 3.5)
+                    </li>
+                    
+                    
+                  <!--   <li>
+                    Added photo galleries from late 2014, which included:
+                    <ul>
+                    <li> Game Nights
+                    </li>
+                    <li> Halloween
+                    </li>
+                    <li> Cosplay Ball
+                    </li>
+                    </ul>
+                    </li> -->
+                    
+                    </ul> 
+                <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	<li>
+                    General bux fixes
+                    </li>
+                    <li>
+                    Updated system requirements for website (still just recommended though)
+                    </li>
+                    </ul>
+            </th>
+        </tr>
+        <tr>
+         <th>
+         </th>
+         <th>
+         </th>
+         <th>
+         <h1> 2014 - 2015 </h1>
+         </th>
+         </tr>
+         <tr> 
+        	<th> 2.0.4</th>
+            <th> 3/6/2015 </th>
+            <th>
+            <h3> features </h3>
+            	<ul align="left">
+                	<li>
+                    Facebook integration
+                    </li>
+                    </ul> 
+                <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	<li>
+                    Added more anime to the Recommended Anime page.
+                    </li>
+
+            </th>
+        </tr>
+        <tr style="background-color:#333333;">
+        	<th> 2.0.3</th>
+            <th> 2/12/2015 </th>
+            <th>
+            <h3> features </h3>
+            	<ul align="left">
+                	<li>
+                    Updated the Recommended Anime page
+                    </li>
+                    
+                
+                    
+                    </ul> 
+                <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                <li>
+                    Updated the board members page to reflect the new board.
+                    </li>
+                    <li>
+                    Small update to the points page, adding points from last semester
+                    </li>
+            </th>
+        </tr>
+        <tr> 
+        	<th> 2.0.2</th>
+            <th> 1/24/2015 </th>
+            <th>
+            <h3> features </h3>
+            	<ul align="left">
+                	<li>
+                    Added advisor information to website
+                    </li>
+                    <li>
+                    Updated the previous anime page (splitting into two semesters)
+                    </li>
+                    
+                    </ul> 
+                <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	<li>
+                    General bux fixes
+                    </li>
+                    </ul> 
+            </th>
+        </tr>
+        <tr style="background-color:#333333;">
+        	<th> 2.0.1</th>
+            <th> 8/14/2014 </th>
+            <th>
+           <!-- <h3> features </h3>
+            	<ul align="left">
+                	<li>
+                    Changed theme to new 2014 theme
+                    </li>
+                    
+                    </ul> -->
+                <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	<li>
+                    General mobile bux fixes involving the side menu.
+                    </li>
+                    </ul> 
+            </th>
+        </tr>
+        
+        <tr> 
+        	<th> 2.0</th>
+            <th> 8/13/2014 </th>
+            <th>
+            <h3> features </h3>
+            	<ul align="left">
+                	<li>
+                    Changed theme to new 2014 theme
+                    </li>
+                    <li>
+                    Re-designed multipul pages
+                    <ul>
+                    <li>
+                    Home page
+                    </li>
+                    <li>
+                    About page
+                    </li>
+                    <li>
+                    Board Members page
+                    </li>
+                    <li>
+                    Anime page
+                    </li>
+                    <li>
+                    Gallery page
+                    </li>
+                    <li>
+                    Points page
+                    </li>
+                    </ul>
+                    </li>
+                    <li>
+                    Added the archive website for stuff before 2012
+                    </li>
+                    </ul>
+            </th>
+        </tr>
+        <tr>
+        <th>
+        </th>
+        <th>
+        </th>
+        <th>
+        <h1> 2013 - 2014 </h1>
+        </th>
+        </tr>
+        <tr style="background-color:#333333;">
+        	<th> 1.3.2</th>
+            <th> 4/7/2014 </th>
+            <th>
+            <h3> features </h3>
+            	<ul  align="left">
+                	<li>
+                    Added gallery for 2014 events (B&amp;W Days and Fan Exhibition)
+                    </li>
+                    </ul>
+                <h3> bug fixes </h3>
+                <ul  align="left">
+                	<li>
+                    Updated some pages to the newer theme.
+                    </li>
+                    </ul> 
+            </th>
+        </tr>
+        <tr> 
+        	<th> 1.3.1</th>
+            <th> 3/13/2014 </th>
+            <th>
+            <h3> features </h3>
+            	<ul  align="left">
+                	<li>
+                    Put 4 four leaf clovers on the website Each are worth 25 points
+                    </li>
+                    </ul>
+
+            </th>
+        </tr>
+        <tr style="background-color:#333333;">
+        	<th> 1.3</th>
+            <th> 3/10/2014 </th>
+            <th>
+            <h3> features </h3>
+            	<ul  align="left">
+                	<li>
+                    Improved the layout of Anime page, seperating it into fall and spring
+                    </li>
+                    <li>
+                    Changed the layout of the gallery page to display the year on the left side of the picture inside of on top
+                    </li>
+                     <li>
+                    Changed the layout of previous meetings page.
+                    </li>
+                    <li>
+                    Added gallery for 2011 Cosplay Ball.
+                    </li>
+                    <li>
+                    Added a page for the upcoming Pokémon Tournament.
+                    </li>
+                    <li>
+                    Added a page for the upcoming Cosplay Ball.
+                    </li>
+                    </ul>
+
+            </th>
+        </tr>
+        <tr>
+        	<th> 1.2.2</th>
+            <th> 2/3/2014 </th>
+            <th >
+            <h3 > features </h3>
+            	<ul  align="left">
+                	<li>
+                    Changed theme to valentine's day theme.
+                    </li>
+                    </ul>
+
+            </th>
+        </tr>
+        <tr style="background-color:#333333;">
+        	<th> 1.2.1</th>
+            <th> 1/27/2014 </th>
+            <th >
+            <h3 > features </h3>
+            	<ul align="left">
+                	<li>
+                    Added a page for meeting notes (Previous Meetings)
+                    </li>
+                    </ul>
+            </th>
+        </tr>
+        <tr>
+        	<th> 1.2.1</th>
+            <th> 12/2/2013 </th>
+            <th >
+            <h3 > features </h3>
+            	<ul align="left">
+                	<li>
+                    Changed to a Winter theme.
+                    </li>
+                    <li>
+                     Added a gallery for  the Pokémon X and Y Tournament.
+                     </li>
+                    </ul>
+            </th>
+        </tr>
+         <tr style="background-color:#333333;">
+        	<th> 1.2</th>
+            <th> 11/25/2013 </th>
+            <th >
+            <h3 > features </h3>
+            	<ul align="left">
+                	<li>
+                    Added the points page to the main top bar.
+                    </li>
+                    <li>
+                    Moved the Gallery page to the events page under "past events".
+                    </li>
+                    <li>
+                    Added a Comment card section.
+                    </li>
+                    <li>
+                    Added a gallery for non video game night.
+                    </li>
+                </ul>
+                <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	<li>
+                    Fixed height error with calendar on the homepage.
+                    </li>
+                    <li>
+                    Fixed the layout of the sub menu and the links at the top of the pages in the about section.
+                    </li>
+                    <li>
+                    Fixed the link on the sub pages of anime (pages 2 and 3).
+                    </li>
+                    <li>
+                    Fixed active link identifier on about tab when looking at board members.
+                    </li>
+                </ul>
+            </th>
+        </tr>
+        <tr>
+        	<th> 1.1</th>
+            <th> 11/18/2013 </th>
+            <th >
+            <h3 > features </h3>
+            	<ul align="left">
+                	<li>
+                    Added the ability to maximize and minimize the calendar on the homepage.
+                    </li>
+                	<li>
+                    Changed the way anime was listed, 3 per page for faster loading.
+                    </li>
+                    <li>
+                    Split up the gallery so it shows picture groups by year.
+                    </li>
+                    <li>
+                    Created a new page for each gallery.
+                    </li>
+                   <li>
+                    Added 2 galleries from 2011 (White day and Halloween)
+                    </li> 
+                    <li>
+                    Created a history page with minimal information with the intent to expand upon it later.
+                    </li>
+                    <li>
+                    Converted the constitution and Pokémon X and Y Tournament Rules to HTML files for easier viewing on computers that can not read .doc or .docx files.
+                    </li>
+                </ul>
+                <h3 > bug fixes </h3>
+                <ul align="left">
+                	<li>
+                    Fixed issue with constitution not loading properly from certain pages.
+                    </li>
+                    <li>
+                    Corrected some of the spelling errors
+                    </li>
+                    <li>
+                    Fixed active link identifier on the Pokémon X and Y Tournament page.
+                    </li>
+                    <li>
+                    Fixed the error of some pages not correctly displaying the color version on the picture when hovered over.
+                    </li>
+                </ul>
+            </th>
+        </tr>
+        <tr style="background-color:#333333;">
+         	<th> 1.0.3</th>
+            <th> 11/11/2013 </th>
+            <th >
+            <h3 > features </h3>
+            	<ul align="left">
+                	<li>
+                    Changed back to normal theme
+                    </li>
+                    <li>
+                    Added a page for the Pokémon X and Y Tournament.
+                    </li>
+                </ul>
+            </th>
+        </tr>
+        <tr>
+         	<th> 1.0.2</th>
+            <th> 10/7/2013 </th>
+            <th >
+            <h3 > features </h3>
+            	<ul align="left">
+                	<li>
+                    Changed to a Halloween theme
+                    </li>
+                    <li>
+                    Added a small calendar on the lower right corner of the homepage.
+                    </li>
+                    <li>
+                    Added the 2013 Game Night Gallery.
+                    </li>
+                    
+                </ul>
+            </th>
+        </tr>
+        <tr style="background-color:#333333;">
+         	<th> 1.0.1</th>
+            <th> 9/16/2013 </th>
+            <th >
+            <h3 > bug fixes </h3>
+            	<ul align="left">
+                	<li>
+                    Improve mobile format.
+                    </li>
+                    <li>
+                    Fixed loading errors in the gallery because of picture file size.
+                    </li>
+                    
+                </ul>
+            </th>
+        </tr>
+        <tr>
+        	<th>1.0.0</th>
+            <th>9/9/2013</th>
+            <th >
+            <h3 > features </h3>
+            	<ul align="left">
+                	<li>
+                    	Created a basic template.
+                    </li>                
+                    <li>
+                    	Created Home, Events, Gallery, Anime, About, Feature List, Board members and Banned Anime page.
+                    </li>
+                    <li>
+                    	Created top bar navigation and added footer.
+                    </li>
+                    <li>
+                    	Created a mobile theme.
+                    </li>
+                    <li>
+                    	Added 2012 Talent Show Gallery.
+                    </li>
+                </ul>
+            </th>
+         </tr>
+         
+        </table>
+        </th>
+    
+    </tr>
+    
+    </table>
+      <table id="changeLogSmall" width="100%" style="max-width:800px;" align="center">
+		
+		
+		<tr>
+        <th>
+        	 <h1 style="text-align:center;">Features</h1>
+    		<h3 style="text-align:center;">Email <a href="mailto:mjreishman1s@semo.edu">Matt Reishman</a> to request a feature</h3>
+            <h3> Features in the next update that are ready are in the red bar </h3>
+        </th>
+        </tr>
+          <tr>
+        <td align="left">
+        	<ul>
+                 <li>
+                The gallery Update Part 3 (3.9.6?)
+                	<ul>
+                    	<li>
+                        Add galleries for:
+                        <ul>
+                            <li>
+                            Game Night
+                            </li>
+                        </ul>
+                        </li>
+                   	</ul>
+                </li>
+               <li> 
+               The Framework Update Part 2(3.9.7?)
+               	<ul>
+                	<li>
+                    Add directory listing to parts of the website for easier access to resources for the images folder (2012+)
+                    </li>
+                    <li>
+                    Update meta data on webpages
+                    </li>
+                    <li>
+                    Clean up main css file
+                    </li>     
+                </ul>
+              </li>
+              <li>
+              The Navigation Update (3.10?)
+              	<ul>
+                    <li>
+                    Add search functionality???
+                    </li>
+                    <li>
+                    Add sidebar nav to the board members page when scrolling down?
+                    </li>
+                    <li>
+                    Change Recommended Anime page to use javascript for easy updating
+                    </li>
+                 </ul>   
+              </li>
+              <li> 
+              Project Motion v2 (3.11?)
+                 <ul>
+                        <li>
+                       Add opening and closing animations to side bar and new bottom bar?
+                       </li>
+                      	<li>
+                        Add animation to the open and close icon.??
+                        </li>
+                        <li>
+                        animate pictures on social page?
+                        </li>
+                </ul>
+              </li>
+                   <!-- Logo with waves of anime -->         
+                   <!-- Logo with noodle like lines waving around of anime -->
+                   <!-- Logo with bubbles of anime -->   
+                   <!-- Spinny cubes -->       
+                            
+            </ul>
+        </td>
+        </tr>
+        
+	
+	</table>
+    
+    
+      <table id="changeLogSmall" width="100%" style="max-width:800px;" align="center">
+		
+		<tr>
+			<th width="75">Version</th>
+			<th width="90">Date of change</th>
+			<th >Notes</th>
+		</tr>
+        <tr>
+         <th>
+         </th>
+         <th>
+         </th>
+         <th>
+         <h1> 2015-2016 </h1>
+         </th>
+         </tr>
+         <!-- style="background-color:#B22628" -->
+         
+           <tr style="background-color:#333333">
+         <th>
+         3.9.5 - The Gallery Update part 3
+         </th>
+         <th>
+         10/18/2015
+         </th>
+         <th>
+         
+         
+         
+        
+                    
+                    
+          <h3 id="text-center"> Features </h3>
+                <ul align="left">
+               <li>
+                Add photo gallery:   Bake Sale!
+                </li>
+                
+         </ul> 
+         
+         
+         
+          <h3 id="text-center"> Bug Fixes </h3>
+                <ul align="left">
+                <li>
+                     Fixed the abrupt page jump when clicking on the link in the bottom row, as well as opening the menu on mobile.
+                </li>
+                
+                
+         </ul> 
+         </th>
+         </tr>
+         
+         
+         
+           <tr>
+         <th>
+         3.9.4 - The Framework Update part 1
+         </th>
+         <th>
+         10/14/2015
+         </th>
+         <th>
+         
+         
+         
+        
+                    
+                    
+          <h3 id="text-center"> Features </h3>
+                <ul align="left">
+               <li>
+                Add directory listing to parts of the website for easier access to resources for the photos folder (2003 - 2011)
+                </li>
+                
+         </ul> 
+         
+         
+         </th>
+         </tr>
+         
+         
+         
+         
+            <tr style="background-color:#333333">
+         <th>
+         3.9.3
+         </th>
+         <th>
+         10/12/2015
+         </th>
+         <th>
+         
+         
+         
+        
+                    
+                    
+          <h3 id="text-center"> Bug Fixes </h3>
+                <ul align="left">
+                <li>
+                     Changed the size of the last week anime thumbnal on the main anime page. 
+                </li>
+                <li>
+                	Edited the previous anime page for a slightly better layout
+                </li>
+                
+         </ul> 
+         
+         
+         </th>
+         </tr>
+         
+         
+              <tr>
+         <th>
+         3.9.2 - The Gallery Update Part 2
+         </th>
+         <th>
+         10/11/2015
+         </th>
+         <th>
+         
+         
+         
+        
+                    
+                    
+          <h3 id="text-center"> Features </h3>
+                <ul align="left">
+                <li>
+                        Add galleries for:
+                        <ul>
+                            <li>
+                            First Meeting
+                            </li>
+                         </ul>   
+                </li>
+                <li>
+                Added a banner to tell if the gallery is new (will show up for approx 2 weeks after it's uploaded)
+                </li>
+                 <li>
+                Added thumbnails for galleries that are coming soon
+                </li>
+         </ul> 
+         
+         
+         </th>
+         </tr>
+         
+         
+          
+            <tr style="background-color:#333333">
+         <th>
+         3.9.1 - The Gallery Update Part 1
+         </th>
+         <th>
+         10/9/2015
+         </th>
+         <th>
+         
+         
+         
+        
+                    
+                    
+          <h3 id="text-center"> Features </h3>
+                <ul align="left">
+                <li>
+                        Add galleries for:
+                        <ul>
+                            <li>
+                            Welcome Back!
+                            </li>
+                         </ul>   
+                </li>
+                <li>
+                Added the logo for each year next to their respictive galleries.
+                </li>
+         </ul> 
+         
+         
+         </th>
+         </tr>
+         
+         
+         
+         
+            
+           <tr>
+         <th>
+         3.9.0.1
+         </th>
+         <th>
+         9/17/2015 - 14:20
+         </th>
+         <th>
+         
+         
+         
+        
+                    
+                    
+          <h3 id="text-center"> Weekly Update </h3>
+                <ul align="left">
+         		<li>
+                Add meeting notes to the webstie
+                </li>
+                <li>
+                Update last anime and add lastweeks anime to the archive
+                </li>
+                <li>
+                Change the date on the homepage
+                </li>
+                <li>
+                Updated members points
+                </li>
+         </ul> 
+         
+         
+         </th>
+         </tr>
+         
+         
+         
+         
+            <tr style="background-color:#333333">
+         <th>
+         3.9 - The Archive Update
+         </th>
+         <th>
+         9/12/2015
+         </th>
+         <th>
+         
+         
+         
+       <h3 id="text-center"> features </h3>
+                <ul align="left">
+                	
+                    <li>
+                    Update the archive
+                    <ul>
+                        <li>
+                            Updated home page
+                            <ul>
+                                <li>
+                                Made it easier to view on mobile
+                                </li>
+                                <li>
+                                Made pictures on front clickable
+                                </li>
+                            </ul>
+                            </li> 
+                            <li>
+                        Changed look of galleries on mobile 
+                        	<ul>
+                            	<li>
+                                Removed duplicate galleries from the archive
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Adjusted the top and bottom bar to be fixed positions
+                        </li>
+                         <li>
+                        Added a new history page to the archive
+                        </li>
+                        
+                     </ul> 
+                    </li>
+                </ul>
+                    
+                    
+                   <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	
+                    
+                     
+                    <li>
+                   Fixed layout issues on phones for the points page
+                    </li>
+                    </ul>   
+       
+       <!--
+       		 <h3 align="center"> pictures </h3>
+                <a href="images/changeLog/3.7.5ConstDesktop.jpg" data-lightbox="3point7point5m"><img src="images/changeLog/3.7.5ConstDesktop.jpg" width="auto" height="128"  alt=""/></a>
+                <a href="images/changeLog/3.7.5Downloads.jpg" data-lightbox="3point7point5m"><img src="images/changeLog/3.7.5Downloads.jpg" width="auto" height="128"  alt=""/></a> -->
+               
+       
+       
+         
+         
+         </th>
+         </tr>
+         
+         
+         
+        <tr>
+         <th>
+         3.8.2
+         </th>
+         <th>
+         9/11/2015
+         </th>
+         <th>
+         
+         
+         
+       <h3 id="text-center"> features </h3>
+                <ul align="left">
+                	
+                    
+                     
+                    <li>
+                  Added the ability to sort points by name and ammount of points (ASC and DESC)
+					</li>
+                    </ul> 
+                    
+                    
+                 <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	
+                    
+                     
+                    <li>
+                   Fixed some issues with the javascript programming
+                    </li>
+                    </ul>   
+       
+       
+       		  <!-- <h3 align="center"> pictures </h3>
+                <a href="images/changeLog/3.7.5ConstDesktop.jpg" data-lightbox="3point7point5m"><img src="images/changeLog/3.7.5ConstDesktop.jpg" width="auto" height="128"  alt=""/></a>
+                <a href="images/changeLog/3.7.5Downloads.jpg" data-lightbox="3point7point5m"><img src="images/changeLog/3.7.5Downloads.jpg" width="auto" height="128"  alt=""/></a> -->
+               
+       
+       
+         
+         
+         </th>
+         </tr>
+         
+         
+         
+         
+         
+             <tr style="background-color:#333333;">
+         <th>
+         3.8.1
+         </th>
+         <th>
+         9/10/2015
+         </th>
+         <th>
+
+       
+                 <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	
+                    
+                     
+                    <li>
+                   Changed the default profile picture to a star
+                    </li>
+                    </ul>   
+       
+         
+         </th>
+         </tr>
+         
+         
+         
+         
+         
+         
+         
+          <tr >
+         <th>
+         3.8 - Points
+         </th>
+         <th>
+         9/7/2015
+         </th>
+         <th>
+         
+         
+         
+         <h3> features </h3>
+            	<ul align="left">
+               		 <li>
+                   	  Update the points page
+                        
+                        <ul>
+                         <li>
+                       	Change the layour of the points system
+                            <ul>
+                                <li>
+                                Seperated parts into 'cards' two wide (one wide on smaller screens)
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                       Moved the information to the left hand side of the screen (right in medium sized screens, top in small screens/phones)
+                        </li>
+                        <li>
+                        Updated the members points view
+                         <ul>
+                         		<li>
+                                Moved the members points to the right side of the screen (bottom on small screens/phones)
+                                </li>
+                                <li>
+                                Changed the system to use javascript for easier updates
+                                </li>
+                                <li>
+                                Added profile pictures (opional)
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        </ul>
+                        </li>
+                   </ul>
+                  <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	
+                    
+                     
+                    <li>
+                   Removed old pages that were not in use
+                    </li>
+                    </ul>   
+
+                <h3 align="center"> pictures </h3>
+                <a href="images/changeLog/3.8Points.png" data-lightbox="3point8m"><img src="images/changeLog/3.8Points_Thumbnail.jpg" width="auto" height="128"  alt=""/></a>
+                
+                
+         
+         </th>
+         </tr>
+         
+         
+         
+         
+         
+         
+         <!-- style="background-color:#B22628"-->
+          <tr style="background-color:#333333;">
+         <th>
+         3.7.5
+         </th>
+         <th>
+         9/5/2015
+         </th>
+         <th>
+         
+         
+         
+         <h3 id="text-center"> features </h3>
+                <ul align="left">
+                	
+                    
+                     
+                    <li>
+                   Changed the link layout on the constitution page on the desktop.
+                    </li>
+                 <li>
+               Added a download option for the costitution (pdf and word)
+                </li>
+                    </ul>
+                    
+                    
+                 <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	
+                    
+                     
+                    <li>
+                   Fixed the issues on the mobile version of the boardmembers page
+                    </li>
+                    </ul>   
+       
+       
+       		  <h3 align="center"> pictures </h3>
+                <a href="images/changeLog/3.7.5ConstDesktop.jpg" data-lightbox="3point7point5m"><img src="images/changeLog/3.7.5ConstDesktop.jpg" width="auto" height="128"  alt=""/></a>
+                <a href="images/changeLog/3.7.5Downloads.jpg" data-lightbox="3point7point5m"><img src="images/changeLog/3.7.5Downloads.jpg" width="auto" height="128"  alt=""/></a>
+               
+       
+       
+         
+         
+         </th>
+         </tr>
+         
+         
+         
+         
+         
+           <tr>
+         <th>
+         3.7.4
+         </th>
+         <th>
+         9/4/2015
+         </th>
+         <th>
+         
+         
+         
+         <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	
+                    
+                     
+                    <li>
+                   Fixed issues with the home page linking to the incorrect last meeting page
+                    </li>
+                     <li>
+                  Updated format on meeting notes pages
+                    </li>
+                 <li>
+               	Add new points chart to the points page
+                </li>
+                    </ul>
+                    
+                    
+                    
+       
+         
+         
+         </th>
+         </tr>
+         
+         
+         
+         
+         
+         
+         
+          <tr style="background-color:#333333;">
+         <th>
+         3.7.3
+         </th>
+         <th>
+         9/3/2015 - 23:21
+         </th>
+         <th>
+         
+         
+         
+         <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	
+                    
+                     
+                    <li>
+                   Fixed issues displaying last meeting info on mobile
+                    </li>
+                 <li>
+               fixed broken links on the mobile version of the last meeting page
+                </li>
+                    </ul>
+                    
+                    
+                    
+       
+         
+         
+         </th>
+         </tr>
+         
+         
+         
+         
+         
+           <tr>
+         <th>
+         3.7.2
+         </th>
+         <th>
+         9/3/2015 - 22:20
+         </th>
+         <th>
+         
+         
+         
+         <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	
+                    
+                     
+                    <li>
+                    Fixed locations of links on constitution page
+                    </li>
+                 <li>
+               Adjusted the size of the font on the home page for mobile
+                </li>
+                    </ul>
+                    
+                    
+                    
+          <h3 id="text-center"> Weekly Update </h3>
+                <ul align="left">
+         		<li>
+                Add meeting notes to the webstie
+                </li>
+                <li>
+                Update last anime and add lastweeks anime to the archive
+                </li>
+                <li>
+                Change the date on the homepage
+                </li>
+         </ul> 
+         
+         
+         </th>
+         </tr>
+         
+         
+         
+          <tr style="background-color:#333333;">
+         <th>
+         3.7.1
+         </th>
+         <th>
+         9/3/2015 - 17:00
+         </th>
+         <th>
+         
+         
+         
+         <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	
+                    
+                     
+                    <li>
+                    Fixed the bug for zooming in on the selection field on mobile safari
+                    </li>
+                 <li>
+               Adjusted the size and location of the 'back to top' button on mobile
+                </li>
+                    </ul>
+                    
+                    
+                    
+       
+         
+         
+         </th>
+         </tr>
+         
+         
+         
+         
+          <tr >
+         <th>
+         3.7 - Project Motion
+         </th>
+         <th>
+         9/3/2015  - 11:00 
+         </th>
+          <th>
+         
+         
+         
+         <h3> features </h3>
+            	<ul align="left">
+                <li>
+                   	  Add animation to hovering over links on menu bar
+                        </li>
+                         <li>
+                        Smoother scrolling to areas linked on same page
+                        </li>
+                        <li>
+                        Added a standard 'back to top' button on the pages that it needed it
+                        </li>
+                        <li>
+                        Add another optional background to the homepage
+                        </li>
+                        <li>
+                        Add picture below social media that is shown when hovering over icon
+                        </li>
+                         <li>
+                        Update Constitution to the new version
+                            <ul>
+                                <li>
+                                Add section links at top for easier and quicker navigation.
+                                </li>
+                            </ul>
+                        </li>
+                   </ul>
+                
+                
+                   <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	
+                    
+                     
+                    <li>
+                    General Bux Fixes
+                    </li>
+                    </ul>
+                
+               
+                
+                
+                <h3 align="center"> pictures </h3>
+                <a href="images/changeLog/3.7Const.jpg" data-lightbox="3point7m"><img src="images/changeLog/3.7Const.jpg" width="auto" height="128"  alt=""/></a>
+                <a href="images/changeLog/3.7Social.jpg" data-lightbox="3point7m"><img src="images/changeLog/3.7Social.jpg" width="auto" height="128"  alt=""/></a>
+                <a href="images/changeLog/3.7BackToTop.jpg" data-lightbox="3point7m"><img src="images/changeLog/3.7BackToTop.jpg" width="auto" height="128"  alt=""/></a>
+                
+         
+         </th>
+         </tr>
+         
+         
+         
+          <tr style="background-color:#333333;">
+         <th>
+         3.6.5
+         </th>
+         <th>
+         9/1/2015
+         </th>
+         <th>
+         
+         
+         
+         <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	
+                    
+                     
+                    <li>
+                    Update the board members page
+                    </li>
+                 <li>
+               Add missing screenshots to anime 
+                </li>
+                    </ul>
+                    
+                    
+                    
+          <h3 id="text-center"> Weekly Update </h3>
+                <ul align="left">
+         		<li>
+                Add meeting notes to the webstie
+                </li>
+                <li>
+                Update last anime and add lastweeks anime to the archive
+                </li>
+                <li>
+                Change the date on the homepage
+                </li>
+         </ul>
+         
+         
+         </th>
+         </tr>
+         
+         
+           <tr >
+         <th>
+         3.6.4
+         </th>
+         <th>
+         8/27/2015  
+         </th>
+         <th>
+         
+         
+         
+         <h3> features </h3>
+            	<ul align="left">
+                   	<li>
+                   		Updated the change log view on desktops 
+                  	</li>
+                   </ul>
+                
+                
+                  
+                
+               
+               
+                
+         
+         </th> 
+         </tr>
+         
+         
+         <tr style="background-color:#333333;">
+         <th>
+         3.6.3
+         </th>
+         <th>
+         8/26/2015
+         </th>
+         <th>
+         
+         
+         
+         <h3 id="text-center"> features </h3>
+                <ul align="left">
+                	
+                    
+                     
+                     <li>
+               Replaced the numbers on recommended anime page with stars 
+                </li>
+                    </ul>
+                    
+                    
+                    <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	
+                    
+                     
+                    <li>
+                    Updated the recommended anime picture on the anime page
+                    </li>
+                    <li>
+                    Improved detection of when you move your mouse off of the hovered menu bar (going down)
+                    </li>
+                    </ul>
+         
+         
+         
+                
+                <h3 align="center"> pictures </h3>
+                <a href="images/changeLog/3.6.3Stars.jpg" data-lightbox="3point6point3m"><img src="images/changeLog/3.6.3Stars_Thumbnail.jpg" width="auto" height="128"  alt=""/></a>
+               <!--  <a href="images/changeLog/3.6FAQ.jpg" data-lightbox="3point6"><img src="images/changeLog/3.6FAQ_Thumbnail.jpg" width="auto" height="128"  alt=""/></a>
+                <a href="images/changeLog/3.6AnimeSort.jpg" data-lightbox="3point6"><img src="images/changeLog/3.6AnimeSort_Thumbnail.jpg" width="auto" height="128"  alt=""/></a> -->
+         
+         
+         </th>
+         </tr>
+         
+         
+         
+         <tr>
+         <th>
+         3.6.2
+         </th>
+         <th>
+         8/22/2015
+         </th>
+         <th>
+         
+         
+         
+         <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	
+                    
+                     
+                    <li>
+                    Added more anime to the recommended anime page
+                    </li>
+                    </ul>
+         
+         
+         
+         
+         </th>
+         </tr>
+         
+         
+         
+         
+          <tr style="background-color:#333333;">
+         <th>
+         3.6.1
+         </th>
+         <th>
+         8/21/2015 - 23:15
+         </th>
+         <th>
+         
+         
+         
+         <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	
+                    
+                     
+                    <li>
+                    Fixed recommended anime page on mobile
+                    </li>
+                    <li>
+                    Fixed bugs with the on hover bar
+                    </li>
+                    </ul>
+         
+         
+         
+         
+         </th>
+         </tr>
+         
+         
+         
+         <tr>
+         <th>
+         3.6 The Desktop Update
+         </th>
+         <th>
+         8/21/2015 - 23:00  
+         </th>
+         <th>
+         
+         
+         
+         <h3> features </h3>
+            	<ul align="left">
+                   	<li>
+                   		Added a hover option to show the sub pages below the main menu when hovering over each of the tabs 
+                  	</li>
+                     <li>
+                        Update the look of the recommended anime page 
+                        	<ul>
+                            	<li>
+                                	Sorted anime in the recommended anime page by:
+                                    	<ul>
+                                        	<li>
+                                            rank from Anime-Planet Ascending
+                                            </li>
+                                            <li>
+                                            rank from Anime-Planet Descending
+                                            </li> 
+                                            <li>
+                                            A - Z
+                                            </li>
+                                            <li>
+                                            Z - A
+                                            </li>
+                                            <li>
+                                            2015 - 1992 
+                                            </li>
+                    		                 <li>
+                                            1992 - 2015
+                                            </li>
+                                         <li>
+                                           Num Of Episodes Ascending
+                                            </li>
+                                          <li>
+                                           Num Of Episodes Descending
+                                            </li>  
+                                        </ul>
+                            	</li>
+                                <li>
+                                	Switched to a card based system which added more information about the anime including
+                                    <ul>
+                                    	<li>
+                                        Rank
+                                        </li>
+                                        <li>
+                                        Number Of Episodes
+                                        </li>
+                                        <li>
+                                        Year
+                                        </li>
+                                        <li>
+                                        Genere
+                                        </li>
+                                        <li>
+                                        Screenshots
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                     </li>
+                     <li>
+                        Improve the look of the FAQ section in the comment card
+                     </li>
+                   </ul>
+                
+                
+               <!--    <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	
+                    
+                     
+                    <li>
+                    ---
+                    </li>
+                    </ul>
+                
+                -->
+                
+                
+                <h3 align="center"> pictures </h3>
+                <a href="images/changeLog/3.6RecommendedAnime.jpg" data-lightbox="3point6m"><img src="images/changeLog/3.6RecommendedAnime_Thumbnail.jpg" width="auto" height="128"  alt=""/></a>
+                <a href="images/changeLog/3.6FAQ.jpg" data-lightbox="3point6m"><img src="images/changeLog/3.6FAQ_Thumbnail.jpg" width="auto" height="128"  alt=""/></a>
+                <a href="images/changeLog/3.6AnimeSort.jpg" data-lightbox="3point6m"><img src="images/changeLog/3.6AnimeSort_Thumbnail.jpg" width="auto" height="128"  alt=""/></a>
+                
+         
+         </th>
+         </tr>
+         
+         
+         
+           <tr style="background-color:#333333;">
+         <th>
+         3.5.3
+         </th>
+         <th>
+         8/18/2015 - 22:22 
+         </th>
+         <th>
+         
+         
+         
+         <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	
+                    
+                     
+                    <li>
+                    seperated the ways to earn points and the ways to spend points in the table (on the points page)
+                    </li>
+                    </ul>
+         
+         
+         
+         
+         </th>
+         </tr>
+          
+          
+          
+          
+          
+          
+          <tr>
+         <th>
+         3.5.2
+         </th>
+         <th>
+         8/18/2015 - 20:55 
+         </th>
+         <th>
+         
+         
+         
+         <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	
+                    
+                     
+                    <li>
+                    Update the height of the mobile version of the footer bar
+                    </li>
+                    <li>
+                    Changed the size of the pictures in the feedback bar and changed the height
+                    </li>
+                    </ul>
+         
+         
+         
+         
+         </th>
+         </tr>
+         
+         <tr style="background-color:#333333;">
+         <th>
+         3.5.1
+         </th>
+         <th>
+         8/18/2015 - 19:28 
+         </th>
+         <th>
+         
+         
+         
+         <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	
+                    
+                     
+                    <li>
+                    Update the height of the mobile version of the anime page
+                    </li>
+                    <li>
+                    Fixed the issue where the date and meeting place were not showing up on the mobile version of the website.
+                    </li>
+                    </ul>
+         
+         
+         
+         
+         </th>
+         </tr>
+         
+         
+         
+         
+         
+         
+          <tr>
+         <th>
+         3.5 - The Mobile Update
+         </th>
+         <th>
+         8/18/2015 - 19:15
+         </th>
+         <th>
+         
+         
+         
+         <h3> features </h3>
+            	<ul align="left">
+                   	<li>
+                    Updated index page look on mobile devices for easier viewing
+                    </li>
+                    <li>
+                    Updated close icon for mobile bar
+                    </li>
+                    <li>
+                    Update footer for better viewing on mobile devices
+                    </li>
+                    <li>
+                    Update look of anime page on smaller screens
+                    </li>
+                    <li>
+                    Updated the look of the change log
+                    	<ul>
+                        	<li>
+                            Added pictures of the new features (if applicable)
+                            </li>
+                            <li>
+                            Cleaned up top area.
+                            </li>
+                            <li>
+                            Changed the background color of every other to help seperate versions
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                    Updated the previous anime page's link to the archive
+                    </li>
+                    <li>
+                    Added two galeries to the galleries page
+                    	<ul>
+                        	<li>
+                            Game Night 2015 and other
+                            </li>
+                            <li>
+                            New Board 2015 - 2016
+                            </li>
+                        </ul>
+                    </li>
+         		</ul>
+                
+                
+                  <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	
+                    
+                     
+                    <li>
+                    Fixed the variation of alpha values of the links on the side bar
+                    </li>
+                    <li>
+                    Update mobile version of points page to reflect changes to the main page
+                    </li>
+                    <li>
+                    Fixed the width of the comment card when displaying on smaller screens
+                    </li>
+                    <li>
+                    General bux fixes
+                    </li>
+                    
+                    </ul>
+                
+                
+                
+                 <h3 align="center"> pictures </h3>
+                <a href="images/changeLog/3.5IndexLook.jpg" data-lightbox="3point5m"><img src="images/changeLog/3.5IndexLook_Thumbnail.jpg" width="auto" height="128"  alt=""/></a>
+         		 <a href="images/changeLog/3.5AnimeLook.jpg" data-lightbox="3point5m"><img src="images/changeLog/3.5AnimeLook_Thumbnail.jpg" width="auto" height="128"  alt=""/></a>
+                  <a href="images/changeLog/3.5Footer.jpg" data-lightbox="3point5m"><img src="images/changeLog/3.5Footer_Thumbnail.jpg" width="auto" height="128"  alt=""/></a>
+                  <a href="images/changeLog/3.5Gallery.jpg" data-lightbox="3point5m"><img src="images/changeLog/3.5Gallery.jpg" width="auto" height="128"  alt=""/></a>
+         </th>
+         </tr>
+         
+         
+         
+         
+         
+         
+         
+         
+          <tr style="background-color:#333333;">
+         <th>
+         3.4
+         </th>
+         <th>
+         8/17/2015
+         </th>
+         <th>
+         
+         
+         
+         <h3> features </h3>
+            	<ul align="left">
+                   	<li>
+                   		Added more anime to the recommended anime picture on the main anime page
+                  	</li>
+                    <li>
+                    	Added a popup menu to the footer which can be used to submit feedback on the website either via email or form.
+                    </li>
+                    <li>
+                    Added an area to mark the point values and what they can be redeemed for.
+                    </li>
+                    <li>
+                Added links to Relevant YouTube videos on gallery pages.
+                </li>
+         		</ul>
+                
+                
+               <!--    <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	
+                    
+                     
+                    <li>
+                    ---
+                    </li>
+                    </ul>
+                
+                -->
+         
+         </th>
+         </tr>
+         
+         
+         
+         
+         
+         
+         
+         
+         
+          <tr >
+         <th>
+         3.3.1
+         </th>
+         <th>
+         8/15/2015 - 23:07
+         </th>
+         <th>
+         
+         
+         
+         <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	
+                    
+                     
+                    <li>
+                    slightly adjusted position of social media bars for the mobile version
+                    </li>
+                    <li>
+                    fixed scaling of the pictures on the about section when viewing on tablets
+                    </li>
+                    </ul>
+         
+         
+         
+         
+         </th>
+         </tr>
+         
+         
+         
+         
+         
+         
+         
+          
+           <tr style="background-color:#333333;">
+         <th>
+         3.3
+         </th>
+         <th>
+         8/15/2015 - 21:00
+         </th>
+         <th>
+         
+         
+         
+         <h3> features </h3>
+            	<ul align="left">
+                   	<li>
+                   		Changed the look of years on the gallery page 
+                  	</li>
+                  	<li>
+                   		Update look of social media page icons
+                        <ul>
+                            <li>
+                            Add instagram link to page
+                            </li>
+                        </ul>
+                    </li>
+                     <li>
+                    Update look and layout of the last meetings page
+                    </li>
+                    <li>
+                    Seperate a WIP version from the rest for better information on what i'm working on
+                    </li>
+         		</ul>
+                
+                
+               <!--    <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	
+                    
+                     
+                    <li>
+                    ---
+                    </li>
+                    </ul>
+                
+                -->
+         
+         </th>
+         </tr>
+         
+         
+         
+         
+          
+          
+           <tr>
+         <th>
+         3.2.3
+         </th>
+         <th>
+         8/14/2015
+         </th>
+         <th>
+         
+         
+         
+         <h3> features </h3>
+            	<ul align="left">
+                     <li>
+                	Added a link to the archive from the photo gallery page
+                	</li>
+         		</ul>
+                
+                
+                  <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	
+                    
+                     
+                    <li>
+                    fixed issues where the preview gallery width was not displaying correctly on mobile safari
+                    </li>
+                    <li>
+                    fixing issues with incorrect css code
+                    </li>
+                    <li>
+                    edit alpha values on the logo on the mobile navigation side bar
+                    </li>
+                    </ul>
+                
+                
+         
+         </th>
+         </tr>
+          
+          
+          
+          
+          
+          
+          <tr style="background-color:#333333;">
+         <th>
+         3.2.2
+         </th>
+         <th>
+         8/13/2015 - 23:37
+         </th>
+         <th>
+         
+         
+         
+         <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	
+                    
+                     
+                    <li>
+                    Fixed visual bug where the recommended anime page as well as the main anime page would not show up on mobile devices
+                    </li>
+                    <li>
+                    Fixed (all?) broken links on the mobile navigation side bar
+                    </li>
+                    </ul>
+         
+         
+         
+         
+         </th>
+         </tr>
+          
+          
+          
+          <tr>
+         <th>
+         3.2.1
+         </th>
+         <th>
+         8/13/2015 - 23:00
+         </th>
+         <th>
+         
+         
+         
+         <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	
+                    
+                     
+                    <li>
+                    Fixed some of the galleries not displaying correctly on small windows / mobile devices
+                    </li>
+                    </ul>
+         
+         
+         
+         
+         </th>
+         </tr>
+         
+         
+         
+          
+          
+           <tr style="background-color:#333333;">
+         <th>
+         3.2
+         </th>
+         <th>
+         8/13/2015 - 22:00
+         </th>
+         <th>
+         
+         
+         
+         <h3> features </h3>
+            	<ul align="left">
+                	 <li>
+                            Photo Gallery Page
+                            	<ul>
+                                    <li>
+                                    Changed layout of pages making it easier to add in new events
+                                    </li>
+                                    <li>
+                                    Adding missing galleries from last year.
+                                    </li>
+                            	</ul>
+               		 </li>
+                     <li>
+                	Added blur to the background of elements to make it easier to read <a href="http://caniuse.com/#feat=css-backdrop-filter">(although it is not supported in most web browsers)</a>
+                	</li>
+         		</ul>
+                
+                
+                  <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	
+                    
+                     
+                    <li>
+                    Adjusted older Gallery pages to make sure content fit on screen with the new content layout.
+                    </li>
+                    </ul>
+                
+                
+         
+         </th>
+         </tr>
+          
+          
+          
+          
+           <tr>
+         <th>
+         3.1.1
+         </th>
+         <th>
+         8/12/2015
+         </th>
+         <th>
+         
+         
+         
+         <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	
+                    
+                     
+                    <li>
+                    Fixed mobile view for events page (putting calender under upcoming events insted of next to it)
+                    </li>
+                    <li>
+                    Home page video loops less abruptly.
+                    </li>
+                    </ul>
+         
+         
+         
+         
+         </th>
+         </tr>
+          
+          
+          
+          
+          <tr style="background-color:#333333;">
+         <th>
+         3.1
+         </th>
+         <th>
+         8/10/2015
+         </th>
+         <th>
+         
+         
+         
+         <h3> features </h3>
+            	<ul align="left">
+                	<li>
+                    Redesign Event page 
+                    </li>
+                    <li>
+                    Added more anime to the Recommended Anime page. 
+                    </li>
+                    <li>
+                            Anime Party Archive
+                            	<ul>
+                                	<li>
+                                    Moved the info from the history page to the home page of the archive
+                                    </li>
+                                    <li>
+                                    Moved the previous anime from the main site to the archive
+                                    </li>
+                                </ul>
+                            </li>
+         		</ul>
+                
+                
+                
+                
+                <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	
+                    
+                     
+                    <li>
+                    Fixed a bug specific to mobile safari which the pictures on the about page were not the correct size. 
+                    </li>
+                    <li>
+                    Fixed the video on the front page from loading on mobile devices.
+                    </li>
+                    <li>
+                    Fixed issue on Internet Explorer where text on the about page was off of the page.
+                    </li>
+                    </ul>
+         
+         </th>
+         </tr>
+          
+          
+          
+          
+          <tr>
+         <th>
+         3.0.3
+         </th>
+         <th>
+         8/5/2015
+         </th>
+         <th>
+         
+         
+         
+         <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	
+                    
+                     
+                    <li>
+                    Fixed a bug specific to mobile safari which now shows a picture insted of a video for mobile to conserve data usage
+                    </li>
+                    <li>
+                    Links for the anime on the board members pages are correct and working
+                    </li>
+                    </ul>
+         
+         
+         
+         
+         </th>
+         </tr>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <tr style="background-color:#333333;">
+         <th>
+         3.0.2
+         </th>
+         <th>
+         8/3/2015
+         </th>
+         <th>
+         
+         
+         
+         <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	
+                    
+                     <li>
+                     The mobile Sidebar now reflects the updated desktop link bar.
+                     </li>
+                    <li>
+                    Added text to about page to improve mobile vewing.
+                    </li>
+                    </ul>
+         
+         
+         
+         
+         </th>
+         </tr>
+          
+          
+          
+          
+          
+          
+         <tr>
+         <th>
+         3.0.1
+         </th>
+         <th>
+         8/2/2015
+         </th>
+         <th>
+         
+         
+         
+         <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	
+                    <li>
+                    Replaced old g+ icon with twitter icon
+                    </li>
+                     <li>
+                    Fixed mobile display issues on about and board members pages
+                    </li>
+                    
+                    </ul>
+         
+         
+         
+         
+         </th>
+         </tr>
+         
+         
+        <tr style="background-color:#333333;"> 
+        	<th> 3.0</th>
+            <th> 8/1/2015 </th>
+            <th>
+            <h3> features </h3>
+            	<ul align="left">
+                	<li>
+                    Update to the logo (Designed by Hannah)
+                    </li>
+                    <li>
+                    Redesigned Pages
+                        <ul>
+                        	<li>
+                            General updates to backgrounds and height settings to allow for dynamic and easier to read text. 
+                            </li>
+                            <li>
+                            Home Page
+                            	 <ul>
+                                    <li>
+                                    Updated the look of the background
+                                    </li>
+                                    <li>
+                                    Simplified the message below the logo
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                            Board Members Page
+                                <ul>
+                                    <li>
+                                    Changed to current board members
+                                    </li>
+                                    <li>
+                                    Change layout of information
+                                    </li>
+                                </ul>
+                            </li>
+                            
+                            
+                            <li>
+                            About Page
+                            	<ul>
+                                	<li>
+                                    Moved the social media links to the social media page
+                                    </li>
+                                    <li>
+                                    Changed look of about page
+                                    </li>
+                                    <li>
+                                    Added more content to the page
+                                    </li>
+                                </ul>
+                            </li>
+                            
+                            <li>
+                            Comment Card Page
+                            	<ul>
+                                	<li>
+                                    Added a FAQ part with previous questions and answers
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        
+                    </li>
+                    <li>
+                    Added New Pages
+                    	<ul>
+                        	<li>
+                            Social Media Page
+                            
+                            	<ul>
+                                	<li>
+                                    Changed the google plus link to a twitter page
+                                    </li>
+                                    <li>
+                                    Added the Facebook page to the list of links
+                                    </li>
+                                </ul>
+                            
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                    The history page now links to the archive website and is renamed to 'archive'.
+                    </li>
+                    <li>
+                    <s>Added a known bugs column to the change log page.</s> (see 3.5)
+                    </li>
+                    
+                    
+                  <!--   <li>
+                    Added photo galleries from late 2014, which included:
+                    <ul>
+                    <li> Game Nights
+                    </li>
+                    <li> Halloween
+                    </li>
+                    <li> Cosplay Ball
+                    </li>
+                    </ul>
+                    </li> -->
+                    
+                    </ul> 
+                <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	<li>
+                    General bux fixes
+                    </li>
+                    <li>
+                    Updated system requirements for website (still just recommended though)
+                    </li>
+                    </ul>
+            </th>
+        </tr>
+        <tr>
+         <th>
+         </th>
+         <th>
+         </th>
+         <th>
+         <h1> 2014 - 2015 </h1>
+         </th>
+         </tr>
+         <tr> 
+        	<th> 2.0.4</th>
+            <th> 3/6/2015 </th>
+            <th>
+            <h3> features </h3>
+            	<ul align="left">
+                	<li>
+                    Facebook integration
+                    </li>
+                    </ul> 
+                <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	<li>
+                    Added more anime to the Recommended Anime page.
+                    </li>
+
+            </th>
+        </tr>
+        <tr style="background-color:#333333;">
+        	<th> 2.0.3</th>
+            <th> 2/12/2015 </th>
+            <th>
+            <h3> features </h3>
+            	<ul align="left">
+                	<li>
+                    Updated the Recommended Anime page
+                    </li>
+                    
+                
+                    
+                    </ul> 
+                <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                <li>
+                    Updated the board members page to reflect the new board.
+                    </li>
+                    <li>
+                    Small update to the points page, adding points from last semester
+                    </li>
+            </th>
+        </tr>
+        <tr> 
+        	<th> 2.0.2</th>
+            <th> 1/24/2015 </th>
+            <th>
+            <h3> features </h3>
+            	<ul align="left">
+                	<li>
+                    Added advisor information to website
+                    </li>
+                    <li>
+                    Updated the previous anime page (splitting into two semesters)
+                    </li>
+                    
+                    </ul> 
+                <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	<li>
+                    General bux fixes
+                    </li>
+                    </ul> 
+            </th>
+        </tr>
+        <tr style="background-color:#333333;">
+        	<th> 2.0.1</th>
+            <th> 8/14/2014 </th>
+            <th>
+           <!-- <h3> features </h3>
+            	<ul align="left">
+                	<li>
+                    Changed theme to new 2014 theme
+                    </li>
+                    
+                    </ul> -->
+                <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	<li>
+                    General mobile bux fixes involving the side menu.
+                    </li>
+                    </ul> 
+            </th>
+        </tr>
+        
+        <tr> 
+        	<th> 2.0</th>
+            <th> 8/13/2014 </th>
+            <th>
+            <h3> features </h3>
+            	<ul align="left">
+                	<li>
+                    Changed theme to new 2014 theme
+                    </li>
+                    <li>
+                    Re-designed multipul pages
+                    <ul>
+                    <li>
+                    Home page
+                    </li>
+                    <li>
+                    About page
+                    </li>
+                    <li>
+                    Board Members page
+                    </li>
+                    <li>
+                    Anime page
+                    </li>
+                    <li>
+                    Gallery page
+                    </li>
+                    <li>
+                    Points page
+                    </li>
+                    </ul>
+                    </li>
+                    <li>
+                    Added the archive website for stuff before 2012
+                    </li>
+                    </ul>
+            </th>
+        </tr>
+        <tr>
+        <th>
+        </th>
+        <th>
+        </th>
+        <th>
+        <h1> 2013 - 2014 </h1>
+        </th>
+        </tr>
+        <tr style="background-color:#333333;">
+        	<th> 1.3.2</th>
+            <th> 4/7/2014 </th>
+            <th>
+            <h3> features </h3>
+            	<ul  align="left">
+                	<li>
+                    Added gallery for 2014 events (B&amp;W Days and Fan Exhibition)
+                    </li>
+                    </ul>
+                <h3> bug fixes </h3>
+                <ul  align="left">
+                	<li>
+                    Updated some pages to the newer theme.
+                    </li>
+                    </ul> 
+            </th>
+        </tr>
+        <tr> 
+        	<th> 1.3.1</th>
+            <th> 3/13/2014 </th>
+            <th>
+            <h3> features </h3>
+            	<ul  align="left">
+                	<li>
+                    Put 4 four leaf clovers on the website Each are worth 25 points
+                    </li>
+                    </ul>
+
+            </th>
+        </tr>
+        <tr style="background-color:#333333;">
+        	<th> 1.3</th>
+            <th> 3/10/2014 </th>
+            <th>
+            <h3> features </h3>
+            	<ul  align="left">
+                	<li>
+                    Improved the layout of Anime page, seperating it into fall and spring
+                    </li>
+                    <li>
+                    Changed the layout of the gallery page to display the year on the left side of the picture inside of on top
+                    </li>
+                     <li>
+                    Changed the layout of previous meetings page.
+                    </li>
+                    <li>
+                    Added gallery for 2011 Cosplay Ball.
+                    </li>
+                    <li>
+                    Added a page for the upcoming Pokémon Tournament.
+                    </li>
+                    <li>
+                    Added a page for the upcoming Cosplay Ball.
+                    </li>
+                    </ul>
+
+            </th>
+        </tr>
+        <tr>
+        	<th> 1.2.2</th>
+            <th> 2/3/2014 </th>
+            <th >
+            <h3 > features </h3>
+            	<ul  align="left">
+                	<li>
+                    Changed theme to valentine's day theme.
+                    </li>
+                    </ul>
+
+            </th>
+        </tr>
+        <tr style="background-color:#333333;">
+        	<th> 1.2.1</th>
+            <th> 1/27/2014 </th>
+            <th >
+            <h3 > features </h3>
+            	<ul align="left">
+                	<li>
+                    Added a page for meeting notes (Previous Meetings)
+                    </li>
+                    </ul>
+            </th>
+        </tr>
+        <tr>
+        	<th> 1.2.1</th>
+            <th> 12/2/2013 </th>
+            <th >
+            <h3 > features </h3>
+            	<ul align="left">
+                	<li>
+                    Changed to a Winter theme.
+                    </li>
+                    <li>
+                     Added a gallery for  the Pokémon X and Y Tournament.
+                     </li>
+                    </ul>
+            </th>
+        </tr>
+         <tr style="background-color:#333333;">
+        	<th> 1.2</th>
+            <th> 11/25/2013 </th>
+            <th >
+            <h3 > features </h3>
+            	<ul align="left">
+                	<li>
+                    Added the points page to the main top bar.
+                    </li>
+                    <li>
+                    Moved the Gallery page to the events page under "past events".
+                    </li>
+                    <li>
+                    Added a Comment card section.
+                    </li>
+                    <li>
+                    Added a gallery for non video game night.
+                    </li>
+                </ul>
+                <h3 id="text-center"> bug fixes </h3>
+                <ul align="left">
+                	<li>
+                    Fixed height error with calendar on the homepage.
+                    </li>
+                    <li>
+                    Fixed the layout of the sub menu and the links at the top of the pages in the about section.
+                    </li>
+                    <li>
+                    Fixed the link on the sub pages of anime (pages 2 and 3).
+                    </li>
+                    <li>
+                    Fixed active link identifier on about tab when looking at board members.
+                    </li>
+                </ul>
+            </th>
+        </tr>
+        <tr>
+        	<th> 1.1</th>
+            <th> 11/18/2013 </th>
+            <th >
+            <h3 > features </h3>
+            	<ul align="left">
+                	<li>
+                    Added the ability to maximize and minimize the calendar on the homepage.
+                    </li>
+                	<li>
+                    Changed the way anime was listed, 3 per page for faster loading.
+                    </li>
+                    <li>
+                    Split up the gallery so it shows picture groups by year.
+                    </li>
+                    <li>
+                    Created a new page for each gallery.
+                    </li>
+                   <li>
+                    Added 2 galleries from 2011 (White day and Halloween)
+                    </li> 
+                    <li>
+                    Created a history page with minimal information with the intent to expand upon it later.
+                    </li>
+                    <li>
+                    Converted the constitution and Pokémon X and Y Tournament Rules to HTML files for easier viewing on computers that can not read .doc or .docx files.
+                    </li>
+                </ul>
+                <h3 > bug fixes </h3>
+                <ul align="left">
+                	<li>
+                    Fixed issue with constitution not loading properly from certain pages.
+                    </li>
+                    <li>
+                    Corrected some of the spelling errors
+                    </li>
+                    <li>
+                    Fixed active link identifier on the Pokémon X and Y Tournament page.
+                    </li>
+                    <li>
+                    Fixed the error of some pages not correctly displaying the color version on the picture when hovered over.
+                    </li>
+                </ul>
+            </th>
+        </tr>
+        <tr style="background-color:#333333;">
+         	<th> 1.0.3</th>
+            <th> 11/11/2013 </th>
+            <th >
+            <h3 > features </h3>
+            	<ul align="left">
+                	<li>
+                    Changed back to normal theme
+                    </li>
+                    <li>
+                    Added a page for the Pokémon X and Y Tournament.
+                    </li>
+                </ul>
+            </th>
+        </tr>
+        <tr>
+         	<th> 1.0.2</th>
+            <th> 10/7/2013 </th>
+            <th >
+            <h3 > features </h3>
+            	<ul align="left">
+                	<li>
+                    Changed to a Halloween theme
+                    </li>
+                    <li>
+                    Added a small calendar on the lower right corner of the homepage.
+                    </li>
+                    <li>
+                    Added the 2013 Game Night Gallery.
+                    </li>
+                    
+                </ul>
+            </th>
+        </tr>
+        <tr style="background-color:#333333;">
+         	<th> 1.0.1</th>
+            <th> 9/16/2013 </th>
+            <th >
+            <h3 > bug fixes </h3>
+            	<ul align="left">
+                	<li>
+                    Improve mobile format.
+                    </li>
+                    <li>
+                    Fixed loading errors in the gallery because of picture file size.
+                    </li>
+                    
+                </ul>
+            </th>
+        </tr>
+        <tr>
+        	<th>1.0.0</th>
+            <th>9/9/2013</th>
+            <th >
+            <h3 > features </h3>
+            	<ul align="left">
+                	<li>
+                    	Created a basic template.
+                    </li>                
+                    <li>
+                    	Created Home, Events, Gallery, Anime, About, Feature List, Board members and Banned Anime page.
+                    </li>
+                    <li>
+                    	Created top bar navigation and added footer.
+                    </li>
+                    <li>
+                    	Created a mobile theme.
+                    </li>
+                    <li>
+                    	Added 2012 Talent Show Gallery.
+                    </li>
+                </ul>
+            </th>
+         </tr>
+         
+        </table>
+         
+        </table>
+   
+ 
+         <table>
+ <tr height="50px">
+ <td>
+ </td>
+ </tr>
+ </table>
+ 
+    
+ </div>   
+
+<!-- InstanceEndEditable -->
+
+
+<a href="#" class="back-to-top" id="blurBG" style="color:#000000;">Back to Top</a>
+<div id="footerBar" class="footerBarHide">
+
+<h1 align="center"><a href="http://www.2point5dproductions.com">Designed by 2.5D Productions</a> </h1>
+<h1 align="center"><a href="ChangeLog.html">Last Updated 10/18/2015</a> </h1> <!-- dont forget desktop version -->
+<h3 align="center">If you want to leave feedback, please either send an email or fill out the form. Thanks!</h3>
+  <table width="100%" align="center" style="max-width:1200px;">
+    
+        <tr>
+        
+        	<th width="50%">
+            <a href="mailto:mjreishman1s@semo.edu"><img class="fade" src="Images/feedbackEmail.png" width="128" height="auto" alt="Email"/> </a>
+            </th>
+            <th width="50%">
+            <a href="CommentCard.html"><img class="fade" src="Images/feedbackForm.png" width="128" height="auto" alt="Form"/></a>
+            </th>
+        
+        </tr>
+    
+    </table>   
+</div>  
+
+
+
+
+<div id="feedbackBar" class="feedbackBarHide">
+ 	
+    
+    <h1 align="center"> If you want to leave feedback, please choose the option to send an email or fill out the form. </h1>
+    
+    <table width="100%" align="center" style="max-width:1200px;">
+    
+        <tr>
+        
+        	<th width="50%">
+            <a href="mailto:mjreishman1s@semo.edu"><img class="fade" src="Images/feedbackEmail.png" width="128" height="auto" alt="Email"/> </a>
+            </th>
+            <th width="50%">
+            <a href="CommentCard.html"><img class="fade" src="Images/feedbackForm.png" width="128" height="auto" alt="Form"/></a>
+            </th>
+        
+        </tr>
+    
+    </table>
+    
+    <h2 align="center"> Thank you for taking the time to submit feedback on the website </h2>
+	</div>	
+
+
+<div class="lowerBar blurBG">
+<p id="lowerBarMain" align="center"><a href="http://www.2point5dproductions.com">Designed by 2.5D Productions</a> | <a href="ChangeLog.html">Last Updated 10/18/2015</a> <!-- dont forget mobile version --> | <a class="show-feedbackBar" id="showFeedbackBar">Leave feedback on the website</a> <a class="hide-feedbackBar" id="hideFeedbackBar">Close feedback</a>
+</p>
+<p id="lowerBarMobile" align="center">
+<a id="showFooterBar" class="show-footerBar">Click For More Info</a><a id="hideFooterBar" class="hide-footerBar">Close Footer</a>
+</p>
+</div>
+</body>
+<!-- InstanceEnd --></html>

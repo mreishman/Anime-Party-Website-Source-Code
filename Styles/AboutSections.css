@@ -1,0 +1,130 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+section {
+box-sizing: border-box;
+height: 43vh;
+text-align: center;
+padding: 2vw;
+
+font-size:250%;
+
+align-items: center;
+justify-content: center;
+flex-direction: column;
+background-size: cover;
+-webkit-background-size:cover;
+-moz-background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: 50% 0px;
+
+
+
+
+}
+
+
+section:nth-of-type(even) {
+	border-top:#FFFFFF thin solid;
+	box-shadow: 0 0 15px #FFFFFF;
+	-webkit-box-shadow: 0 0 30 #FFFFFF;
+	-moz-box-shadow: 0 0 30 #FFFFFF;
+	border-bottom:#FFFFFF thin solid;
+
+}
+
+section:nth-of-type(1) {
+background-image: url(../Images/About_Pic.jpg);
+}
+
+section:nth-of-type(3) {
+background-image: url(../Images/About_Pic1.jpg);
+}
+
+
+section:nth-of-type(5) {
+background-image: url(../Images/Non_VideoGame_Night_2013/6.jpg);
+}
+
+section:nth-of-type(7) {
+background-image: url(../Images/Game_Night_2013/10.jpg);
+}
+
+section:nth-of-type(9) {
+background-image: url(../Images/About_Pic.jpg);
+}
+
+section:nth-of-type(10) {
+height: 120vh;
+}
+
+@media only screen and (max-width:800px) 
+{
+	
+section{
+	height: 60vh;
+	font-size:200%;
+	background-attachment:scroll;
+	background-repeat:repeat;
+	-webkit-background-size:c over;
+	-moz-background-size: cover;
+	background-size:cover;
+	
+	
+}
+
+
+
+	
+}
+
+
+@media only screen and (max-device-width:480px) and (-webkit-min-device-pixel-ratio: 1.5)
+{ 
+
+section{
+	height: 60vh;
+	font-size:200%;
+	min-height:1100px;
+	background-attachment:scroll;
+	background-repeat:repeat;
+	-webkit-background-size:cover;
+	-moz-background-size: cover;
+	background-size:cover;
+	
+}
+
+
+}
+
+@media only screen and (orientation: landscape) and (max-device-width:1024px) and (min-device-width:768px)
+{
+	section{
+	height: 60vh;
+	font-size:200%;
+	min-height:500px;
+	background-attachment:scroll;
+	background-repeat:repeat;
+	-webkit-background-size:cover;
+	-moz-background-size: cover;
+	background-size:cover;
+	
+}
+}
+
+@media only screen and (orientation: portrait) and (max-device-width:1024px) and (min-device-width:768px)
+{
+	section{
+	height: 40vh;
+	font-size:200%;
+	min-height:500px;
+	background-attachment:scroll;
+	background-repeat:repeat;
+	-webkit-background-size:cover;
+	-moz-background-size: cover;
+	background-size:cover;
+	
+}
+}

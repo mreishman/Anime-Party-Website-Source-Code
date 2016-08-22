@@ -7,6 +7,67 @@ overflow: -moz-scrollbars-vertical;
 overflow-y: scroll;
 }
 
+
+
+
+
+#paddingLeftDesktop
+{
+	
+	margin-left:160px;
+	
+}
+
+
+.paddingLeftDesktop
+{
+	
+	margin-left:160px;
+	
+}
+
+
+
+@font-face
+{
+	
+	font-family: thinFont;
+	src: url(../fonts/AlegreyaSans-Thin.ttf);
+	
+}
+
+#clockdiv{
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+}
+
+#clockdiv > div{
+    padding: 10px;
+    border-radius: 3px;
+    background: #111111;
+    display: inline-block;
+}
+
+#clockdiv div > span{
+    width: 120px;
+    height: 60px;
+    padding-top: 40px;
+    border-radius: 3px;
+    background: rgba(0,0,0,0.46);
+    display: inline-block;
+    font-family: thinFont;
+    font-size: 300%;
+}
+
+.smalltext{
+    padding-top: 5px;
+    font-size: 16px;
+}
+
 .hidePoints
 {
 
@@ -466,18 +527,18 @@ background-size: cover;
 
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
   .blurBG {
-    -webkit-backdrop-filter: blur(5px);
+    
+         -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
-     
   }
 }
 
 
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
   #blurBG {
-    -webkit-backdrop-filter: blur(5px);
+   
+         -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
-     
   }
 }
 
@@ -530,8 +591,9 @@ a:active {color: #FFF;} /*FFF*/
 #nav li a {
 		font-size: 16px;
 		display: block;
-		width: 150px;
-		height: 36px;
+		width: 160px;
+		height: 32px;
+		padding-top:16px;
 		text-align:center;
 		color: #FFFFFF; /*FFF*/
 
@@ -578,6 +640,7 @@ a:active {color: #FFF;} /*FFF*/
 }
 
 
+
 #upperBarCenterMobile
 {
 	width:90%;
@@ -591,12 +654,16 @@ a:active {color: #FFF;} /*FFF*/
 {
     position:absolute;
     display:block;
-    height:525px;
+    height:250px;
     width:600px;
-    left:50%;
+    /* left:50%;
     top:50%;
-    margin-top:-262px;
-    margin-left:-300px;
+    margin-top:-112px;
+    margin-left:-210px; */  /* -300 */
+	
+	bottom:10px;
+	right:10px;
+	
 	font-size:24px;
 	line-height:8px;    
 }
@@ -659,6 +726,7 @@ a:active {color: #FFF;} /*FFF*/
 	background-color:rgba(0,0,0,0.50);
 	z-index:20;
 	border-top:#FFFFFF thin solid;
+	display:none;
 	
 	  
 }
@@ -692,6 +760,7 @@ a:active {color: #FFF;} /*FFF*/
 	box-shadow: 0 0 15px #000033;
 	-webkit-box-shadow: 0 0 15 #000033;
 	-moz-box-shadow: 0 0 15 #000033;
+	display:none;
 	  
 }
 
@@ -788,11 +857,12 @@ a:active {color: #FFF;} /*FFF*/
 #mainContent
 {
 	position:absolute;
-	width:90%;
-	min-width:500px;
 	
-	top:10%;
-	left:5%;
+	
+	top:2%;
+	left:170px;
+	right:20px;
+	
 	/* overflow:auto; */
 		
 }
@@ -800,11 +870,11 @@ a:active {color: #FFF;} /*FFF*/
 #eventMain
 {
 	position:absolute;
-	width:90%;
-	min-width:500px;
 	
-	top:10%;
-	left:5%;
+	min-width:500px;
+	padding:1%;
+	
+	
 	/* overflow:auto; */
 		
 }
@@ -828,12 +898,12 @@ a:active {color: #FFF;} /*FFF*/
 #boardMain
 {
 	position:absolute;
-	width:90%;
+	
 	min-width:500px;
 	
 	
 	
-	left:5%;
+	
 	/* overflow:auto; */
 		
 }
@@ -944,19 +1014,33 @@ a:active {color: #FFF;} /*FFF*/
 	height: 100%;
 }
 
+
+#mainBar-scroll {
+	width: 160px;
+	position:fixed;
+	border-right-style:solid;
+	/* overflow: scroll!important; */
+	overflow-x: hidden!important;
+	-webkit-overflow-scroll: touch!important;	
+	height: 100%;
+	background-color:#999999;
+	background-color:#999999e6;
+}
+
+
 #LeftHeightIndex
 {
-	height:215px;
+	height:275px;
 	width:150px;	
 }
 #LeftHeightTwo
 {
-	height:110px;
+	height:150px;
 	width:150px;	
 }
 #width_logo
 {
-	width:300px;	
+	width:150px;	
 }
 #constBar
 {
@@ -964,7 +1048,7 @@ a:active {color: #FFF;} /*FFF*/
 }
 #LeftHeightLogo
 {
-	height:250px;
+	height:150px;
 	width:300px;	
 }
 
@@ -1160,6 +1244,23 @@ a:active {color: #FFF;} /*FFF*/
 	display:none;	
 }
 
+#paddingLeftDesktop
+{
+	
+	margin-left:5px;
+	
+}
+
+
+.paddingLeftDesktop
+{
+	
+	margin-left:5px;
+	
+}
+
+
+
 
 #mobileOnly
 {
@@ -1205,6 +1306,13 @@ a:active {color: #FFF;} /*FFF*/
 	#lowerBarMain
 {
 	display:none;	
+}
+
+.lowerBar
+{
+	
+display:block;	
+	
 }
 
 #lowerBarMobile
@@ -1268,9 +1376,22 @@ a:active {color: #FFF;} /*FFF*/
 {
     
 	min-width:20px;
+	display:block;
     
 	  
 }
+
+#paddingLeftDesktop
+{
+	
+	margin-left:0px;
+	
+}
+
+#mainBar-scroll {
+	display:none;
+}
+
 	
 #aboutMain
 {
@@ -1360,6 +1481,21 @@ div.sidebarRight
 	display:none;	
 }
 
+#paddingLeftDesktop
+{
+	
+	margin-left:5px;
+	
+}
+
+
+.paddingLeftDesktop
+{
+	
+	margin-left:5px;
+	
+}
+
 #mobileOnly
 {
 	display:inline;	
@@ -1415,6 +1551,13 @@ input, select, textarea {
 	#lowerBarMain
 {
 	display:none;	
+}
+
+.lowerBar
+{
+	
+display:block;	
+	
 }
 
 #lowerBarMobile
@@ -1507,8 +1650,20 @@ video#bgvid {
 {
     
 	min-width:20px;
+	display:block;
     
 	  
+}
+
+#paddingLeftDesktop
+{
+	
+	margin-left:0px;
+	
+}
+
+#mainBar-scroll {
+	display:none;
 }
 
 .upperBarBoard
@@ -1534,8 +1689,11 @@ video#bgvid {
 .upperBar	{
 
 	height:72px;
+	display:block;
 	
 }
+
+
 
 
 .nav-toggle {
@@ -1617,9 +1775,23 @@ body
 {
     
 	min-width:20px;
+	display:block;
     
 	  
 }
+
+#paddingLeftDesktop
+{
+	
+	margin-left:0px;
+	
+}
+
+
+		#mainBar-scroll {
+	display:none;
+}
+		
 		
 #aboutMain
 {
@@ -1688,6 +1860,21 @@ body
 	#desktopOnly
 {
 	display:none;	
+}
+
+#paddingLeftDesktop
+{
+	
+	margin-left:5px;
+	
+}
+
+
+.paddingLeftDesktop
+{
+	
+	margin-left:5px;
+	
 }
 
 #mobileOnly
@@ -1790,6 +1977,21 @@ body
 	#desktopOnly
 {
 	display:none;	
+}
+
+#paddingLeftDesktop
+{
+	
+	margin-left:5px;
+	
+}
+
+
+.paddingLeftDesktop
+{
+	
+	margin-left:5px;
+	
 }
 
 #mobileOnly

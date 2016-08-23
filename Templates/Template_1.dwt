@@ -299,7 +299,7 @@
                    				<td width="25px">
 								<!-- TemplateBeginEditable name="BoardMembers" --> <li> <!-- TemplateEndEditable -->
 				   				<img src="../Images/Next.png" height="20px" alt=""/>
-								
+								</li>
                   				 </td>
                    				<td width="135px" align="left">
 				   				Board Members
@@ -434,7 +434,9 @@
 							<table>
                    				<tr>
                    				<td width="25px">
-				   				<!--<img src="../Images/Next.png" height="20px" alt=""/>-->
+								<!-- TemplateBeginEditable name="Gallery" --> <li style="display:none;"> <!-- TemplateEndEditable -->
+				   				<img src="../Images/Next.png" height="20px" alt=""/>
+								</li>
                   				 </td>
                    				<td width="135px" align="left">
 				   				Gallery

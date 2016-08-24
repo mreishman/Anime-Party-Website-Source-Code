@@ -264,7 +264,7 @@
                    <table>
                    <tr>
                    <td width="25px">
-				   		<!-- TemplateBeginEditable name="Home" --> <li>  <!-- TemplateEndEditable -->  <img src="../Images/Next.png" height="20px" alt=""/>  </li>
+				   		<!-- TemplateBeginEditable name="Home" --> <li style="display:none;">  <!-- TemplateEndEditable -->  <img src="../Images/Next.png" height="20px" alt=""/>  </li>
                    </td>
                    <td width="135px" align="left">
 				   		Home
@@ -281,7 +281,7 @@
 								<table>
                    				<tr>
                    				<td width="25px">
-								<!-- TemplateBeginEditable name="About" -->  <li> <!-- TemplateEndEditable -->
+								<!-- TemplateBeginEditable name="About" -->  <li style="display:none;"> <!-- TemplateEndEditable -->
 				   				<img src="../Images/Next.png" height="20px" alt=""/>
 								</li>
                   				 </td>
@@ -297,7 +297,7 @@
 							 	<table>
                    				<tr>
                    				<td width="25px">
-								<!-- TemplateBeginEditable name="BoardMembers" --> <li> <!-- TemplateEndEditable -->
+								<!-- TemplateBeginEditable name="BoardMembers" --> <li style="display:none;"> <!-- TemplateEndEditable -->
 				   				<img src="../Images/Next.png" height="20px" alt=""/>
 								</li>
                   				 </td>
@@ -314,7 +314,7 @@
                    				<tr>
                    				<td width="25px">
 								<!-- TemplateBeginEditable name="SocialMedia" -->
-								<li>
+								<li style="display:none;">
 								<!-- TemplateEndEditable -->
 				   				<img src="../Images/Next.png" height="20px" alt=""/>
 								</li>
@@ -480,7 +480,9 @@
 					<table>
                    				<tr>
                    				<td width="25px">
-				   				<!--<img src="../Images/Next.png" height="20px" alt=""/>-->
+								<!-- TemplateBeginEditable name="FooterLink" --> <li style="display:none;"> <!-- TemplateEndEditable -->
+				   				<img src="../Images/Next.png" height="20px" alt=""/>
+								</li>
                   				 </td>
                    				<td width="135px" align="left">
 				   				Designed by 2.5D Productions

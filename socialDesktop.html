@@ -1,0 +1,513 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Social_Dekstop</title>
+<link rel="stylesheet" type="text/css" href="Styles/styles.css" media="screen" /> 
+<link rel="stylesheet" type="text/css" href="Styles/cssAnimations.css" media="screen" /> 
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script type="text/javascript" src="js/smoothscroll.js"></script>
+<script type="text/javascript" src="js/backToTop.js"></script>
+
+
+
+
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+</script>
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=238222576225355";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+<script type="text/javascript">
+
+
+
+
+
+	function MM_swapImgRestore() { //v3.0
+	  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+	}	
+	function MM_preloadImages() { //v3.0
+	  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+		var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+		if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+	}
+	function MM_findObj(n, d) { //v4.01
+	  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+		d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+	  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+	  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+	  if(!x && d.getElementById) x=d.getElementById(n); return x;
+	}
+
+	function MM_swapImage() { //v3.0
+	  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+	   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+	}
+
+    function hideClass()
+    {
+        document.getElementById("leftBar").className = "Hideblock";
+		document.getElementById("show").className = "show-sidebar";
+		document.getElementById("hide").className = "hide-sidebar";
+    }
+
+	function showClass()
+    {
+        document.getElementById("leftBar").className = "Showblock blurBG";
+		document.getElementById("show").className = "hide-sidebar";
+		document.getElementById("hide").className = "show-sidebar";
+		
+    }
+	
+	
+	
+	function showFeedbackBar()
+	{
+		document.getElementById("feedbackBar").className = "feedbackBar blurBG";
+		document.getElementById("showFeedbackBar").className = "hide-feedbackBar";
+		document.getElementById("hideFeedbackBar").className = "show-feedbackBar";	
+	}
+	
+	function hideFeedbackBar()
+	{
+		document.getElementById("feedbackBar").className = "feedbackBarHide";
+		document.getElementById("showFeedbackBar").className = "show-feedbackBar";
+		document.getElementById("hideFeedbackBar").className = "hide-feedbackBar";	
+	}
+	
+	
+	function showFooterBar()
+	{
+		document.getElementById("footerBar").className = "footerBarShow blurBG";
+		document.getElementById("showFooterBar").className = "hide-footerBar";
+		document.getElementById("hideFooterBar").className = "show-footerBar";	
+	}
+	
+	function hideFooterBar()
+	{
+		document.getElementById("footerBar").className = "footerBarHide";
+		document.getElementById("showFooterBar").className = "show-footerBar";
+		document.getElementById("hideFooterBar").className = "hide-footerBar";	
+	}
+	
+	function aboutHoverF()
+	{
+		
+		hideAnimation();
+		
+		
+		if(document.getElementById("activeAbout"))
+		{
+		
+		}
+		else
+		{
+			document.getElementById("aboutBar").className = "upperBarThree blurBG fade-in-25s";
+			document.getElementById("aboutBar").id = "aboutBarActive";
+		}
+		
+		//document.getElementById("animeBar").className = "footerBarHide";
+		//document.getElementById("eventsBar").className = "footerBarHide";
+		
+	}
+	
+	function animeHover()
+	{
+		
+		hideAnimation();
+		
+		
+		if(document.getElementById("activeAnime"))
+		{
+			
+		}
+		else
+		{
+			document.getElementById("animeBar").className = "upperBarThree blurBG fade-in-25s";
+			document.getElementById("animeBar").id = "animeBarActive";
+		}
+		
+		//document.getElementById("aboutBar").className = "footerBarHide fade-in-25s";
+		//document.getElementById("eventsBar").className = "footerBarHide fade-in-25s";
+		
+	}
+	
+	function eventsHover()
+	{
+		
+		hideAnimation();
+		
+		if(document.getElementById("eventsActive"))
+		{
+			
+		}
+		else
+		{
+			
+			document.getElementById("eventsBar").className = "upperBarThree blurBG fade-in-25s";
+			document.getElementById("eventsBar").id = "eventsBarActive";
+		}
+		
+		//document.getElementById("animeBar").className = "footerBarHide";
+		//document.getElementById("aboutBar").className = "footerBarHide";
+		
+		
+	}
+	function hideAnimation()
+	{
+	
+		var delay=480;
+		setTimeout(function(){hideAll();}, delay); 
+		if(document.getElementById("aboutBarActive"))
+		{
+			document.getElementById("aboutBarActive").className = "upperBarThree blurBG fade-out-25s";	
+			document.getElementById("aboutBarActive").id = "aboutBarDeActive";	
+			
+		}
+		if(document.getElementById("eventsBarActive"))
+		{
+			document.getElementById("eventsBarActive").className = "upperBarThree blurBG fade-out-25s";
+			document.getElementById("eventsBarActive").id = "eventsBarDeActive";	
+			
+		}
+		if(document.getElementById("animeBarActive"))
+		{
+			document.getElementById("animeBarActive").className = "upperBarThree blurBG fade-out-25s";
+			document.getElementById("animeBarActive").id = "animeBarDeActive";		
+			
+		}
+		
+		
+	}
+	
+	
+	function hideAll()
+	{
+		
+		if(document.getElementById("aboutBarDeActive"))
+		{
+			document.getElementById("aboutBarDeActive").className = "footerBarHide";
+			document.getElementById("aboutBarDeActive").id = "aboutBar";
+		}
+		if(document.getElementById("animeBarDeActive"))
+		{
+			document.getElementById("animeBarDeActive").className = "footerBarHide";
+			document.getElementById("animeBarDeActive").id = "animeBar";
+		}
+		if(document.getElementById("eventsBarDeActive"))
+		{
+			document.getElementById("eventsBarDeActive").className = "footerBarHide";
+			document.getElementById("eventsBarDeActive").id = "eventsBar";
+		}
+								
+	}
+	
+
+    window.onload = function()
+    {
+        document.getElementById("hide").addEventListener( 'click' , hideClass );
+		document.getElementById("show").addEventListener( 'click' , showClass );
+		
+		
+		document.getElementById("showFeedbackBar").addEventListener( 'click' , showFeedbackBar);
+		document.getElementById("hideFeedbackBar").addEventListener( 'click' , hideFeedbackBar);
+		
+		
+		document.getElementById("showFooterBar").addEventListener( 'click' , showFooterBar);
+		document.getElementById("hideFooterBar").addEventListener( 'click' , hideFooterBar);
+		
+		
+		document.getElementById("aboutHover").addEventListener('mouseover', aboutHoverF);	
+		document.getElementById("homeHover").addEventListener('mouseover', hideAnimation);
+		
+		document.getElementById("animeHover").addEventListener('mouseover', animeHover);
+		document.getElementById("eventsHover").addEventListener('mouseover', eventsHover);
+		document.getElementById("pointsHover").addEventListener('mouseover', hideAnimation);
+		
+		document.getElementById("hideBarE").addEventListener('mouseover', hideAnimation);
+		document.getElementById("hideBarAb").addEventListener('mouseover', hideAnimation);
+		document.getElementById("hideBarAn").addEventListener('mouseover', hideAnimation);
+		
+		if (document.getElementById("FacebookPageID"))  //check for about page
+		{
+			document.getElementById("FacebookPageID").addEventListener('mouseover',facebookPage);
+			document.getElementById("TwitterID").addEventListener('mouseover',twitterPage);
+			document.getElementById("YoutubeID").addEventListener('mouseover',youtubePage);
+			document.getElementById("instagramID").addEventListener('mouseover',instagramPage);
+			document.getElementById("facebookGroupID").addEventListener('mouseover',facebookGroup);
+		}
+		
+		if (document.getElementById("pointsDESClink")) //check for point page
+		{
+			
+			document.getElementById("pointsDESClink").addEventListener('click',showPointsASC);
+			document.getElementById("pointsASClink").addEventListener('click',showPointsDESC); 
+			document.getElementById("pointslink").addEventListener('click',showPointsDESC);
+			document.getElementById("pointsNameLink").addEventListener('click',showPointsNameDESC);  
+			document.getElementById("pointsNameAsclink").addEventListener('click',showPointsNameDESC);
+			document.getElementById("pointsNameDesclink").addEventListener('click',showPointsNameASC );
+		}
+		
+		
+    }
+	
+</script>
+
+
+
+
+
+<script type="text/javascript">
+
+
+	function facebookPage()
+	{	
+		document.getElementById("socialFacebookGroupID").className = "socialFacebookGroup2";
+		
+		
+		document.getElementById("socialTwitterID").className = "socialTwitter";	
+		document.getElementById("socialYoutubeID").className = "socialYoutube";
+		document.getElementById("socialInstagramID").className = "socialInstagram";
+		document.getElementById("sociaFacebookPageID").className = "sociaFacebookPage";
+		
+		
+		
+	}
+	function twitterPage()
+	{
+	
+		document.getElementById("socialTwitterID").className = "socialTwitter2";	
+		
+		
+		document.getElementById("socialFacebookGroupID").className = "socialFacebookGroup";
+		document.getElementById("socialYoutubeID").className = "socialYoutube";
+		document.getElementById("socialInstagramID").className = "socialInstagram";
+		document.getElementById("sociaFacebookPageID").className = "sociaFacebookPage";
+	}
+	function youtubePage()
+	{
+		
+		document.getElementById("socialYoutubeID").className = "socialYoutube2";
+		
+		
+		document.getElementById("socialFacebookGroupID").className = "socialFacebookGroup";
+		document.getElementById("socialTwitterID").className = "socialTwitter";	
+		document.getElementById("socialInstagramID").className = "socialInstagram";
+		document.getElementById("sociaFacebookPageID").className = "sociaFacebookPage";
+	}
+ 	function instagramPage()
+	{
+		
+		document.getElementById("socialInstagramID").className = "socialInstagram2";
+	
+		document.getElementById("socialFacebookGroupID").className = "socialFacebookGroup";
+		document.getElementById("socialTwitterID").className = "socialTwitter";	
+		document.getElementById("socialYoutubeID").className = "socialYoutube";
+		document.getElementById("sociaFacebookPageID").className = "sociaFacebookPage";
+	}
+	function facebookGroup()
+	{
+	
+		document.getElementById("sociaFacebookPageID").className = "sociaFacebookPage2";
+	
+	
+		document.getElementById("socialFacebookGroupID").className = "socialFacebookGroup";
+		document.getElementById("socialTwitterID").className = "socialTwitter";	
+		document.getElementById("socialYoutubeID").className = "socialYoutube";
+		document.getElementById("socialInstagramID").className = "socialInstagram";
+		
+	}
+</script>
+
+
+</head>
+
+<body>
+
+
+ <div id="aboutTable">
+    
+   
+       
+         
+         
+         
+         
+         
+         
+         
+         <table style="font-size:135%; position:absolute; bottom:0px;" width="100%" height="100%" align="center" cellpadding="0px" cellspacing="0px">
+          
+        
+         <tr style="max-height:500px;">
+            <th style="background-color:#3b5998; position:fixed; top:0px; width:20%; height:50%;" id="FacebookPageID" class="facebookGroup" width="20%">
+           
+             
+            <a href="https://www.facebook.com/groups/4872553564"  target="_blank"><img src="Images/Facebook.jpg" alt="Facebook" width="150" height="auto" style="padding-top:50%;" ></a></th>
+            <th style="background-color:#00aced; position:fixed; top:0px; width:20%; height:50%; left:20%;"  width="20%" id="TwitterID">
+            
+            
+            
+            <a href="https://twitter.com/animepartymo"  target="_blank"><img src="Images/twitter.jpg" alt="Twitter" width="150" height="auto" style="padding-top:50%;"></a> 
+             
+            </th>
+            <th style="background-color:#bb0000; position:fixed; top:0px; width:20%; height:50%; left:40%;"  width="20%" id="YoutubeID">
+              
+       	    <a href="https://www.youtube.com/channel/UCvIp-ePYQ_j6zfiT9XruI-Q" target="_blank"><img src="Images/youtube.jpg" alt="Youtube" width="150" height="auto" style="padding-top:50%;" ></a></th>
+            <th style="background-color:#517fa4; position:fixed; top:0px; width:20%; height:50%; left:60%;"  width="20%" id="instagramID">
+            <a href="https://instagram.com/animepartymo"><img src="Images/instagram.jpg" alt="instagram" width="150" height="auto" style="padding-top:50%;"></a>
+            </th>
+            
+            <th style="background-color:#3b5998; position:fixed; top:0px; width:20%; height:50%; left:80%;"  width="20%" id="facebookGroupID">
+            <a href="https://www.facebook.com/AnimePartyMO"  target="_blank"><img src="Images/Facebook.jpg" alt="Facebook" width="150" height="auto" style="padding-top:50%;" id="Facebook2"></a></th>
+        </tr> 
+        <tr >
+            <th style="position: fixed; top: 50%; width: 20%; height: 50%;">
+            	<table width="20.1%" height="50%" cellpadding="0" cellspacing="0" style="position: fixed;
+    top: 50%;
+    z-index: 3;	" >
+                 <tr>
+                <th style="text-shadow: 2px 2px #000000;"><a href="https://www.facebook.com/groups/4872553564"  target="_blank"><h3> Facebook Group</h3> </a>
+           		</th>
+                </tr>
+                </table>
+            	<table width="20.1%" height="50%" cellpadding="0" cellspacing="0" id="socialFacebookGroupID" class="socialFacebookGroup">
+                 <tr>
+                <th style=" background-color:#3b5998;"> 
+           		</th>
+                </tr>
+                </table>
+                <table width="100%" height="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                <th style=" background-image:url(Images/Social1.jpg); background-size:cover; background-position: center top; ">
+           		</th>
+                </tr>
+                </table>
+            </th>
+            <th style="position: fixed; top: 50%; width: 20%; height: 50%; left:20%;">
+            <table width="20.1%" height="50%" cellpadding="0" cellspacing="0" style="position: fixed;
+    top: 50%;
+    z-index: 3;	" >
+                 <tr>
+                <th style="text-shadow: 2px 2px #000000;"><a href="https://twitter.com/animepartymo"  target="_blank"><h3> Twitter</h3> </a>
+           		</th>
+                </tr>
+                </table>
+            	<table width="20.1%" height="50%" cellpadding="0" cellspacing="0" id="socialTwitterID" class="socialTwitter">
+                 <tr>
+                <th style=" background-color:#00aced; "> 
+           		</th>
+                </tr>
+                </table>
+                <table width="100%" height="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                <th style=" background-image:url(Images/Social2.jpg); background-size:cover; background-position: center top; ">
+           		</th>
+                </tr>
+                </table>
+            </th>
+            
+            <th style="position: fixed; top: 50%; width: 20%; height: 50%; left:40%;">
+            <table width="20.1%" height="50%" cellpadding="0" cellspacing="0" style="position: fixed;
+    top: 50%;
+    z-index: 3;	" >
+                 <tr>
+                <th style="text-shadow: 2px 2px #000000;"><a href="https://www.youtube.com/channel/UCvIp-ePYQ_j6zfiT9XruI-Q" target="_blank"><h3>Youtube</h3> </a>
+           		</th>
+                </tr>
+                </table>
+            	<table width="20.1%" height="50%" cellpadding="0" cellspacing="0" id="socialYoutubeID" class="socialYoutube">
+                 <tr>
+                <th style=" background-color:#bb0000; "> 
+           		</th>
+                </tr>
+                </table>
+                <table width="100%" height="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                <th style=" background-image:url(Images/Social3.jpg); background-size:cover; background-position: center top; ">
+           		</th>
+                </tr>
+                </table>
+            </th>
+            
+            <th style="position: fixed; top: 50%; width: 20%; height: 50%; left:60%;">
+            <table width="20.1%" height="50%" cellpadding="0" cellspacing="0" style="position: fixed;
+    top: 50%;
+    z-index: 3;	" >
+                 <tr>
+                <th style="text-shadow: 2px 2px #000000;"> <a href="https://instagram.com/animepartymo"> <h3>Instagram </h3></a>
+           		</th>
+                </tr>
+                </table>
+            	<table width="20.1%" height="50%" cellpadding="0" cellspacing="0" id="socialInstagramID" class="socialInstagram">
+                 <tr>
+                <th style=" background-color:#517fa4; "> 
+           		</th>
+                </tr>
+                </table>
+                <table width="100%" height="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                <th style=" background-image:url(Images/Social4.jpg); background-size:cover; background-position: center top; ">
+           		</th>
+                </tr>
+                </table>
+            </th>
+            <th style="position: fixed; top: 50%; width: 20%; height: 50%; left:80%;"> 
+            <table width="20.1%" height="50%" cellpadding="0" cellspacing="0" style="position: fixed;
+    top: 50%;
+    z-index: 3;	" >
+                 <tr>
+                <th style="text-shadow: 2px 2px #000000;">  <a href="https://www.facebook.com/AnimePartyMO"  target="_blank"> <h3>Facebook Page</h3> </a>
+           		</th>
+                </tr>
+                </table>
+            	<table width="20.1%" height="50%" cellpadding="0" cellspacing="0" id="sociaFacebookPageID" class="sociaFacebookPage">
+                 <tr>
+                <th style=" background-color:#3b5998; "> 
+           		</th>
+                </tr>
+                </table>
+                <table width="100%" height="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                <th style=" background-image:url(Images/Social1.jpg); background-size:cover; background-position: center top;">
+           		</th>
+                </tr>
+                </table>
+            </th>
+        </tr>
+        </table>
+          
+        </div>
+		
+		
+		
+</body>
+</html>

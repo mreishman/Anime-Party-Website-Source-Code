@@ -14,7 +14,7 @@ overflow-y: scroll;
 #paddingLeftDesktop
 {
 	
-	margin-left:160px;
+	padding-left:170px;
 	
 }
 
@@ -22,7 +22,7 @@ overflow-y: scroll;
 .paddingLeftDesktop
 {
 	
-	margin-left:160px;
+	margin-left:170px;
 	
 }
 
@@ -869,7 +869,7 @@ a:active {color: #FFF;} /*FFF*/
 
 #eventMain
 {
-	position:absolute;
+	
 	
 	min-width:500px;
 	padding:1%;

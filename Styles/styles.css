@@ -1243,6 +1243,20 @@ a:active {color: #FFF;} /*FFF*/
 {
 	display:none;	
 }
+#paddingLeftDesktop
+{
+	
+	padding-left:5px;
+	
+}
+
+#paddingLeftDesktop
+{
+	
+	padding-left:5px;
+	
+}
+
 
 #paddingLeftDesktop
 {
@@ -1479,6 +1493,13 @@ div.sidebarRight
 #desktopOnly
 {
 	display:none;	
+}
+
+#paddingLeftDesktop
+{
+	
+	padding-left:5px;
+	
 }
 
 #paddingLeftDesktop
@@ -1865,6 +1886,13 @@ body
 #paddingLeftDesktop
 {
 	
+	padding-left:5px;
+	
+}
+
+#paddingLeftDesktop
+{
+	
 	margin-left:5px;
 	
 }
@@ -1977,6 +2005,13 @@ body
 	#desktopOnly
 {
 	display:none;	
+}
+
+#paddingLeftDesktop
+{
+	
+	padding-left:5px;
+	
 }
 
 #paddingLeftDesktop

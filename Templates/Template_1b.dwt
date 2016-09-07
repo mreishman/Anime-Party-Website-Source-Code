@@ -152,7 +152,7 @@
                    <table>
                    <tr>
                    <td width="25px">
-				   		<!-- InstanceBeginEditable name="Home" --> <li> <!-- InstanceEndEditable -->  <img src="../Images/Next.png" height="20px" alt=""/>  </li>
+				   		<!-- InstanceBeginEditable name="Home" --> <li style="display:none;"> <!-- InstanceEndEditable -->  <img src="../Images/Next.png" height="20px" alt=""/>  </li>
                    </td>
                    <td width="135px" align="left">
 				   		Home
@@ -169,7 +169,7 @@
 								<table>
                    				<tr>
                    				<td width="25px">
-								<!-- InstanceBeginEditable name="About" --> <li> <!-- InstanceEndEditable -->
+								<!-- InstanceBeginEditable name="About" --><li style="display:none;"> <!-- InstanceEndEditable -->
 				   				<img src="../Images/Next.png" height="20px" alt=""/>
 								</li>
                   				 </td>
@@ -185,8 +185,7 @@
 							 	<table>
                    				<tr>
                    				<td width="25px">
-								<!-- InstanceBeginEditable name="BoardMembers" --> <li>
-				   				<img src="../Images/Next.png" height="20px" alt=""/>
+								<!-- InstanceBeginEditable name="BoardMembers" --> <li style="display:none;">
 								<!-- InstanceEndEditable -->
 				   				<img src="../Images/Next.png" height="20px" alt=""/>
 								</li>
@@ -204,7 +203,7 @@
                    				<tr>
                    				<td width="25px">
 								<!-- InstanceBeginEditable name="SocialMedia" -->
-								<li>
+								<li style="display:none;">
 								<!-- InstanceEndEditable -->
 				   				<img src="../Images/Next.png" height="20px" alt=""/>
 								</li>
@@ -277,7 +276,7 @@
 							<table>
                    				<tr>
                    				<td width="25px">
-								<!-- InstanceBeginEditable name="Anime" --> <li> <!-- InstanceEndEditable -->
+								<!-- InstanceBeginEditable name="Anime" --> <li style="display:none;"> <!-- InstanceEndEditable -->
 				   				<img src="../Images/Next.png" height="20px" alt=""/>
 								</li>
                   				 </td>
@@ -326,7 +325,7 @@
 							<table>
                    				<tr>
                    				<td width="25px">
-								<!-- InstanceBeginEditable name="Events" --> <li class="active" id="eventsActive"> <!-- InstanceEndEditable -->
+								<!-- InstanceBeginEditable name="Events" --> <li style="display:none;"><!-- InstanceEndEditable -->
 				   				<img src="../Images/Next.png" height="20px" alt=""/>
 								</li>
                   				 </td>
@@ -356,7 +355,9 @@
 							<table>
                    				<tr>
                    				<td width="25px">
-				   				<!--<img src="../Images/Next.png" height="20px" alt=""/>-->
+								<!-- InstanceBeginEditable name="lastMeeting" --> <li> <!-- InstanceEndEditable -->
+				   				<img src="../Images/Next.png" height="20px" alt=""/>
+								</li>
                   				 </td>
                    				<td width="135px" align="left">
 				   				Past Meetings
@@ -371,7 +372,7 @@
 					<table>
                    				<tr>
                    				<td width="25px">
-								 <!-- InstanceBeginEditable name="Points" --> <li> <!-- InstanceEndEditable -->
+								 <!-- InstanceBeginEditable name="Points" --> <li style="display:none;"> <!-- InstanceEndEditable -->
 				   				<img src="../Images/Next.png" height="20px" alt=""/>
 								</li>
                   				 </td>
@@ -550,21 +551,21 @@
             	<ul id="minTable">
                 	<!-- TemplateBeginEditable name="82715Active" -->
 					<li> <!-- TemplateEndEditable --> 
-                    	<a href="../prevMeetings/2015_8_27.html"> 8/27/15 </a>
+                    	<a href="../prevMeetings/2015_8_27.html"> 8/25/16 </a>
                     </li>
 					<!-- TemplateBeginEditable name="9315Active" -->
                     <li><!-- TemplateEndEditable --> 
-                    	<a href="../prevMeetings/2015_9_3.html">9/3/15</a>
+                    	<a href="../prevMeetings/2015_9_3.html">9/1/16</a>
                     </li>
                      
                     <!-- TemplateBeginEditable name="91015Active" -->
                     <li><!-- TemplateEndEditable --> 
-                    	<a href="../prevMeetings/2015_9_10.html">9/10/15</a>
+                    	<a href="../prevMeetings/2015_9_10.html">9/8/16</a>
                     </li>
                     
                     <!-- TemplateBeginEditable name="91715Active" -->
                     <li><!-- TemplateEndEditable --> 
-                    	<a href="../prevMeetings/lastMeeting.html">9/17/15</a>
+                    	<a href="../prevMeetings/lastMeeting.html">9/15/16</a>
                     </li>
                     
                 </ul>
@@ -597,10 +598,10 @@
             	
                 <select onchange="location = this.options[this.selectedIndex].value;" style="min-width:70%">
                 	<option>Please select a date</option>
-                    <option value="../prevMeetings/2015_8_27.html">8/27/15</option>
-                  <option value="../prevMeetings/2015_9_3.html">9/3/15</option>
-                   <option value="../prevMeetings/2015_9_10.html">9/10/15</option>
-                	<option value="../prevMeetings/lastMeeting.html">9/17/15</option>
+                    <option value="../prevMeetings/2015_8_27.html">8/25/16</option>
+                  <option value="../prevMeetings/2015_9_3.html">9/1/16</option>
+                   <option value="../prevMeetings/2015_9_10.html">9/8/16</option>
+                	<option value="../prevMeetings/lastMeeting.html">9/15/16</option>
                 </select>
                 
             </th>

@@ -1107,17 +1107,9 @@ a:active {color: #FFF;} /*FFF*/
 		width:300px;	
 	}
 	
-	div#scrollable {
-    overflow-y: scroll;
-	height: 85%;
-	}
 	
-	.aboutInfoRight
-	{
 	
-		display:none;	
-		
-	}
+	
 	#mobilePoints
 	{
 	
@@ -1158,18 +1150,9 @@ a:active {color: #FFF;} /*FFF*/
 		width:300px;	
 	}
 	
-	div#scrollable {
-    overflow-y: scroll;
-	height: 85%;
-	}
 	
 	
-	.aboutInfoRight
-	{
 	
-		display:none;	
-		
-	}
 	#mobilePoints
 	{
 	

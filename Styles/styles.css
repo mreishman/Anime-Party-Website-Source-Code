@@ -1005,7 +1005,7 @@ a:active {color: #FFF;} /*FFF*/
 }
 
 #leftBar-scroll {
-	width: 300px;
+	width: 320px;
 	margin-left:auto;
 	margin-right:auto;
 	/* overflow: scroll!important; */
@@ -1031,25 +1031,29 @@ a:active {color: #FFF;} /*FFF*/
 #LeftHeightIndex
 {
 	height:275px;
-	width:150px;	
+	width:160px;	
 }
 #LeftHeightTwo
 {
 	height:150px;
-	width:150px;	
+	width:160px;	
 }
 #width_logo
 {
 	width:150px;	
 }
+#width_logoTwo
+{
+	width:320px;	
+}
 #constBar
 {
-	height:38px;	
+	height:54px;	
 }
 #LeftHeightLogo
 {
-	height:150px;
-	width:300px;	
+	height:280px;
+	width:320px;	
 }
 
 #recAnimeBig
@@ -1629,8 +1633,8 @@ video#bgvid {
 #LeftHeightLogo
 {
 	padding-top:10px;
-	height:350px;
-	width:300px;	
+	height:560px;
+	width:600px;	
 }
 #LeftHeightIndex
 {
@@ -1747,7 +1751,7 @@ video#bgvid {
 }
 #leftBar-scroll {
 	
-	width:600px;
+	width:640px;
 	
 		
 }
@@ -1766,7 +1770,7 @@ video#bgvid {
 }
 #constBar
 {
-	height:76px;	
+	height:110px;	
 }
 
 

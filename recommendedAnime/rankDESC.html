@@ -92,117 +92,12 @@
 		document.getElementById("hideFooterBar").className = "hide-footerBar";	
 	}
 	
-	function aboutHoverF()
-	{
-		
-		hideAnimation();
-		
-		
-		if(document.getElementById("activeAbout"))
-		{
-		
-		}
-		else
-		{
-			document.getElementById("aboutBar").className = "upperBarThree blurBG fade-in-25s";
-			document.getElementById("aboutBar").id = "aboutBarActive";
-		}
-		
-		//document.getElementById("animeBar").className = "footerBarHide";
-		//document.getElementById("eventsBar").className = "footerBarHide";
-		
-	}
-	
-	function animeHover()
-	{
-		
-		hideAnimation();
-		
-		
-		if(document.getElementById("activeAnime"))
-		{
-			
-		}
-		else
-		{
-			document.getElementById("animeBar").className = "upperBarThree blurBG fade-in-25s";
-			document.getElementById("animeBar").id = "animeBarActive";
-		}
-		
-		//document.getElementById("aboutBar").className = "footerBarHide fade-in-25s";
-		//document.getElementById("eventsBar").className = "footerBarHide fade-in-25s";
-		
-	}
-	
-	function eventsHover()
-	{
-		
-		hideAnimation();
-		
-		if(document.getElementById("eventsActive"))
-		{
-			
-		}
-		else
-		{
-			
-			document.getElementById("eventsBar").className = "upperBarThree blurBG fade-in-25s";
-			document.getElementById("eventsBar").id = "eventsBarActive";
-		}
-		
-		//document.getElementById("animeBar").className = "footerBarHide";
-		//document.getElementById("aboutBar").className = "footerBarHide";
-		
-		
-	}
-	function hideAnimation()
-	{
-	
-		var delay=480;
-		setTimeout(function(){hideAll();}, delay); 
-		if(document.getElementById("aboutBarActive"))
-		{
-			document.getElementById("aboutBarActive").className = "upperBarThree blurBG fade-out-25s";	
-			document.getElementById("aboutBarActive").id = "aboutBarDeActive";	
-			
-		}
-		if(document.getElementById("eventsBarActive"))
-		{
-			document.getElementById("eventsBarActive").className = "upperBarThree blurBG fade-out-25s";
-			document.getElementById("eventsBarActive").id = "eventsBarDeActive";	
-			
-		}
-		if(document.getElementById("animeBarActive"))
-		{
-			document.getElementById("animeBarActive").className = "upperBarThree blurBG fade-out-25s";
-			document.getElementById("animeBarActive").id = "animeBarDeActive";		
-			
-		}
-		
-		
-	}
 	
 	
-	function hideAll()
-	{
-		
-		if(document.getElementById("aboutBarDeActive"))
-		{
-			document.getElementById("aboutBarDeActive").className = "footerBarHide";
-			document.getElementById("aboutBarDeActive").id = "aboutBar";
-		}
-		if(document.getElementById("animeBarDeActive"))
-		{
-			document.getElementById("animeBarDeActive").className = "footerBarHide";
-			document.getElementById("animeBarDeActive").id = "animeBar";
-		}
-		if(document.getElementById("eventsBarDeActive"))
-		{
-			document.getElementById("eventsBarDeActive").className = "footerBarHide";
-			document.getElementById("eventsBarDeActive").id = "eventsBar";
-		}
-								
-	}
+	
+	
+	
+	
 	
 
     window.onload = function()
@@ -219,16 +114,7 @@
 		document.getElementById("hideFooterBar").addEventListener( 'click' , hideFooterBar);
 		
 		
-		document.getElementById("aboutHover").addEventListener('mouseover', aboutHoverF);	
-		document.getElementById("homeHover").addEventListener('mouseover', hideAnimation);
 		
-		document.getElementById("animeHover").addEventListener('mouseover', animeHover);
-		document.getElementById("eventsHover").addEventListener('mouseover', eventsHover);
-		document.getElementById("pointsHover").addEventListener('mouseover', hideAnimation);
-		
-		document.getElementById("hideBarE").addEventListener('mouseover', hideAnimation);
-		document.getElementById("hideBarAb").addEventListener('mouseover', hideAnimation);
-		document.getElementById("hideBarAn").addEventListener('mouseover', hideAnimation);
 		
 		if (document.getElementById("FacebookPageID"))  //check for about page
 		{
@@ -259,20 +145,279 @@
 <!-- InstanceBeginEditable name="BodyTag" --> <body>
 
 <!-- InstanceEndEditable -->
-
-<div class="upperBar blurBG">
-
-<div id="upperBarCenter">
+<div id="mainBar-scroll" class="blurBG">
 <ul id="nav">
-
-                   <!-- InstanceBeginEditable name="Home" --> <li> <!-- InstanceEndEditable --><a href="../Index.html" id="homeHover" >Home</a></li>
-                   <!-- InstanceBeginEditable name="About" --> <li> <!-- InstanceEndEditable --><a href="../About.html" id="aboutHover">About</a> </li>
-                   <!-- InstanceBeginEditable name="Anime" --> <li class="active" id="activeAnime"> <!-- InstanceEndEditable --><a href="../Anime.html" id="animeHover" >Anime</a></li>
-                   <!-- InstanceBeginEditable name="Events" --> <li> <!-- InstanceEndEditable --><a href="../Events.html" id="eventsHover" >Events</a></li>
-                   <!-- InstanceBeginEditable name="Points" --> <li> <!-- InstanceEndEditable --><a href="../Points.html" id="pointsHover" >Points</a></li>
+					<li id="LeftHeightLogo"> <a href="../Index.html"><img src="../Images/Logo_2016-2017.png" id="width_logo" height="auto" alt=""/></a></li>
+                   <li class="activeSub"> 
+                   <a href="../Index.html">
+                   <table>
+                   <tr>
+                   <td width="25px">
+				   		<!-- InstanceBeginEditable name="Home" --> <li style="display:none;"> <!-- InstanceEndEditable -->  <img src="../Images/Next.png" height="20px" alt=""/>  </li>
+                   </td>
+                   <td width="135px" align="left">
+				   		Home
+                   </td>
+                   </tr>
+                   </table>
+				   </a>
+                   </li>
+                    
+                    <li id="LeftHeightIndex">
+                    <ul id="nav">
+                        <li class="activeSub">
+                        		<a href="../About.html">
+								<table>
+                   				<tr>
+                   				<td width="25px">
+								<!-- InstanceBeginEditable name="About" --> <li style="display:none;"><!-- InstanceEndEditable -->
+				   				<img src="../Images/Next.png" height="20px" alt=""/>
+								</li>
+                  				 </td>
+                   				<td width="135px" align="left">
+				   				About
+                  				 </td>
+                  				 </tr>
+                   				</table>
+								</a>
+                        </li>
+                        <li class="navSub">
+                       		 <a href="../boardMembers.html">
+							 	<table>
+                   				<tr>
+                   				<td width="25px">
+								<!-- InstanceBeginEditable name="BoardMembers" --> <li style="display:none;">
+								<!-- InstanceEndEditable -->
+				   				<img src="../Images/Next.png" height="20px" alt=""/>
+								</li>
+                  				 </td>
+                   				<td width="135px" align="left">
+				   				Board Members
+                  				 </td>
+                  				 </tr>
+                   				</table>
+								</a> 
+                        </li>
+                        <li class="navSub">
+                        		<a href="../SocialMedia.html">
+								<table>
+                   				<tr>
+                   				<td width="25px">
+								<!-- InstanceBeginEditable name="SocialMedia" -->
+								<li style="display:none;">
+								<!-- InstanceEndEditable -->
+				   				<img src="../Images/Next.png" height="20px" alt=""/>
+								</li>
+                  				 </td>
+                   				<td width="135px" align="left">
+				   				Social Media
+                  				 </td>
+                  				 </tr>
+                   				</table>
+								</a>
+                        </li>
+                        <li class="navSub" id="constBar">
+                       		 <a href="../Constitution.html">
+							 <table>
+                   				<tr>
+                   				<td width="25px">
+								<!-- InstanceBeginEditable name="Constitution" --> 
+								<li style="display:none;">
+								<!-- InstanceEndEditable -->
+				   				<img src="../Images/Next.png" height="20px" alt=""/>
+								</li>
+                  				 </td>
+                   				<td width="135px" align="left">
+				   				Constitution
+                  				 </td>
+                  				 </tr>
+                   				</table>
+								</a> 
+                        </li>
+                        <li class="navSub">
+                       		 <a href="../Archive/index.html">
+							 <table>
+                   				<tr>
+                   				<td width="25px">
+				   				<!--<img src="../Images/Next.png" height="20px" alt=""/>-->
+                  				 </td>
+                   				<td width="135px" align="left">
+				   				Archive
+                  				 </td>
+                  				 </tr>
+                   				</table>
+								</a>
+                        </li>
+                        <li class="navSub">
+                       		 <a href="../CommentCard.html">
+							 <table>
+                   				<tr>
+                   				<td width="25px">
+								<!-- InstanceBeginEditable name="commentCard" -->
+								<li style="display:none;">
+								<!-- InstanceEndEditable -->
+								
+				   				<img src="../Images/Next.png" height="20px" alt=""/>
+								</li>
+                  				 </td>
+                   				<td width="135px" align="left">
+				   				Comment Card
+                  				 </td>
+                  				 </tr>
+                   				</table>
+								</a>
+                        </li>
+                    </ul>
+                    
+                    </li>
+                    <li id="LeftHeightTwo"> 
+                        <ul id="nav">
+                            <li class="activeSub">
+                            <a href="../Anime.html">
+							<table>
+                   				<tr>
+                   				<td width="25px">
+								<!-- InstanceBeginEditable name="Anime" --> <li style="display:none;"><!-- InstanceEndEditable -->
+				   				<img src="../Images/Next.png" height="20px" alt=""/>
+								</li>
+                  				 </td>
+                   				<td width="135px" align="left">
+				   				Anime
+                  				 </td>
+                  				 </tr>
+                   				</table></a>
+                            </li>
+                            <li class="navSub">
+                            <a href="../Anime/recommendedAnime.html">
+							<table>
+                   				<tr>
+                   				<td width="25px">
+								<!-- InstanceBeginEditable name="recommendedAnime" --> 
+								<li>
+								<!-- InstanceEndEditable -->
+				   				<img src="../Images/Next.png" height="20px" alt=""/>
+								</li>
+                  				 </td>
+                   				<td width="135px" align="left">
+				   				Recommended
+                  				 </td>
+                  				 </tr>
+                   				</table></a> 
+                            </li>
+                            <li class="navSub">
+                            <a href="../Anime/PreviousAnime.html">
+							<table>
+                   				<tr>
+                   				<td width="25px">
+								<!-- InstanceBeginEditable name="previousAnime" -->
+								<li style="display:none;">
+								<!-- InstanceEndEditable -->
+				   				<img src="../Images/Next.png" height="20px" alt=""/>
+								</li>
+                  				 </td>
+                   				<td width="135px" align="left">
+				   				Previous Anime
+                  				 </td>
+                  				 </tr>
+                   				</table></a> 
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="LeftHeightTwo">
+                    <ul id="nav">
+                        <li class="activeSub">
+                        	<a href="../Events.html">
+							<table>
+                   				<tr>
+                   				<td width="25px">
+								<!-- InstanceBeginEditable name="Events" --> <li style="display:none;"> <!-- InstanceEndEditable -->
+				   				<img src="../Images/Next.png" height="20px" alt=""/>
+								</li>
+                  				 </td>
+                   				<td width="135px" align="left">
+				   				Events
+                  				 </td>
+                  				 </tr>
+                   				</table></a>
+                        </li>
+                        <li class="navSub">
+                        	<a href="../Gallery.html">
+							<table>
+                   				<tr>
+                   				<td width="25px">
+								<!-- InstanceBeginEditable name="Gallery" --> <li style="display:none;"> <!-- InstanceEndEditable -->
+				   				<img src="../Images/Next.png" height="20px" alt=""/>
+								</li>
+                  				 </td>
+                   				<td width="135px" align="left">
+				   				Gallery
+                  				 </td>
+                  				 </tr>
+                   				</table></a>
+                        </li>
+                        <li class="navSub">
+                        	<a href="../prevMeetings/lastMeeting.html">
+							<table>
+                   				<tr>
+                   				<td width="25px">
+								<!-- InstanceBeginEditable name="lastMeeting" --> <li style="display:none;"> <!-- InstanceEndEditable -->
+				   				<img src="../Images/Next.png" height="20px" alt=""/>
+								</li>
+                  				 </td>
+                   				<td width="135px" align="left">
+				   				Past Meetings
+                  				 </td>
+                  				 </tr>
+                   				</table></a> 
+                        </li>
+                    </ul>
+                    
+                    </li>
+                    <li class="activeSub"> <a href="../Points.html" >
+					<table>
+                   				<tr>
+                   				<td width="25px">
+								 <!-- InstanceBeginEditable name="Points" --> <li style="display:none;"><!-- InstanceEndEditable -->
+				   				<img src="../Images/Next.png" height="20px" alt=""/>
+								</li>
+                  				 </td>
+                   				<td width="135px" align="left">
+				   				Points
+                  				 </td>
+                  				 </tr>
+                   				</table></a></li>
+                    
+                    <br>
+                    <br>
+                    <br>
+                    <li class="activeSub">
+                    <a href="../ChangeLog.html" style="height:42px;" >
+					<table>
+                   				<tr>
+                   				<td width="25px">
+								<!-- InstanceBeginEditable name="FooterLink" --> <li style="display:none;"> <!-- InstanceEndEditable -->
+				   				<img src="../Images/Next.png" height="20px" alt=""/>
+								</li>
+                  				 </td>
+                   				<td width="135px" align="left">
+				   				Designed by 2.5D Productions
+                  				 </td>
+                  				 </tr>
+                   				</table></a>
+                   <!-- <p>Last Updated 8/21/15</p>
+                    <p>Leave Feedback</p> -->
+                    </li>
+                   
+                  
                          
- </ul>  
- </div> 
+				</ul>  
+</div>
+<div class="upperBar">
+
+
+ 
+ 
+ 
  
  <div id="upperBarCenterMobile">
  <table width="100%">
@@ -319,7 +464,7 @@
 </table> 
 <div id="leftBar-scroll">
 <ul id="nav">
-					<li id="LeftHeightLogo"> <a href="../Index.html"><img src="../Images/Logo-transparent.png" id="width_logo" height="auto" alt=""/></a></li>
+					<li id="LeftHeightLogo"> <a href="../Index.html"><img src="../Images/Logo_2016-2017.png" id="width_logoTwo" height="auto" alt=""/></a></li>
                    <li> <a href="../Index.html">Home</a></li>
                     <li> <a href="../Points.html" >Points</a></li>
                     <li id="LeftHeightIndex">
@@ -379,142 +524,35 @@
 </div>
 </div>
 
-
-
-
-<div id="eventsBar" class="footerBarHide">
-    <div id="upperBarCenterThree">
-    <ul id="nav">
-    <li class="navSub">
-    <a href="../Events.html">Events</a>
-    </li>
-    <li class="navSub">
-    <a href="../Gallery.html">Gallery</a> 
-    </li>
-    <li class="navSub">
-    <a href="../prevMeetings/lastMeeting.html">Previous Meetings</a> 
-    </li>
-    </ul>
-    </div>
-    <div id="hideBarE">
-    
-    </div>
-    </div> 
-
-
-<div id="animeBar" class="footerBarHide">
-    <div id="upperBarCenterThree">
-    <ul id="nav">
-    <li class="navSub">
-    <a href="../Anime.html">Anime</a>
-    </li>
-    <li class="navSub">
-    <a href="../Anime/recommendedAnime.html">Recommended</a> 
-    </li>
-    <li class="navSub">
-    <a href="../Anime/PreviousAnime.html">Previous Anime</a> 
-    </li>
-    </ul>
-    </div>
-    <div id="hideBarAn">
-    
-    </div>
-    </div> 
-    
-    
-<div id="aboutBar" class="footerBarHide">
-    <div id="upperBarCenterTwo">
-    <ul id="nav">
-    <li class="navSub">
-    <a href="../About.html">About</a>
-    </li>
-    <li class="navSub">
-    <a href="../boardMembers.html">Board Members</a> 
-    </li>
-    <li class="navSub">
-    <a href="../SocialMedia.html">Social Media</a>
-    </li>
-    <li class="navSub">
-    <a href="../Constitution.html">Constitution</a> 
-    </li>
-    <li class="navSub">
-    <a href="../Archive/index.html">Archive</a>
-    </li>
-    <li class="navSub">
-    <a href="../CommentCard.html">Comment Card</a></h4>
-    </li>
-    </ul>
-    
-    </div>
-    <div id="hideBarAb">
-    
-    </div>
-    </div>
 <!-- InstanceBeginEditable name="Body" -->
-<div class="upperBarTwo blurBG">
-    <div id="upperBarCenterThree">
-    <ul id="nav">
-    <li class="navSub">
-    <a href="../Anime.html">Anime</a>
-    </li>
-    <li class="activeSub">
-    <a href="../Anime/recommendedAnime.html">Recommended</a> 
-    </li>
-    <li class="navSub">
-    <a href="../Anime/PreviousAnime.html">Previous Anime</a> 
-    </li>
-    </ul>
-    </div>
-    
-    </div> 
 
 
 
 
 
 
- <div > <!-- id="boardMain" -->
+ <div  class="paddingLeftDesktop" > <!-- id="boardMain" -->
 
 
 
 
-	  <table style="font-size:135%" width="100%" align="center" >
-        <tr>
-        	<td width="33%">
-            </td>
-            <td width="33%">
-            
-            </td>
-            <td width="33%">
-            </td>
-       </tr>
-       <tr height="80px">
-        	<td>
-            
-            </td>
-            <td>
-            
-            </td>
-            <td>
-            </td>
-       </tr>
-       </table>
+	
       <div style="overflow:auto;" id="animeBarSort">
        <table width="100%" align="center" style="color:black; background-color:white;">
        		<tr align="center">
-            <th width="1200px">
+            <th width="1300px">
             	<table>
                 	<tr>
-                        <th width="300px" bgcolor="#868686">
+                        <th width="320px" bgcolor="#868686">
                         Rank
                         </th>
-                        <th width="300px" bgcolor="#B6B6B6">
+                        <th width="320px" bgcolor="#B6B6B6">
                         Name
                         </th>
-                        <th width="300px" bgcolor="#868686">
+                        <th width="320px" bgcolor="#868686">
                         Year
                         </th>
-                        <th width="300px" bgcolor="#B6B6B6">
+                        <th width="320px" bgcolor="#B6B6B6">
                         Episodes
                         </th>
                     </tr>
@@ -523,30 +561,30 @@
             </tr>
            <tr align="center">
                <th>
-               	<ul id="nav" style="width:1200px;">
+               	<ul id="nav" style="width:1300px;">
                 <li class="navSub">
                 <a href="../anime/recommendedAnime.html">ASC</a> 
                 </li>
                 <li class="activeSub">
-                <a href="rankDESC.html">DESC</a> 
+                <a href="../recommendedAnime/rankDESC.html">DESC</a> 
                 </li>
                 <li class="navSub">
-                <a href="az.html">A-Z</a> 
+                <a href="../recommendedAnime/az.html">A-Z</a> 
                 </li>
                 <li class="navSub">
-                <a href="za.html">Z-A</a> 
+                <a href="../recommendedAnime/za.html">Z-A</a> 
                 </li>
                 <li class="navSub">
-                <a href="year.html">2015-1992</a> 
+                <a href="../recommendedAnime/year.html">2015-1992</a> 
                 </li>
                 <li class="navSub">
-                <a href="yearASC.html">1992-2015</a> 
+                <a href="../recommendedAnime/yearASC.html">1992-2015</a> 
                 </li>
                 <li class="navSub">
-                <a href="episodesASC.html">ASC</a> 
+                <a href="../recommendedAnime/episodesASC.html">ASC</a> 
                 </li>
                 <li class="navSub">
-                <a href="episodesDESC.html">DESC</a> 
+                <a href="../recommendedAnime/episodesDESC.html">DESC</a> 
                 </li>
                 </ul>
                </th>
@@ -3429,9 +3467,13 @@
 	</div>	
 
 
-<div class="lowerBar blurBG">
-<p id="lowerBarMain" align="center"><a href="http://www.2point5dproductions.com">Designed by 2.5D Productions</a> | <a href="../ChangeLog.html">Last Updated 10/18/2015</a> <!-- dont forget mobile version --> | <a class="show-feedbackBar" id="showFeedbackBar">Leave feedback on the website</a> <a class="hide-feedbackBar" id="hideFeedbackBar">Close feedback</a>
+<div class="lowerBar">
+
+
+<p id="lowerBarMain" align="center" style="display:none;"><a href="http://www.2point5dproductions.com">Designed by 2.5D Productions</a> | <a href="../ChangeLog.html">Last Updated 10/18/2015</a> <!-- dont forget mobile version --> | <a class="show-feedbackBar" id="showFeedbackBar">Leave feedback on the website</a> <a class="hide-feedbackBar" id="hideFeedbackBar">Close feedback</a>
 </p>
+
+
 <p id="lowerBarMobile" align="center">
 <a id="showFooterBar" class="show-footerBar">Click For More Info</a><a id="hideFooterBar" class="hide-footerBar">Close Footer</a>
 </p>

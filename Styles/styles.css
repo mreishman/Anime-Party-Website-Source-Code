@@ -1030,7 +1030,7 @@ a:active {color: #FFF;} /*FFF*/
 
 #LeftHeightIndex
 {
-	height:275px;
+	height:295px;
 	width:160px;	
 }
 #LeftHeightTwo
@@ -1052,10 +1052,14 @@ a:active {color: #FFF;} /*FFF*/
 }
 #LeftHeightLogo
 {
+	height:140px;
+	width:160px;	
+}
+#LeftHeightLogoTwo
+{
 	height:280px;
 	width:320px;	
 }
-
 #recAnimeBig
 {
 	display:none;	
